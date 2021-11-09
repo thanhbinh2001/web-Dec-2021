@@ -1,0 +1,135 @@
+.header-catergory {
+    position: relative;
+}
+
+.header-catergory:hover .category-hidden {
+    display: block;
+}
+
+.category-hidden {
+    display: none;
+    box-shadow: 0 0 2px #999;
+    position: absolute;
+    z-index: 2;
+    background-color: #fff;
+    top: 30px;
+}
+
+.breadcrumb {
+    background-color: #fff;
+}
+
+.breadcrumb-home {
+    color: #0c6;
+    position: relative;
+}
+
+.breadcrumb-home:hover {
+    color: #0c6;
+}
+
+.breadcrumb-category {
+    color: #999;
+    position: relative;
+    margin-left: 10px;
+}
+
+.breadcrumb-category::before {
+    content: "/";
+    left: -10px;
+    top: -2px;
+    position: absolute;
+    color: #999;
+
+}
+
+/* category sidebar */
+#category {
+    display: flex;
+}
+
+.category-sidebar {
+    flex: 0 0 20%;
+    padding-left: 15px
+}
+
+.category-sidebar-wrapper {
+    background-color: #f2f2f2;
+}
+
+.category-sidebar-wrapper+.category-sidebar-wrapper {
+    margin-top: 10px;
+}
+
+.category-sidebar-wrapper-headding {
+    background-color: #0c6;
+    color: #fff;
+    padding: 5px 10px;
+    text-transform: uppercase;
+}
+
+.category-sidebar-list {
+    list-style: none;
+    padding-left: 10px;
+    margin: 0;
+    max-height: 250px;
+}
+
+.category-sidebar-scroll {
+    overflow-y: scroll;
+
+}
+
+.category-product-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.category-sidebar-item {}
+
+.category-sidebar-item a {
+    display: block;
+    color: #444;
+    padding: 5px;
+    text-transform: capitalize;
+}
+
+.category-sidebar-item a:hover {
+    text-decoration: none;
+    color: #0c6;
+}
+
+.category-content {
+    position: relative;
+    flex: 0 0 80%;
+    padding-left: 15px;
+}
+
+.category-content-wrapper {}
+
+.category-content-wrapper__heading {
+    color: #595959;
+    font-weight: bold;
+}
+
+.category-filter {
+    background-color: #f2f2f2;
+}
+
+#category-form-filter {
+    padding: 10px;
+    float: right;
+}
+
+#category-form-filter label {
+    margin: 0 20px 0 0;
+    color: #595959;
+}
+
+
+#category-form-filter select {
+    color: #595959;
+}
+.category-product-item {
+    margin-bottom: 10px;
+}

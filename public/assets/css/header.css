@@ -81,6 +81,7 @@
     background-color: #fff;
     padding: 5px;
     width: 210px;
+    cursor: default;
 }
 
 .header-bottom__left-title {

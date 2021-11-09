@@ -24,9 +24,13 @@
 .sidebar-item__link {
     display: block;
     padding: 10px;
+    color: #444;
 }
 
-.sidebar-item__link i {}
+.sidebar-item__link:hover {
+    text-decoration: none;
+    color: #fff;
+}
 
 .sidebar-item:hover .sidebar__submenu {
     display: block;
@@ -130,4 +134,3 @@
 .slider-radio.active {
     background-color: #0c6;
 }
-

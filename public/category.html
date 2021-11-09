@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sách kinh tế</title>
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Css -->
+    <link rel="stylesheet" href="./assets/css/home.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/slider.css" />
+    <link rel="stylesheet" href="./assets/css/content.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
+    <link rel="stylesheet" href="./assets/css/category.css" />
+  </head>
+  <body>
+    <div id="app">
+      <!-- Header start -->
+      <header id="header">
+        <div class="container">
+          <div class="header-wrapper">
+            <div class="header-left col-xl-3">
+              <div class="header-logo">
+                <a href="./index.html">
+                  <img
+                    src="./assets/images/logo/logo.png"
+                    alt=""
+                    class="header-img"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="header-right col-xl-9">
+              <div class="header-search col-xl-7">
+                <form action="" class="header-form">
+                  <table width="100%" cellspacing="0" cellpadding="0">
+                    <tbody>
+                      <tr>
+                        <td class="header-input">
+                          <input type="text" class="header-input__text" />
+                        </td>
+                        <td class="header-submit">
+                          <input type="submit" value="Tìm" alt="Tìm" />
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </form>
+              </div>
+              <div class="header-shoptool col-xl-5">
+                <ul class="shoptool-list">
+                  <li>
+                    <div class="shoptool-text">
+                      <span>Tài khoản của bạn</span>
+                      <i class="fas fa-sort-down"></i>
+                    </div>
+                    <div class="shoptool-text__subcontent">
+                      <!-- code here -->
+                    </div>
+                  </li>
+                  <li>
+                    <div class="shoptool-text" title="Giỏ hàng">
+                      <span> Giỏ hàng (</span>
+                      <span class="shoptool-shownumber">0</span>
+                      <span>)</span>
+                      <i class="fas fa-sort-down"></i>
+                    </div>
+                    <div class="shoptool-text__subcontent">
+                      <!-- code here -->
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div id="header-bottom">
+        <div class="container clearfix">
+          <div class="header-bottom__left clearfix ml-3 header-catergory">
+            <i class="fas fa-bars"></i>
+            <span class="header-bottom__left-title"> DANH MỤC SẢN PHẨM </span>
+
+            <div class="category-hidden">
+              <ul class="sidebar-list">
+                <li class="sidebar-item">
+                  <a class="sidebar-item__link">
+                    <span>Nổi bật</span>
+                  </a>
+                  <ul class="sidebar__submenu">
+                    <li class="submenu-item">
+                      <a href="" target="_self">Sách bán chạy</a>
+                    </li>
+                    <li class="submenu-item">
+                      <a href="" target="_self">Sách mới</a>
+                    </li>
+                    <li class="submenu-item">
+                      <a href="" target="_self">Sách phát hành</a>
+                    </li>
+                    <li class="submenu-item">
+                      <a href="" target="_self">Sách giảm giá</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="sidebar-item">
+                  <a class="sidebar-item__link">
+                    <span>Sách kinh tế</span>
+                  </a>
+                  <ul class="sidebar__submenu">
+                    <li class="submenu-item">
+                      <a href="" target="_self">Tài chính - Kế toán</a>
+                    </li>
+                    <li class="submenu-item">
+                      <a href="" target="_self">Quản trị - Lãnh đạo</a>
+                    </li>
+                    <li class="submenu-item">
+                      <a href="" target="_self">Marketing - Bán hàng</a>
+                    </li>
+                    <li class="submenu-item">
+                      <a href="" target="_self">Kinh tế học</a>
+                    </li>
+                    <li class="submenu-item">
+                      <a href="" target="_self">Khởi nghiệp</a>
+                    </li>
+                    <li class="submenu-item">
+                      <a href="" target="_self">Doanh nhân - Tập đoàn</a>
+                    </li>
+                    <li class="submenu-item">
+                      <a href="" target="_self">Bài học kinh doanh</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="header-bottom__right clearfix">
+            <i class="fas fa-phone mr-1"></i>
+            <span>Hotline: </span>
+            <span class="header-bottom__right-span">0938 424 289</span>
+          </div>
+        </div>
+      </div>
+      <!-- Header end -->
+      <!-- Breadcrumb start-->
+      <div class="breadcrumb">
+        <div class="container">
+          <a href="./index.html" class="breadcrumb-home ml-3">Trang chủ</a>
+          <span class="breadcrumb-category">Sách kinh tế</span>
+        </div>
+      </div>
+      <!-- Breadcrumb end-->
+
+      <div id="app-content">
+        <div class="container">
+          <div id="category">
+            <div class="category-sidebar">
+              <div class="category-sidebar-wrapper">
+                <h5 class="category-sidebar-wrapper-headding">Danh mục</h5>
+                <ul class="category-sidebar-list">
+                  <li class="category-sidebar-item">
+                    <a href="">Bài học kinh doanh</a>
+                  </li>
+                  <li class="category-sidebar-item">
+                    <a href="">Doanh nhân - Tập đoàn</a>
+                  </li>
+                  <li class="category-sidebar-item">
+                    <a href="">Khởi nghiệp</a>
+                  </li>
+                  <li class="category-sidebar-item">
+                    <a href="">Kinh tế học</a>
+                  </li>
+                  <li class="category-sidebar-item">
+                    <a href="">Kĩ năng làm việc</a>
+                  </li>
+                  <li class="category-sidebar-item">
+                    <a href="">Marketing - bán hàng</a>
+                  </li>
+                  <li class="category-sidebar-item">
+                    <a href="">Quản trị - lãnh đạo</a>
+                  </li>
+                  <li class="category-sidebar-item">
+                    <a href="">Tài chính - kế toán</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="category-sidebar-wrapper">
+                <h5 class="category-sidebar-wrapper-headding">Tác giả</h5>
+                <ul class="category-sidebar-list category-sidebar-scroll">
+                  <li class="category-sidebar-item">
+                    <a href="">Nhiều tác giả</a>
+                  </li>
+                  <li class="category-sidebar-item">
+                    <a href="">Napoleon Hill</a>
+                  </li>
+                  <li class="category-sidebar-item">
+                    <a href="">Trịnh Minh Thảo</a>
+                  </li>
+                  <li class="category-sidebar-item">
+                    <a href="">John C Maxwell</a>
+                  </li>
+                  <li class="category-sidebar-item">
+                    <a href="">C. K. Prahalad & Venkat Ramaswamy</a>
+                  </li>
+                  <li class="category-sidebar-item">
+                    <a href="">Craig Nathanson</a>
+                  </li>
+                  <li class="category-sidebar-item">
+                    <a href="">Jacky Tai</a>
+                  </li>
+                  <li class="category-sidebar-item">
+                    <a href="">Angus deton</a>
+                  </li>
+                  <li class="category-sidebar-item">
+                    <a href="">Phil knight</a>
+                  </li>
+                  <li class="category-sidebar-item">
+                    <a href="">charlie pownall</a>
+                  </li>
+                  <li class="category-sidebar-item">
+                    <a href="">russell brunson</a>
+                  </li>
+                  <li class="category-sidebar-item">
+                    <a href="">eugene m. schawartz</a>
+                  </li>
+                  <li class="category-sidebar-item"><a href="">Đỗ Huân</a></li>
+                  <li class="category-sidebar-item">
+                    <a href="">David Nguyễn</a>
+                  </li>
+                  <li class="category-sidebar-item">
+                    <a href="">Chris Anderson</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="category-sidebar-wrapper">
+                <h5 class="category-sidebar-wrapper-headding">Thương hiệu</h5>
+                <ul class="category-sidebar-list">
+                  <li class="category-sidebar-item"><a href="">Thái hà</a></li>
+                  <li class="category-sidebar-item">
+                    <a href="">Alphabooks</a>
+                  </li>
+                  <li class="category-sidebar-item"><a href="">Nhã nam</a></li>
+                  <li class="category-sidebar-item">
+                    <a href="">Kinh tế học</a>
+                  </li>
+                  <li class="category-sidebar-item"><a href="">NXB trẻ</a></li>
+                  <li class="category-sidebar-item"><a href="">Dtbooks</a></li>
+                  <li class="category-sidebar-item">
+                    <a href="">Ngòi bút việt</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="category-content">
+              <div class="category-content-wrapper">
+                <h5 class="category-content-wrapper__heading">Sách kinh tế</h5>
+                <div class="category-filter clearfix">
+                  <form action="" id="category-form-filter">
+                    <label for="">Xem theo</label>
+                    <select name="" id="">
+                      <option value="" selected>Mới trước cũ sau</option>
+                      <option value="" selected>Cũ trước mới sau</option>
+                      <option value="" selected>Giá cao đến thấp</option>
+                      <option value="" selected>Giá thấp đến cao</option>
+                    </select>
+                  </form>
+                </div>
+                <!-- product start -->
+                <div class="section-book">
+                  <div class="bookcontent">
+                    <div class="catergory-product">
+                      <div class="category-product-list">
+                        <div class="col-xl-3 category-product-item">
+                          <div class="product-item-wrapper">
+                            <a href="">
+                              <div
+                                class="product-item-wrapper__img"
+                                style="
+                                  background-image: url(./assets/images/product/anh-c_-thi_u-ng_i-y_u-kh_ng-03__37620_thum_135.jpg);
+                                "
+                              >
+                                <span
+                                  class="product-item-wrapper__sale"
+                                  style="
+                                    background-image: url('./assets/images/product/saleprice.png');
+                                  "
+                                  >20%</span
+                                >
+                              </div>
+                            </a>
+                            <div class="product-item-details">
+                              <div class="product-item-wrapper__title">
+                                <a href="" class="product-item-wrapper__link"
+                                  >Anh Có Thiếu Người Yêu Không? - Tập 2</a
+                                >
+                              </div>
+                              <div class="product-item-wrapper__subtitle">
+                                <span>Ngô Đồng Tư Ngữ</span>
+                              </div>
+                              <div class="product-item-wrapper__prices">
+                                113.600 ₫
+                              </div>
+                              <div class="product-item-wrapper__rootprices">
+                                142.000 ₫
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-3 category-product-item">
+                          <div class="product-item-wrapper">
+                            <a href="">
+                              <div
+                                class="product-item-wrapper__img"
+                                style="
+                                  background-image: url(./assets/images/product/image_236770__81222_thum_135.jpg);
+                                "
+                              >
+                                <span
+                                  class="product-item-wrapper__sale"
+                                  style="
+                                    background-image: url('./assets/images/product/saleprice.png');
+                                  "
+                                  >20%</span
+                                >
+                              </div>
+                            </a>
+                            <div class="product-item-details">
+                              <div class="product-item-wrapper__title">
+                                <a href="" class="product-item-wrapper__link"
+                                  >Anh Có Thiếu Người Yêu Không? - Tập 2</a
+                                >
+                              </div>
+                              <div class="product-item-wrapper__subtitle">
+                                <span>Ngô Đồng Tư Ngữ</span>
+                              </div>
+                              <div class="product-item-wrapper__prices">
+                                113.600 ₫
+                              </div>
+                              <div class="product-item-wrapper__rootprices">
+                                142.000 ₫
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-3 category-product-item">
+                          <div class="product-item-wrapper">
+                            <a href="">
+                              <div
+                                class="product-item-wrapper__img"
+                                style="
+                                  background-image: url(./assets/images/product/image_237168__65357_thum_135.jpg);
+                                "
+                              >
+                                <span
+                                  class="product-item-wrapper__sale"
+                                  style="
+                                    background-image: url('./assets/images/product/saleprice.png');
+                                  "
+                                  >20%</span
+                                >
+                              </div>
+                            </a>
+                            <div class="product-item-details">
+                              <div class="product-item-wrapper__title">
+                                <a href="" class="product-item-wrapper__link"
+                                  >Anh Có Thiếu Người Yêu Không? - Tập 2</a
+                                >
+                              </div>
+                              <div class="product-item-wrapper__subtitle">
+                                <span>Ngô Đồng Tư Ngữ</span>
+                              </div>
+                              <div class="product-item-wrapper__prices">
+                                113.600 ₫
+                              </div>
+                              <div class="product-item-wrapper__rootprices">
+                                142.000 ₫
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-3 category-product-item">
+                          <div class="product-item-wrapper">
+                            <a href="">
+                              <div
+                                class="product-item-wrapper__img"
+                                style="
+                                  background-image: url(./assets/images/product/image_239889__26597_thum_135.jpg);
+                                "
+                              >
+                                <span
+                                  class="product-item-wrapper__sale"
+                                  style="
+                                    background-image: url('./assets/images/product/saleprice.png');
+                                  "
+                                  >20%</span
+                                >
+                              </div>
+                            </a>
+                            <div class="product-item-details">
+                              <div class="product-item-wrapper__title">
+                                <a href="" class="product-item-wrapper__link"
+                                  >Anh Có Thiếu Người Yêu Không? - Tập 2</a
+                                >
+                              </div>
+                              <div class="product-item-wrapper__subtitle">
+                                <span>Ngô Đồng Tư Ngữ</span>
+                              </div>
+                              <div class="product-item-wrapper__prices">
+                                113.600 ₫
+                              </div>
+                              <div class="product-item-wrapper__rootprices">
+                                142.000 ₫
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-3 category-product-item">
+                          <div class="product-item-wrapper">
+                            <a href="">
+                              <div
+                                class="product-item-wrapper__img"
+                                style="
+                                  background-image: url(./assets/images/product/image_237981__39794_thum_135.jpg);
+                                "
+                              >
+                                <span
+                                  class="product-item-wrapper__sale"
+                                  style="
+                                    background-image: url('./assets/images/product/saleprice.png');
+                                  "
+                                  >20%</span
+                                >
+                              </div>
+                            </a>
+                            <div class="product-item-details">
+                              <div class="product-item-wrapper__title">
+                                <a href="" class="product-item-wrapper__link"
+                                  >Anh Có Thiếu Người Yêu Không? - Tập 2</a
+                                >
+                              </div>
+                              <div class="product-item-wrapper__subtitle">
+                                <span>Ngô Đồng Tư Ngữ</span>
+                              </div>
+                              <div class="product-item-wrapper__prices">
+                                113.600 ₫
+                              </div>
+                              <div class="product-item-wrapper__rootprices">
+                                142.000 ₫
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- product start -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer start -->
+      <footer id="footer">
+        <div class="container">
+          <ul class="footer-list">
+            <li class="footer-item col-xl-3">
+              Hỗ trợ khách hàng
+              <ul class="footer-sublist">
+                <li class="footer-subitem">
+                  <a href="">Email: admin@nobita.vn </a>
+                </li>
+                <li class="footer-subitem">
+                  <a href=""> Hotline: <span>0938 424 289</span></a>
+                </li>
+              </ul>
+            </li>
+            <li class="footer-item col-xl-3">
+              Giới thiệu
+              <ul class="footer-sublist">
+                <li class="footer-subitem"><a href="">Về nobita</a></li>
+                <li class="footer-subitem"><a href="">Tuyển dụng</a></li>
+              </ul>
+            </li>
+            <li class="footer-item col-xl-3">
+              Tài khoản
+              <ul class="footer-sublist">
+                <li class="footer-subitem"><a href="">Tài khoản</a></li>
+                <li class="footer-subitem">
+                  <a href="">Danh sách đơn hàng</a>
+                </li>
+                <li class="footer-subitem"><a href="">Thông báo</a></li>
+              </ul>
+            </li>
+            <li class="footer-item col-xl-3">
+              Hướng Dẫn
+              <ul class="footer-sublist">
+                <li class="footer-subitem">
+                  <a href="">Hướng dẫn mua hàng</a>
+                </li>
+                <li class="footer-subitem">
+                  <a href="">Phương thức thanh toán</a>
+                </li>
+                <li class="footer-subitem">
+                  <a href="">Câu hỏi thường gặp</a>
+                </li>
+                <li class="footer-subitem">
+                  <a href="">Phương thức vận chuyển</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="copyright">
+          <div class="container">
+            <div class="copyright-text">
+              <p>Copyright © 2014 Nobita.vn</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="#" class="footer-arrow-top">
+          <i class="fas fa-arrow-up"></i>
+        </a>
+      </footer>
+      <!-- footer end -->
+    </div>
+  </body>
+</html>
