@@ -1,0 +1,17 @@
+.footer-list {
+    display: flex;
+    list-style: none;
+}
+
+.footer-item {
+    font-weight:bold;
+}
+
+.footer-sublist {
+    list-style: none;
+
+}
+
+.footer-subitem {
+    font-weight: normal;
+}

@@ -1,12 +1,674 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Mua Sách Online</title>
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Css -->
+    <link rel="stylesheet" href="./assets/css/home.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/slider.css" />
+    <link rel="stylesheet" href="./assets/css/content.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+  </head>
+  <body>
+    <div id="app">
+      <!-- Header start -->
+      <header id="header">
+        <div class="container">
+          <div class="header-wrapper">
+            <div class="header-left col-xl-3">
+              <div class="header-logo">
+                <img
+                  src="./assets/images/logo/logo.png"
+                  alt=""
+                  class="header-img"
+                />
+              </div>
+            </div>
+            <div class="header-right col-xl-9">
+              <div class="header-search col-xl-7">
+                <form action="" class="header-form">
+                  <table width="100%" cellspacing="0" cellpadding="0">
+                    <tbody>
+                      <tr>
+                        <td class="header-input">
+                          <input type="text" class="header-input__text" />
+                        </td>
+                        <td class="header-submit">
+                          <input type="submit" value="Tìm" alt="Tìm" />
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </form>
+              </div>
+              <div class="header-shoptool col-xl-5">
+                <ul class="shoptool-list">
+                  <li>
+                    <div class="shoptool-text">
+                      <span>Tài khoản của bạn</span>
+                      <i class="fas fa-sort-down"></i>
+                    </div>
+                    <div class="shoptool-text__subcontent">
+                      <!-- code here -->
+                    </div>
+                  </li>
+                  <li>
+                    <div class="shoptool-text" title="Giỏ hàng">
+                      <span> Giỏ hàng (</span>
+                      <span class="shoptool-shownumber">0</span>
+                      <span>)</span>
+                      <i class="fas fa-sort-down"></i>
+                    </div>
+                    <div class="shoptool-text__subcontent">
+                      <!-- code here -->
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div id="header-bottom">
+        <div class="container clearfix">
+          <div class="header-bottom__left clearfix ml-3">
+            <i class="fas fa-bars"></i>
+            <span class="header-bottom__left-title"> DANH MỤC SẢN PHẨM </span>
+          </div>
+          <div class="header-bottom__right clearfix">
+            <i class="fas fa-phone mr-1"></i>
+            <span>Hotline: </span>
+            <span class="header-bottom__right-span">0938 424 289</span>
+          </div>
+        </div>
+      </div>
+      <!-- Header end -->
+
+      <!-- Slider start -->
+      <div id="slider">
+        <div class="container slider-container">
+          <div class="sidebar col-xl-2 ml-1">
+            <ul class="sidebar-list">
+              <li class="sidebar-item">
+                <a class="sidebar-item__link">
+                  <span>Nổi bật</span>
+                </a>
+                <ul class="sidebar__submenu">
+                  <li class="submenu-item">
+                    <a href="" target="_self">Sách bán chạy</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="" target="_self">Sách mới</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="" target="_self">Sách phát hành</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="" target="_self">Sách giảm giá</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="sidebar-item">
+                <a class="sidebar-item__link">
+                  <span>Sách kinh tế</span>
+                </a>
+                <ul class="sidebar__submenu">
+                  <li class="submenu-item">
+                    <a href="" target="_self">Tài chính - Kế toán</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="" target="_self">Quản trị - Lãnh đạo</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="" target="_self">Marketing - Bán hàng</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="" target="_self">Kinh tế học</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="" target="_self">Khởi nghiệp</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="" target="_self">Doanh nhân - Tập đoàn</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="" target="_self">Bài học kinh doanh</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="slider-wrapper col-xl-10">
+            <div class="slider-wrapper-box ml-5">
+              <div class="slider-viewport">
+                <ul class="slider-viewport__list">
+                  <li class="slider-viewport__item">
+                    <a href="" class="slider-viewport__link" target="_self">
+                     <img class="slider-viewport__img" src="./assets/images/slider/luc-xu-qc.jpg"></img>
+                    </a>
+                  </li>
+                                   
+                </ul>
+              </div>
+
+              <div class="slider-radio-control">
+                  <a class="slider-radio active"></a>
+                  <a class="slider-radio"></a>
+                  <a class="slider-radio"></a>
+                  <a class="slider-radio"></a>
+                  <a class="slider-radio"></a>
+                  <a class="slider-radio"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Slider end -->
+
+      <!-- Content start -->
+      <div id="app-content">
+          <div class="container">
+              <!-- Sách mới start-->
+            <div class="section-book">
+                <div class="section-book-heading clearfix">
+                    <a href="" class="section-book-heading__title">Sách mới <span></span> </a>
+
+                    <a href="" class="section-book-heading__show"> Xem tất cả</a>
+                </div>
+                <div class="bookcontent">
+                    <div class="product">
+                        <div class="product-list">
+                            <div class="product-item col-xl-2">
+                                <div class="product-item-wrapper">
+                                    <div class="product-item-wrapper__img" style="background-image: url(./assets/images/product/anh-c_-thi_u-ng_i-y_u-kh_ng-03__37620_thum_135.jpg)">
+                                        <span class="product-item-wrapper__sale" style="background-image: url('./assets/images/product/saleprice.png')">20%</span>
+                                    </div>
+                                    <div class="product-item-wrapper__title">
+                                        <a href="" class="product-item-wrapper__link">Anh Có Thiếu Người Yêu Không? - Tập 2</a>
+                                    </div>
+                                    <div class="product-item-wrapper__subtitle"><span>Ngô Đồng Tư Ngữ</span></div>
+                                    <div class="product-item-wrapper__prices">113.600 ₫</div>
+                                    <div class="product-item-wrapper__rootprices">142.000 ₫</div>
+
+                                </div>
+                            </div>
+                            <div class="product-item col-xl-2">
+                                <div class="product-item-wrapper">
+                                    <div class="product-item-wrapper__img" style="background-image: url(./assets/images/product/anh-c_-thi_u-ng_i-y_u-kh_ng-03__37620_thum_135.jpg)">
+                                        <span class="product-item-wrapper__sale" style="background-image: url('./assets/images/product/saleprice.png')">20%</span>
+                                    </div>
+                                    <div class="product-item-wrapper__title">
+                                        <a href="" class="product-item-wrapper__link">Anh Có Thiếu Người Yêu Không? - Tập 2</a>
+                                    </div>
+                                    <div class="product-item-wrapper__subtitle"><span>Ngô Đồng Tư Ngữ</span></div>
+                                    <div class="product-item-wrapper__prices">113.600 ₫</div>
+                                    <div class="product-item-wrapper__rootprices">142.000 ₫</div>
+
+                                </div>
+                            </div>
+                            <div class="product-item col-xl-2">
+                                <div class="product-item-wrapper">
+                                    <div class="product-item-wrapper__img" style="background-image: url(./assets/images/product/anh-c_-thi_u-ng_i-y_u-kh_ng-03__37620_thum_135.jpg)">
+                                        <span class="product-item-wrapper__sale" style="background-image: url('./assets/images/product/saleprice.png')">20%</span>
+                                    </div>
+                                    <div class="product-item-wrapper__title">
+                                        <a href="" class="product-item-wrapper__link">Anh Có Thiếu Người Yêu Không? - Tập 2</a>
+                                    </div>
+                                    <div class="product-item-wrapper__subtitle"><span>Ngô Đồng Tư Ngữ</span></div>
+                                    <div class="product-item-wrapper__prices">113.600 ₫</div>
+                                    <div class="product-item-wrapper__rootprices">142.000 ₫</div>
+
+                                </div>
+                            </div>
+                            <div class="product-item col-xl-2">
+                                <div class="product-item-wrapper">
+                                    <div class="product-item-wrapper__img" style="background-image: url(./assets/images/product/anh-c_-thi_u-ng_i-y_u-kh_ng-03__37620_thum_135.jpg)">
+                                        <span class="product-item-wrapper__sale" style="background-image: url('./assets/images/product/saleprice.png')">20%</span>
+                                    </div>
+                                    <div class="product-item-wrapper__title">
+                                        <a href="" class="product-item-wrapper__link">Anh Có Thiếu Người Yêu Không? - Tập 2</a>
+                                    </div>
+                                    <div class="product-item-wrapper__subtitle"><span>Ngô Đồng Tư Ngữ</span></div>
+                                    <div class="product-item-wrapper__prices">113.600 ₫</div>
+                                    <div class="product-item-wrapper__rootprices">142.000 ₫</div>
+
+                                </div>
+                            </div>
+                            <div class="product-item col-xl-2">
+                                <div class="product-item-wrapper">
+                                    <div class="product-item-wrapper__img" style="background-image: url(./assets/images/product/anh-c_-thi_u-ng_i-y_u-kh_ng-03__37620_thum_135.jpg)">
+                                        <span class="product-item-wrapper__sale" style="background-image: url('./assets/images/product/saleprice.png')">20%</span>
+                                    </div>
+                                    <div class="product-item-wrapper__title">
+                                        <a href="" class="product-item-wrapper__link">Anh Có Thiếu Người Yêu Không? - Tập 2</a>
+                                    </div>
+                                    <div class="product-item-wrapper__subtitle"><span>Ngô Đồng Tư Ngữ</span></div>
+                                    <div class="product-item-wrapper__prices">113.600 ₫</div>
+                                    <div class="product-item-wrapper__rootprices">142.000 ₫</div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!-- Sách mới end-->
+
+              <!-- Sách sắp phát hành start-->
+              <div class="section-book">
+                <div class="section-book-heading clearfix">
+                    <a href="" class="section-book-heading__title">Sắp phát hành <span></span> </a>
+
+                    <a href="" class="section-book-heading__show"> Xem tất cả</a>
+                </div>
+                <div class="bookcontent">
+                    <div class="product">
+                        <div class="product-list">
+                            <div class="product-item col-xl-2">
+                                <div class="product-item-wrapper">
+                                    <div class="product-item-wrapper__img" style="background-image: url(./assets/images/product/anh-c_-thi_u-ng_i-y_u-kh_ng-03__37620_thum_135.jpg)">
+                                        <span class="product-item-wrapper__sale" style="background-image: url('./assets/images/product/saleprice.png')">20%</span>
+                                    </div>
+                                    <div class="product-item-wrapper__title">
+                                        <a href="" class="product-item-wrapper__link">Anh Có Thiếu Người Yêu Không? - Tập 2</a>
+                                    </div>
+                                    <div class="product-item-wrapper__subtitle"><span>Ngô Đồng Tư Ngữ</span></div>
+                                    <div class="product-item-wrapper__prices">113.600 ₫</div>
+                                    <div class="product-item-wrapper__rootprices">142.000 ₫</div>
+
+                                </div>
+                            </div>
+                            <div class="product-item col-xl-2">
+                                <div class="product-item-wrapper">
+                                    <div class="product-item-wrapper__img" style="background-image: url(./assets/images/product/anh-c_-thi_u-ng_i-y_u-kh_ng-03__37620_thum_135.jpg)">
+                                        <span class="product-item-wrapper__sale" style="background-image: url('./assets/images/product/saleprice.png')">20%</span>
+                                    </div>
+                                    <div class="product-item-wrapper__title">
+                                        <a href="" class="product-item-wrapper__link">Anh Có Thiếu Người Yêu Không? - Tập 2</a>
+                                    </div>
+                                    <div class="product-item-wrapper__subtitle"><span>Ngô Đồng Tư Ngữ</span></div>
+                                    <div class="product-item-wrapper__prices">113.600 ₫</div>
+                                    <div class="product-item-wrapper__rootprices">142.000 ₫</div>
+
+                                </div>
+                            </div>
+                            <div class="product-item col-xl-2">
+                                <div class="product-item-wrapper">
+                                    <div class="product-item-wrapper__img" style="background-image: url(./assets/images/product/anh-c_-thi_u-ng_i-y_u-kh_ng-03__37620_thum_135.jpg)">
+                                        <span class="product-item-wrapper__sale" style="background-image: url('./assets/images/product/saleprice.png')">20%</span>
+                                    </div>
+                                    <div class="product-item-wrapper__title">
+                                        <a href="" class="product-item-wrapper__link">Anh Có Thiếu Người Yêu Không? - Tập 2</a>
+                                    </div>
+                                    <div class="product-item-wrapper__subtitle"><span>Ngô Đồng Tư Ngữ</span></div>
+                                    <div class="product-item-wrapper__prices">113.600 ₫</div>
+                                    <div class="product-item-wrapper__rootprices">142.000 ₫</div>
+
+                                </div>
+                            </div>
+                            <div class="product-item col-xl-2">
+                                <div class="product-item-wrapper">
+                                    <div class="product-item-wrapper__img" style="background-image: url(./assets/images/product/anh-c_-thi_u-ng_i-y_u-kh_ng-03__37620_thum_135.jpg)">
+                                        <span class="product-item-wrapper__sale" style="background-image: url('./assets/images/product/saleprice.png')">20%</span>
+                                    </div>
+                                    <div class="product-item-wrapper__title">
+                                        <a href="" class="product-item-wrapper__link">Anh Có Thiếu Người Yêu Không? - Tập 2</a>
+                                    </div>
+                                    <div class="product-item-wrapper__subtitle"><span>Ngô Đồng Tư Ngữ</span></div>
+                                    <div class="product-item-wrapper__prices">113.600 ₫</div>
+                                    <div class="product-item-wrapper__rootprices">142.000 ₫</div>
+
+                                </div>
+                            </div>
+                            <div class="product-item col-xl-2">
+                                <div class="product-item-wrapper">
+                                    <div class="product-item-wrapper__img" style="background-image: url(./assets/images/product/anh-c_-thi_u-ng_i-y_u-kh_ng-03__37620_thum_135.jpg)">
+                                        <span class="product-item-wrapper__sale" style="background-image: url('./assets/images/product/saleprice.png')">20%</span>
+                                    </div>
+                                    <div class="product-item-wrapper__title">
+                                        <a href="" class="product-item-wrapper__link">Anh Có Thiếu Người Yêu Không? - Tập 2</a>
+                                    </div>
+                                    <div class="product-item-wrapper__subtitle"><span>Ngô Đồng Tư Ngữ</span></div>
+                                    <div class="product-item-wrapper__prices">113.600 ₫</div>
+                                    <div class="product-item-wrapper__rootprices">142.000 ₫</div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          <!-- Sách sắp phát hành end-->
+
+            <!-- Sách bán chạy start-->
+            <div class="section-book">
+                <div class="section-book-heading clearfix">
+                    <a href="" class="section-book-heading__title">Sách bán chạy <span></span> </a>
+
+                    <a href="" class="section-book-heading__show"> Xem tất cả</a>
+                </div>
+                <div class="bookcontent">
+                    <div class="product">
+                        <div class="product-list">
+                            <div class="product-item col-xl-2">
+                                <div class="product-item-wrapper">
+                                    <div class="product-item-wrapper__img" style="background-image: url(./assets/images/product/anh-c_-thi_u-ng_i-y_u-kh_ng-03__37620_thum_135.jpg)">
+                                        <span class="product-item-wrapper__sale" style="background-image: url('./assets/images/product/saleprice.png')">20%</span>
+                                    </div>
+                                    <div class="product-item-wrapper__title">
+                                        <a href="" class="product-item-wrapper__link">Anh Có Thiếu Người Yêu Không? - Tập 2</a>
+                                    </div>
+                                    <div class="product-item-wrapper__subtitle"><span>Ngô Đồng Tư Ngữ</span></div>
+                                    <div class="product-item-wrapper__prices">113.600 ₫</div>
+                                    <div class="product-item-wrapper__rootprices">142.000 ₫</div>
+
+                                </div>
+                            </div>
+                            <div class="product-item col-xl-2">
+                                <div class="product-item-wrapper">
+                                    <div class="product-item-wrapper__img" style="background-image: url(./assets/images/product/anh-c_-thi_u-ng_i-y_u-kh_ng-03__37620_thum_135.jpg)">
+                                        <span class="product-item-wrapper__sale" style="background-image: url('./assets/images/product/saleprice.png')">20%</span>
+                                    </div>
+                                    <div class="product-item-wrapper__title">
+                                        <a href="" class="product-item-wrapper__link">Anh Có Thiếu Người Yêu Không? - Tập 2</a>
+                                    </div>
+                                    <div class="product-item-wrapper__subtitle"><span>Ngô Đồng Tư Ngữ</span></div>
+                                    <div class="product-item-wrapper__prices">113.600 ₫</div>
+                                    <div class="product-item-wrapper__rootprices">142.000 ₫</div>
+
+                                </div>
+                            </div>
+                            <div class="product-item col-xl-2">
+                                <div class="product-item-wrapper">
+                                    <div class="product-item-wrapper__img" style="background-image: url(./assets/images/product/anh-c_-thi_u-ng_i-y_u-kh_ng-03__37620_thum_135.jpg)">
+                                        <span class="product-item-wrapper__sale" style="background-image: url('./assets/images/product/saleprice.png')">20%</span>
+                                    </div>
+                                    <div class="product-item-wrapper__title">
+                                        <a href="" class="product-item-wrapper__link">Anh Có Thiếu Người Yêu Không? - Tập 2</a>
+                                    </div>
+                                    <div class="product-item-wrapper__subtitle"><span>Ngô Đồng Tư Ngữ</span></div>
+                                    <div class="product-item-wrapper__prices">113.600 ₫</div>
+                                    <div class="product-item-wrapper__rootprices">142.000 ₫</div>
+
+                                </div>
+                            </div>
+                            <div class="product-item col-xl-2">
+                                <div class="product-item-wrapper">
+                                    <div class="product-item-wrapper__img" style="background-image: url(./assets/images/product/anh-c_-thi_u-ng_i-y_u-kh_ng-03__37620_thum_135.jpg)">
+                                        <span class="product-item-wrapper__sale" style="background-image: url('./assets/images/product/saleprice.png')">20%</span>
+                                    </div>
+                                    <div class="product-item-wrapper__title">
+                                        <a href="" class="product-item-wrapper__link">Anh Có Thiếu Người Yêu Không? - Tập 2</a>
+                                    </div>
+                                    <div class="product-item-wrapper__subtitle"><span>Ngô Đồng Tư Ngữ</span></div>
+                                    <div class="product-item-wrapper__prices">113.600 ₫</div>
+                                    <div class="product-item-wrapper__rootprices">142.000 ₫</div>
+
+                                </div>
+                            </div>
+                            <div class="product-item col-xl-2">
+                                <div class="product-item-wrapper">
+                                    <div class="product-item-wrapper__img" style="background-image: url(./assets/images/product/anh-c_-thi_u-ng_i-y_u-kh_ng-03__37620_thum_135.jpg)">
+                                        <span class="product-item-wrapper__sale" style="background-image: url('./assets/images/product/saleprice.png')">20%</span>
+                                    </div>
+                                    <div class="product-item-wrapper__title">
+                                        <a href="" class="product-item-wrapper__link">Anh Có Thiếu Người Yêu Không? - Tập 2</a>
+                                    </div>
+                                    <div class="product-item-wrapper__subtitle"><span>Ngô Đồng Tư Ngữ</span></div>
+                                    <div class="product-item-wrapper__prices">113.600 ₫</div>
+                                    <div class="product-item-wrapper__rootprices">142.000 ₫</div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Sách bán chạy end-->
+
+            <!-- Sách danh mục start-->
+            <div class="section-book">
+                <div class="section-book-heading clearfix">
+                    <a href="" class="section-book-heading__title">Sách danh mục <span></span> </a>
+
+                    <a href="" class="section-book-heading__show"> Xem tất cả</a>
+                </div>
+                <div class="bookcontent">
+                    <div class="product">
+                        <div class="product-list">
+                            <div class="product-item col-xl-2">
+                                <div class="product-item-wrapper">
+                                    <div class="product-item-wrapper__img" style="background-image: url(./assets/images/product/anh-c_-thi_u-ng_i-y_u-kh_ng-03__37620_thum_135.jpg)">
+                                        <span class="product-item-wrapper__sale" style="background-image: url('./assets/images/product/saleprice.png')">20%</span>
+                                    </div>
+                                    <div class="product-item-wrapper__title">
+                                        <a href="" class="product-item-wrapper__link">Anh Có Thiếu Người Yêu Không? - Tập 2</a>
+                                    </div>
+                                    <div class="product-item-wrapper__subtitle"><span>Ngô Đồng Tư Ngữ</span></div>
+                                    <div class="product-item-wrapper__prices">113.600 ₫</div>
+                                    <div class="product-item-wrapper__rootprices">142.000 ₫</div>
+
+                                </div>
+                            </div>
+                            <div class="product-item col-xl-2">
+                                <div class="product-item-wrapper">
+                                    <div class="product-item-wrapper__img" style="background-image: url(./assets/images/product/anh-c_-thi_u-ng_i-y_u-kh_ng-03__37620_thum_135.jpg)">
+                                        <span class="product-item-wrapper__sale" style="background-image: url('./assets/images/product/saleprice.png')">20%</span>
+                                    </div>
+                                    <div class="product-item-wrapper__title">
+                                        <a href="" class="product-item-wrapper__link">Anh Có Thiếu Người Yêu Không? - Tập 2</a>
+                                    </div>
+                                    <div class="product-item-wrapper__subtitle"><span>Ngô Đồng Tư Ngữ</span></div>
+                                    <div class="product-item-wrapper__prices">113.600 ₫</div>
+                                    <div class="product-item-wrapper__rootprices">142.000 ₫</div>
+
+                                </div>
+                            </div>
+                            <div class="product-item col-xl-2">
+                                <div class="product-item-wrapper">
+                                    <div class="product-item-wrapper__img" style="background-image: url(./assets/images/product/anh-c_-thi_u-ng_i-y_u-kh_ng-03__37620_thum_135.jpg)">
+                                        <span class="product-item-wrapper__sale" style="background-image: url('./assets/images/product/saleprice.png')">20%</span>
+                                    </div>
+                                    <div class="product-item-wrapper__title">
+                                        <a href="" class="product-item-wrapper__link">Anh Có Thiếu Người Yêu Không? - Tập 2</a>
+                                    </div>
+                                    <div class="product-item-wrapper__subtitle"><span>Ngô Đồng Tư Ngữ</span></div>
+                                    <div class="product-item-wrapper__prices">113.600 ₫</div>
+                                    <div class="product-item-wrapper__rootprices">142.000 ₫</div>
+
+                                </div>
+                            </div>
+                            <div class="product-item col-xl-2">
+                                <div class="product-item-wrapper">
+                                    <div class="product-item-wrapper__img" style="background-image: url(./assets/images/product/anh-c_-thi_u-ng_i-y_u-kh_ng-03__37620_thum_135.jpg)">
+                                        <span class="product-item-wrapper__sale" style="background-image: url('./assets/images/product/saleprice.png')">20%</span>
+                                    </div>
+                                    <div class="product-item-wrapper__title">
+                                        <a href="" class="product-item-wrapper__link">Anh Có Thiếu Người Yêu Không? - Tập 2</a>
+                                    </div>
+                                    <div class="product-item-wrapper__subtitle"><span>Ngô Đồng Tư Ngữ</span></div>
+                                    <div class="product-item-wrapper__prices">113.600 ₫</div>
+                                    <div class="product-item-wrapper__rootprices">142.000 ₫</div>
+
+                                </div>
+                            </div>
+                            <div class="product-item col-xl-2">
+                                <div class="product-item-wrapper">
+                                    <div class="product-item-wrapper__img" style="background-image: url(./assets/images/product/anh-c_-thi_u-ng_i-y_u-kh_ng-03__37620_thum_135.jpg)">
+                                        <span class="product-item-wrapper__sale" style="background-image: url('./assets/images/product/saleprice.png')">20%</span>
+                                    </div>
+                                    <div class="product-item-wrapper__title">
+                                        <a href="" class="product-item-wrapper__link">Anh Có Thiếu Người Yêu Không? - Tập 2</a>
+                                    </div>
+                                    <div class="product-item-wrapper__subtitle"><span>Ngô Đồng Tư Ngữ</span></div>
+                                    <div class="product-item-wrapper__prices">113.600 ₫</div>
+                                    <div class="product-item-wrapper__rootprices">142.000 ₫</div>
+
+                                </div>
+                            </div>
+                            <div class="product-item col-xl-2">
+                                <div class="product-item-wrapper">
+                                    <div class="product-item-wrapper__img" style="background-image: url(./assets/images/product/anh-c_-thi_u-ng_i-y_u-kh_ng-03__37620_thum_135.jpg)">
+                                        <span class="product-item-wrapper__sale" style="background-image: url('./assets/images/product/saleprice.png')">20%</span>
+                                    </div>
+                                    <div class="product-item-wrapper__title">
+                                        <a href="" class="product-item-wrapper__link">Anh Có Thiếu Người Yêu Không? - Tập 2</a>
+                                    </div>
+                                    <div class="product-item-wrapper__subtitle"><span>Ngô Đồng Tư Ngữ</span></div>
+                                    <div class="product-item-wrapper__prices">113.600 ₫</div>
+                                    <div class="product-item-wrapper__rootprices">142.000 ₫</div>
+
+                                </div>
+                            </div>
+                            <div class="product-item col-xl-2">
+                                <div class="product-item-wrapper">
+                                    <div class="product-item-wrapper__img" style="background-image: url(./assets/images/product/anh-c_-thi_u-ng_i-y_u-kh_ng-03__37620_thum_135.jpg)">
+                                        <span class="product-item-wrapper__sale" style="background-image: url('./assets/images/product/saleprice.png')">20%</span>
+                                    </div>
+                                    <div class="product-item-wrapper__title">
+                                        <a href="" class="product-item-wrapper__link">Anh Có Thiếu Người Yêu Không? - Tập 2</a>
+                                    </div>
+                                    <div class="product-item-wrapper__subtitle"><span>Ngô Đồng Tư Ngữ</span></div>
+                                    <div class="product-item-wrapper__prices">113.600 ₫</div>
+                                    <div class="product-item-wrapper__rootprices">142.000 ₫</div>
+
+                                </div>
+                            </div>
+                            <div class="product-item col-xl-2">
+                                <div class="product-item-wrapper">
+                                    <div class="product-item-wrapper__img" style="background-image: url(./assets/images/product/anh-c_-thi_u-ng_i-y_u-kh_ng-03__37620_thum_135.jpg)">
+                                        <span class="product-item-wrapper__sale" style="background-image: url('./assets/images/product/saleprice.png')">20%</span>
+                                    </div>
+                                    <div class="product-item-wrapper__title">
+                                        <a href="" class="product-item-wrapper__link">Anh Có Thiếu Người Yêu Không? - Tập 2</a>
+                                    </div>
+                                    <div class="product-item-wrapper__subtitle"><span>Ngô Đồng Tư Ngữ</span></div>
+                                    <div class="product-item-wrapper__prices">113.600 ₫</div>
+                                    <div class="product-item-wrapper__rootprices">142.000 ₫</div>
+
+                                </div>
+                            </div>
+                            <div class="product-item col-xl-2">
+                                <div class="product-item-wrapper">
+                                    <div class="product-item-wrapper__img" style="background-image: url(./assets/images/product/anh-c_-thi_u-ng_i-y_u-kh_ng-03__37620_thum_135.jpg)">
+                                        <span class="product-item-wrapper__sale" style="background-image: url('./assets/images/product/saleprice.png')">20%</span>
+                                    </div>
+                                    <div class="product-item-wrapper__title">
+                                        <a href="" class="product-item-wrapper__link">Anh Có Thiếu Người Yêu Không? - Tập 2</a>
+                                    </div>
+                                    <div class="product-item-wrapper__subtitle"><span>Ngô Đồng Tư Ngữ</span></div>
+                                    <div class="product-item-wrapper__prices">113.600 ₫</div>
+                                    <div class="product-item-wrapper__rootprices">142.000 ₫</div>
+
+                                </div>
+                            </div>
+                            <div class="product-item col-xl-2">
+                                <div class="product-item-wrapper">
+                                    <div class="product-item-wrapper__img" style="background-image: url(./assets/images/product/anh-c_-thi_u-ng_i-y_u-kh_ng-03__37620_thum_135.jpg)">
+                                        <span class="product-item-wrapper__sale" style="background-image: url('./assets/images/product/saleprice.png')">20%</span>
+                                    </div>
+                                    <div class="product-item-wrapper__title">
+                                        <a href="" class="product-item-wrapper__link">Anh Có Thiếu Người Yêu Không? - Tập 2</a>
+                                    </div>
+                                    <div class="product-item-wrapper__subtitle"><span>Ngô Đồng Tư Ngữ</span></div>
+                                    <div class="product-item-wrapper__prices">113.600 ₫</div>
+                                    <div class="product-item-wrapper__rootprices">142.000 ₫</div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Sách danh mục end-->
+          </div>
+
+          <!-- about start -->
+          <div class="section-about mt-5">
+            <div class="about-content container">
+                <h3>Mua Sách Online Tại Nobita.Vn</h3>
+                <p>Ra đời từ năm 2011, đến nay Nobita.vn đã trở thành địa chỉ mua sách online quen thuộc của hàng ngàn độc giả trên cả nước. Với đầu sách phong phú, thuộc các thể loại: Văn học nước ngoại, Văn học trong nước, Kinh tế, Kỹ năng sống, Thiếu nhi, Sách học ngoại ngữ, Sách chuyên ngành,... được cập nhật liên tục từ các nhà xuất bản uy tín trong nước. </p>
+                <p>Khi mua sách online tại Nobita.vn, Quý khách được Bọc plastic miễn phí đến 99% (trừ sách bìa cứng, sách dạng hộp - dạng đặc biệt, sách khổ quá to, ...)</p>
+                <p>Ngoài ra, với hình thức Giao hàng thu tiền tận nơi và Đổi hàng trong vòng 7 ngày nếu sách có bất kỳ lỗi nào trong quá trình in ấn sẽ giúp Quý khách yên tâm hơn khi mua sắm tại Nobita.vn</p>
+            </div>
+          </div>
+          <!-- about end -->
+
+      </div>
+      <!-- Content end -->
+
+      <!-- footer start -->
+      <footer id="footer">
+          <div class="container">
+              <ul class="footer-list">
+                  <li class="footer-item col-xl-3">
+                      Hỗ trợ khách hàng
+                      <ul class="footer-sublist">
+                          <li class="footer-subitem">Email: admin@nobita.vn</li>
+                          <li class="footer-subitem">Hotline: <span>0938 424 289</span></li>
+                      </ul>
+                  </li>
+                  <li class="footer-item  col-xl-3">
+                    Giới thiệu
+                    <ul class="footer-sublist">
+                        <li class="footer-subitem"><a href="">Về nobita</a></li>
+                        <li class="footer-subitem"><a href="">Tuyển dụng</a></li>
+                    </ul>
+                </li>
+                <li class="footer-item col-xl-3">
+                    Tài khoản
+                    <ul class="footer-sublist">
+                        <li class="footer-subitem"><a href="">Tài khoản</a></li>
+                        <li class="footer-subitem"><a href="">Danh sách đơn hàng</a></li>
+                        <li class="footer-subitem"><a href="">Thông báo</a></li>
+                    </ul>
+                </li>
+                <li class="footer-item col-xl-3">
+                    Hướng Dẫn
+                    <ul class="footer-sublist">
+                        <li class="footer-subitem"><a href="">Hướng dẫn mua hàng</a></li>
+                        <li class="footer-subitem"><a href="">Phương thức thanh toán</a></li>
+                        <li class="footer-subitem"><a href="">Câu hỏi thường gặp</a></li>
+                        <li class="footer-subitem"><a href="">Phương thức vận chuyển</a></li>
+                    </ul>
+                </li>
+              </ul>
+          </div>
+      </footer>
+      <!-- footer end -->
+    </div>
+  </body>
 </html>
