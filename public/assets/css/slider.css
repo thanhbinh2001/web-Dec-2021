@@ -4,81 +4,8 @@
     display: flex;
 }
 
-.sidebar {
-    z-index: 2;
-}
-
-.sidebar-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    width: 200px;
-    min-height: 300px;
-    position: relative;
-}
-
-.sidebar-item {
-    transition: padding-left 0.3s
-}
-
-.sidebar-item__link {
-    display: block;
-    padding: 10px;
-    color: #444;
-}
-
-.sidebar-item__link:hover {
-    text-decoration: none;
-    color: #fff;
-}
-
-.sidebar-item:hover .sidebar__submenu {
-    display: block;
-}
-
-.sidebar__submenu::after {
-    content: "";
-    position: absolute;
-    background-color: #0c6;
-    width: 5px;
-    top: 0;
-    left: 0;
-    height: 100%;
-}
-
-
-.sidebar__submenu {
-    position: absolute;
-    top: 0;
-    left: 200px;
-    list-style: none;
-    background-color: #f2f2f2;
-    height: 100%;
-    width: 210px;
-    display: none;
-    z-index: 2;
-}
-
-.sidebar-item:hover {
-    background-color: #0c6;
-    padding-left: 15px;
-    color: #fff;
-    cursor: pointer;
-}
-
-.submenu-item a {
-    color: #000;
-    display: block;
-    padding: 8px;
-}
-
-.submenu-item a:hover {
-    text-decoration: none;
-    color: #0c6;
-}
-
 .slider-wrapper {
-    padding-top: 10px;
+    margin-left: 20%;
 }
 
 .slider-wrapper-box {

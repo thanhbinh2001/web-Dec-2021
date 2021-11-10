@@ -119,20 +119,18 @@
     text-decoration: line-through;
 }
 
-.product-arrow {
-    position: absolute;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    top: 50%;
-    transform: translateY(-100%);
-}
-
 
 .product-arrow-left,
 .product-arrow-right {
     cursor: pointer;
     padding: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-100%);
+}
+
+.product-arrow-right {
+    right: 0;
 }
 
 .product-item-category {
@@ -150,7 +148,7 @@
 
 /* about */
 .section-about {
-    margin-top: 85px;
+    margin: 85px 0;
 }
 
 .about-content {

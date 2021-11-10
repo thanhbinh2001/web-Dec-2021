@@ -1,29 +1,16 @@
 #header {
     background-color: #0c6;
-
 }
 
 .header-wrapper {
     display: flex;
 }
 
-.header-left {}
-
-.header-logo {}
-
-.header-img {}
-
 .header-right {
     display: flex;
     align-items: center;
     height: 55px;
 }
-
-.header-search {}
-
-.header-form {}
-
-.header-input {}
 
 .header-input__text {
     width: 100%;
@@ -50,7 +37,8 @@
     display: flex;
     list-style: none;
     margin: 0;
-    justify-content: center;
+    justify-content: flex-end;
+    margin-right: 20px;
 }
 
 .shoptool-text {
@@ -60,6 +48,13 @@
     cursor: pointer;
 }
 
+.shoptool-text a {
+    color: #f2f2f2;
+}
+
+.shoptool-text a:hover {
+    text-decoration: none;
+}
 
 .shoptool-text i {
     margin-left: 5px;
@@ -105,4 +100,112 @@
 
 .header-bottom__right span {
     font-weight: bold;
+}
+
+.header-bottom__left:hover .menu-list {
+    display: block;
+}
+
+/* submenu */
+.menu {}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 200px;
+    min-height: 300px;
+    position: relative;
+    display: none;
+    background-color: #fff;
+    z-index: 10;
+}
+
+.menu-item {
+    transition: padding-left 0.3s
+}
+
+.menu-item__link {
+    display: block;
+    padding: 10px;
+    color: #444;
+}
+
+.menu-item__link:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu-item:hover .submenu {
+    display: block;
+}
+
+.submenu::after {
+    content: "";
+    position: absolute;
+    background-color: #0c6;
+    width: 5px;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+.submenu {
+    position: absolute;
+    top: 0;
+    left: 200px;
+    list-style: none;
+    background-color: #f2f2f2;
+    height: 100%;
+    width: 210px;
+    display: none;
+    z-index: 2;
+}
+
+.menu-item:hover {
+    background-color: #0c6;
+    padding-left: 15px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.submenu-item a {
+    color: #000;
+    display: block;
+    padding: 8px;
+}
+
+.submenu-item a:hover {
+    text-decoration: none;
+    color: #0c6;
+}
+
+/* breadcrumb */
+
+.breadcrumb {
+    background-color: #fff;
+}
+
+.breadcrumb-home {
+    color: #0c6 !important;
+    position: relative;
+}
+
+.breadcrumb-home:hover {
+    color: #0c6;
+}
+
+.breadcrumb-category {
+    color: #999;
+    position: relative;
+    margin-left: 10px;
+}
+
+.breadcrumb-category::before {
+    content: "/";
+    left: -10px;
+    top: -2px;
+    position: absolute;
+    color: #999;
+
 }

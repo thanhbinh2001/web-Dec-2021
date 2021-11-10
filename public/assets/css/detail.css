@@ -1,45 +1,3 @@
-/* Breadcrumb begin */
-.breadcrumb {
-    background-color: #fff;
-}
-
-.breadcrumb__list {
-    padding: 0 15px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.breadcrumb__item {
-    color: #999999;
-    font-size: 13px;
-    float: left;
-    padding: 0 5 px 0 0;
-    position: relative;
-    z-index: 8;
-    margin-top: 5 px;
-    white-space: nowrap;
-}
-
-.breadcrumb__item--link {
-    font-size: 14px;
-    margin: 0px 2px;
-    color: #00cc66;
-    padding: 0 10px 0 0;
-    text-decoration: none;
-    background-image: url(../images/orange-arrow-r.png);
-    background-repeat: no-repeat;
-    background-position: right;
-}
-
-.breadcrumb__item--link:hover {
-    text-decoration: none;
-
-}
-
-
-/*  Breadcrumb end  */
-
 /* Body begin */
 
 .body {}
@@ -258,6 +216,7 @@
     align-self: center;
     justify-content: center;
     margin-top: 20px;
+    cursor: pointer;
 }
 
 .body__other {}
@@ -304,12 +263,13 @@
     color: #444444;
     margin: 5px 0px;
     text-transform: capitalize;
-    line-height:20px;
+    line-height: 20px;
     font-size: 13px;
 }
+
 .body__other__item__name:hover {
     text-decoration: none;
-    color:#00cc66;
+    color: #00cc66;
 }
 
 .body__other__item__author {
@@ -319,8 +279,9 @@
     text-decoration: none;
     cursor: pointer;
 }
+
 .body__other__item__author:hover {
-    color:#00cc66;
+    color: #00cc66;
     text-decoration: none;
 }
 
@@ -334,9 +295,7 @@
     font-size: 14px;
 }
 
-.body__other__item__price {
-    
-}
+.body__other__item__price {}
 
 .body__other__item__price--old {
     color: #999999;
