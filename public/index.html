@@ -27,23 +27,85 @@
   <link rel="stylesheet" href="./assets/css/slider.css" />
   <link rel="stylesheet" href="./assets/css/content.css" />
   <link rel="stylesheet" href="./assets/css/footer.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+
 </head>
 
 <body>
   <div id="app">
-    <!-- Header start -->
-    <header id="header">
+     <!-- Header start -->
+     <header id="header">
       <div class="container">
         <div class="header-wrapper">
-          <div class="header-left col-xl-3">
-            <div class="header-logo">
-              <a href="./index.html">
-                <img src="./assets/images/logo/logo.png" alt="" class="header-img" />
-              </a>
+          <div class="header-menubar hide-on-pc col-md-1">
+            <i class="fas fa-bars"></i>
+            <div class="submenubar-list">
+              <div class="submenubar-list-heading">
+                <i class="fas fa-times close-submenubar"></i>
+                <i class="fas fa-bars"></i>
+                <h5>DANH MỤC SẢN PHẨM</h5>
+              </div>
+              <ul class="submenubar1">
+                <li class="submenubar1-item">
+                  <a href="">Nổi bật</a>
+                  <ul class="submenubar2">
+                    <li class="submenubar2-item">
+                      <a href="" target="_self">Sách Bán Chạy</a>
+                    </li>
+                    <li class="submenubar2-item">
+                      <a href="" target="_self">Sách Mới</a>
+                    </li>
+                    <li class="submenubar2-item">
+                      <a href="" target="_self">Sách Phát Hành</a>
+                    </li>
+                    <li class="submenubar2-item">
+                      <a href="" target="_self">Sách Giảm Giá</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="submenubar1-item">
+                  <a href="">Nổi bật</a>
+                  <ul class="submenubar2">
+                    <li class="submenubar2-item">
+                      <a href="" target="_self">Sách Bán Chạy</a>
+                    </li>
+                    <li class="submenubar2-item">
+                      <a href="" target="_self">Sách Mới</a>
+                    </li>
+                    <li class="submenubar2-item">
+                      <a href="" target="_self">Sách Phát Hành</a>
+                    </li>
+                    <li class="submenubar2-item">
+                      <a href="" target="_self">Sách Giảm Giá</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="header-right col-xl-9">
-            <div class="header-search col-xl-7">
+          <div class="header-left col-xl-3 col-md-11">
+            <div class="header-logo  col-md-9">
+              <a href="./index.html">
+                <img
+                  src="./assets/images/logo/logo.png"
+                  alt=""
+                  class="header-img"
+                />
+              </a>
+            </div>
+
+            <div class="hide-on-pc shoptool-mobile-tablet col-md-3">
+              <div class="header-search-mobile-tablet">
+                <i class="fas fa-search"></i>
+              </div>
+              <div class="header-cart-mobile-tablet">
+                <i class="fas fa-shopping-cart"></i>
+                (<span class="shownumber">4</span>)
+              </div>
+            </div>
+          </div>
+          <div class="header-right col-xl-9 hide-on-mobile-tablet">
+            <div class="header-search col-xl-7 hide-on-mobile-tablet">
               <form action="" class="header-form">
                 <table width="100%" cellspacing="0" cellpadding="0">
                   <tbody>
@@ -59,11 +121,14 @@
                 </table>
               </form>
             </div>
-            <div class="header-shoptool col-xl-5">
+            <div class="header-shoptool col-xl-5 hide-on-mobile-tablet">
               <ul class="shoptool-list">
-                <li>
+                <li class="hide-on-mobile-tablet">
                   <div class="shoptool-text">
                     <a href="./login.html">Đăng nhập</a>
+                  </div>
+                  <div class="shoptool-text__subcontent">
+                    <!-- code here -->
                   </div>
                 </li>
                 <li>
@@ -74,55 +139,7 @@
                     <i class="fas fa-sort-down"></i>
                   </div>
                   <div class="shoptool-text__subcontent">
-                    <h3>Giỏ hàng</h3>
-                    <div class="shoptool-carts-list">
-                      <div class="shoptool-cart-item">
-                        <a href="" class="shoptool-cart-item-link col-xl-10">
-                          <div class="shoptool-cart-item-picture col-xl-2">
-                            <img src="./assets/images/sanpham/kinhte/nguoibanhangvidai.png" alt=""
-                              class="shoptool-cart-item-img" />
-                          </div>
-                          <div class="shoptool-cart-item-info col-xl-10">
-                            <h6 class="shoptool-cart-item-title">
-                              Người bán hàng vĩ đại
-                            </h6>
-                            <div class="shoptool-cart-item-price">
-                              381.600 ₫
-                            </div>
-                          </div>
-                        </a>
-                        <a href="" class="shoptool-cart-item-delete col-xl-2">
-                          <i class="fas fa-times-circle"></i>
-                        </a>
-                      </div>
-                      <div class="shoptool-cart-item">
-                        <a href="" class="shoptool-cart-item-link col-xl-10">
-                          <div class="shoptool-cart-item-picture col-xl-2">
-                            <img src="./assets/images/sanpham/kinhte/nguoibanhangvidai.png" alt=""
-                              class="shoptool-cart-item-img" />
-                          </div>
-                          <div class="shoptool-cart-item-info col-xl-10">
-                            <h6 class="shoptool-cart-item-title">
-                              Người bán hàng vĩ đại
-                            </h6>
-                            <div class="shoptool-cart-item-price">
-                              381.600 ₫
-                            </div>
-                          </div>
-                        </a>
-                        <a href="" class="shoptool-cart-item-delete col-xl-2">
-                          <i class="fas fa-times-circle"></i>
-                        </a>
-                      </div>
-
-                      <div class="shoptool-cart-total">
-                        <h3>Tổng tiền:</h3>
-                        <span>400.000 ₫</span>
-                      </div>
-                      <div class="shoptool-cart-button">
-                        <a class="shoptool-cart-show">Xem giỏ hàng <i class="fas fa-caret-right"></i></a>
-                      </div>
-                    </div>
+                    <!-- code here -->
                   </div>
                 </li>
               </ul>
@@ -131,9 +148,9 @@
         </div>
       </div>
     </header>
-    <div id="header-bottom">
+    <div id="header-bottom" class="hide-on-mobile-tablet">
       <div class="container clearfix">
-        <div class="header-bottom__left clearfix ">
+        <div class="header-bottom__left clearfix">
           <i class="fas fa-bars"></i>
           <span class="header-bottom__left-title"> DANH MỤC SẢN PHẨM </span>
           <ul class="menu-list" style="display: block">
@@ -141,7 +158,7 @@
               <a class="menu-item__link">
                 <span>Nổi bật</span>
               </a>
-              <i class="fa-solid fa-arrow-right" style=""></i>
+              <i class="fa-solid fa-arrow-right"></i>
               <ul class="submenu">
                 <li class="submenu-item">
                   <a href="" target="_self">Sách Bán Chạy</a>
@@ -250,7 +267,9 @@
                   <a href="" target="_self">Cẩm Nang Làm Cha Mẹ</a>
                 </li>
                 <li class="submenu-item">
-                  <a href="" target="_self">Phương Pháp Giáo Dục Trẻ Các Nước</a>
+                  <a href="" target="_self"
+                    >Phương Pháp Giáo Dục Trẻ Các Nước</a
+                  >
                 </li>
                 <li class="submenu-item">
                   <a href="" target="_self">Phát Triển Trí Tuệ Cho Trẻ</a>
@@ -290,6 +309,7 @@
       </div>
     </div>
     <!-- Header end -->
+   
 
     <!-- Slider start -->
     <div id="slider">
@@ -1311,9 +1331,9 @@
 
     <!-- footer start -->
     <footer id="footer">
-      <div class="container">
+      <div class="container container-md">
         <ul class="footer-list">
-          <li class="footer-item col-xl-3">
+          <li class="footer-item col-xl-3 col-md-6">
             Hỗ trợ khách hàng
             <ul class="footer-sublist">
               <li class="footer-subitem">
@@ -1324,14 +1344,14 @@
               </li>
             </ul>
           </li>
-          <li class="footer-item col-xl-3">
+          <li class="footer-item col-xl-3 col-md-6">
             Giới thiệu
             <ul class="footer-sublist">
-              <li class="footer-subitem"><a href="./about.html">Về nobita</a></li>
+              <li class="footer-subitem"><a href="">Về nobita</a></li>
               <li class="footer-subitem"><a href="">Tuyển dụng</a></li>
             </ul>
           </li>
-          <li class="footer-item col-xl-3">
+          <li class="footer-item col-xl-3 col-md-6">
             Tài khoản
             <ul class="footer-sublist">
               <li class="footer-subitem"><a href="">Tài khoản</a></li>
@@ -1341,7 +1361,7 @@
               <li class="footer-subitem"><a href="">Thông báo</a></li>
             </ul>
           </li>
-          <li class="footer-item col-xl-3">
+          <li class="footer-item col-xl-3 col-md-6">
             Hướng Dẫn
             <ul class="footer-sublist">
               <li class="footer-subitem">

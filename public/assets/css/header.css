@@ -212,13 +212,14 @@
     position: relative;
     float: left;
     height: 30px;
-    background-color:#0c6;
+    background-color: #0c6;
     padding: 5px;
     width: 200px;
     cursor: default;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
-.header-bottom__left .fas{
+
+.header-bottom__left .fas {
     color: white;
 }
 
@@ -263,7 +264,7 @@
     width: 200px;
     min-height: 300px;
     display: none;
-    background-color:#fff;
+    background-color: #fff;
     z-index: 10;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border-radius: 0.3rem;
@@ -274,11 +275,12 @@
     transition: padding-left 0.3s;
 }
 
-.menu-item .fa-solid{
+.menu-item .fa-solid {
     height: 10px;
     width: 10px;
-    padding-top:15px;
+    padding-top: 15px;
 }
+
 .menu-item__link {
     display: block;
     padding: 10px;
@@ -317,7 +319,7 @@
     display: none;
     z-index: 2;
     padding-left: 15px;
-    padding-top:10px;
+    padding-top: 10px;
 }
 
 .menu-item:hover {
@@ -632,4 +634,100 @@
 .cart-section-body-footer-payment:hover {
     text-decoration: none;
     color: #fff;
+}
+
+
+/* reponsive */
+.header-menubar {
+    position: relative;
+}
+
+.submenubar-list {
+    width: 300px;
+    display:none;
+    position: absolute;
+    z-index: 10;
+    top: -3px;
+    left: -39px;
+    background-color: #fff;
+    animation: all 0.5s linear ;
+}
+
+@keyframes leftTo {
+    from {
+        transform: translateX(-320px)
+
+    }
+    to{
+        transform: translateX(0)
+    } 
+}
+
+@keyframes rightTo {
+    from{
+        transform: translateX(0)
+    } 
+    to {
+        transform: translateX(-320px)
+
+    }
+}
+
+.submenubar-list-heading {
+    color: #808080;
+    position: relative;
+    padding-left: 10px;
+}
+
+.submenubar-list-heading i {
+    font-size: 15px;
+}
+
+.submenubar-list-heading h5 {
+    display: inline-block;
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.submenubar-list-heading .close-submenubar {
+    color: #808080;
+    position: absolute;
+    right: 15px;
+    top: 0;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.submenubar1,
+.submenubar2 {
+    list-style: none;
+}
+
+.submenubar1-item a,
+.submenubar2-item a {
+    color: #444;
+    display: block;
+    padding: 5px;
+}
+
+.submenubar1-item>a {
+    font-size: 16px;
+    border-top: 1px solid rgba(0, 0, 0, 0.4);
+    padding: 10px;
+}
+
+.submenubar2-item>a {
+    font-size: 16px;
+    border-top: 1px solid rgba(0, 0, 0, 0.4);
+    background-color: #f7f7f7;
+    padding: 10px;
+}
+
+.submenubar1-item.active .submenubar2-item {
+    display: block;
+}
+
+.submenubar2-item {
+    /* display: none; */
 }

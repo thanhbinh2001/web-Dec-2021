@@ -69,4 +69,13 @@ $(document).ready(function () {
       );
     }
   });
+
+  // responsive
+  // $(".header-menubar").click(function () {
+  //   $(".submenubar-list").show();
+  // });
+  // $(".close-submenubar").click(function () {
+  //   $(".submenubar-list").css("display", "none");
+  //   console.log(this);
+  // });
 });

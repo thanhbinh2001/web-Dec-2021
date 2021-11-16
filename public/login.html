@@ -1,348 +1,456 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng nhập | Website Mua Sách Online</title>
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Đăng nhập | Website Mua Sách Online</title>
-  <!-- Font awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
 
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
+    <!-- Jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
-  <!-- Jquery -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Css -->
 
-  <!-- Css -->
-  <link rel="stylesheet" href="./assets/css/home.css" />
-  <link rel="stylesheet" href="./assets/css/header.css" />
-  <link rel="stylesheet" href="./assets/css/footer.css" />
-  <link rel="stylesheet" href="./assets/css/login.css" />
-</head>
+    <!-- Css -->
+    <link rel="stylesheet" href="./assets/css/home.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
+    <link rel="stylesheet" href="./assets/css/login.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+  </head>
 
-<body>
-  <!-- Header start -->
-  <header id="header">
-    <div class="container">
-      <div class="header-wrapper">
-        <div class="header-left col-xl-3">
-          <div class="header-logo">
-            <a href="./index.html">
-              <img src="./assets/images/logo/logo.png" alt="" class="header-img" />
-            </a>
+  <body>
+    <div id="app">
+      <!-- Header start -->
+      <header id="header">
+        <div class="container">
+          <div class="header-wrapper">
+            <div class="header-menubar hide-on-pc col-md-1">
+              <i class="fas fa-bars"></i>
+              <div class="submenubar-list">
+                <div class="submenubar-list-heading">
+                  <i class="fas fa-times close-submenubar"></i>
+                  <i class="fas fa-bars"></i>
+                  <h5>DANH MỤC SẢN PHẨM</h5>
+                </div>
+                <ul class="submenubar1">
+                  <li class="submenubar1-item">
+                    <a href="">Nổi bật</a>
+                    <ul class="submenubar2">
+                      <li class="submenubar2-item">
+                        <a href="" target="_self">Sách Bán Chạy</a>
+                      </li>
+                      <li class="submenubar2-item">
+                        <a href="" target="_self">Sách Mới</a>
+                      </li>
+                      <li class="submenubar2-item">
+                        <a href="" target="_self">Sách Phát Hành</a>
+                      </li>
+                      <li class="submenubar2-item">
+                        <a href="" target="_self">Sách Giảm Giá</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="submenubar1-item">
+                    <a href="">Nổi bật</a>
+                    <ul class="submenubar2">
+                      <li class="submenubar2-item">
+                        <a href="" target="_self">Sách Bán Chạy</a>
+                      </li>
+                      <li class="submenubar2-item">
+                        <a href="" target="_self">Sách Mới</a>
+                      </li>
+                      <li class="submenubar2-item">
+                        <a href="" target="_self">Sách Phát Hành</a>
+                      </li>
+                      <li class="submenubar2-item">
+                        <a href="" target="_self">Sách Giảm Giá</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="header-left col-xl-3 col-md-11">
+              <div class="header-logo  col-md-9">
+                <a href="./index.html">
+                  <img
+                    src="./assets/images/logo/logo.png"
+                    alt=""
+                    class="header-img"
+                  />
+                </a>
+              </div>
+
+              <div class="hide-on-pc shoptool-mobile-tablet col-md-3">
+                <div class="header-search-mobile-tablet">
+                  <i class="fas fa-search"></i>
+                </div>
+                <div class="header-cart-mobile-tablet">
+                  <i class="fas fa-shopping-cart"></i>
+                  (<span class="shownumber">4</span>)
+                </div>
+              </div>
+            </div>
+            <div class="header-right col-xl-9 hide-on-mobile-tablet">
+              <div class="header-search col-xl-7 hide-on-mobile-tablet">
+                <form action="" class="header-form">
+                  <table width="100%" cellspacing="0" cellpadding="0">
+                    <tbody>
+                      <tr>
+                        <td class="header-input">
+                          <input type="text" class="header-input__text" />
+                        </td>
+                        <td class="header-submit">
+                          <input type="submit" value="Tìm" alt="Tìm" />
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </form>
+              </div>
+              <div class="header-shoptool col-xl-5 hide-on-mobile-tablet">
+                <ul class="shoptool-list">
+                  <li class="hide-on-mobile-tablet">
+                    <div class="shoptool-text">
+                      <a href="./login.html">Đăng nhập</a>
+                    </div>
+                    <div class="shoptool-text__subcontent">
+                      <!-- code here -->
+                    </div>
+                  </li>
+                  <li>
+                    <div class="shoptool-text" title="Giỏ hàng">
+                      <span> Giỏ hàng (</span>
+                      <span class="shoptool-shownumber">0</span>
+                      <span>)</span>
+                      <i class="fas fa-sort-down"></i>
+                    </div>
+                    <div class="shoptool-text__subcontent">
+                      <!-- code here -->
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="header-right col-xl-9">
-          <div class="header-search col-xl-7">
-            <form action="" class="header-form">
-              <table width="100%" cellspacing="0" cellpadding="0">
-                <tbody>
-                  <tr>
-                    <td class="header-input">
-                      <input type="text" class="header-input__text" />
-                    </td>
-                    <td class="header-submit">
-                      <input type="submit" value="Tìm" alt="Tìm" />
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </form>
+      </header>
+      <div id="header-bottom" class="hide-on-mobile-tablet">
+        <div class="container clearfix">
+          <div class="header-bottom__left clearfix">
+            <i class="fas fa-bars"></i>
+            <span class="header-bottom__left-title"> DANH MỤC SẢN PHẨM </span>
+            <ul class="menu-list">
+              <li class="menu-item">
+                <a class="menu-item__link">
+                  <span>Nổi bật</span>
+                </a>
+                <i class="fa-solid fa-arrow-right"></i>
+                <ul class="submenu">
+                  <li class="submenu-item">
+                    <a href="" target="_self">Sách Bán Chạy</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="" target="_self">Sách Mới</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="" target="_self">Sách Phát Hành</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="" target="_self">Sách Giảm Giá</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <a href="./category.html" class="menu-item__link">
+                  <span> Kinh tế</span>
+                </a>
+                <i class="fa-solid fa-arrow-right" style=""></i>
+                <ul class="submenu">
+                  <li class="submenu-item">
+                    <a href="" target="_self">Tài Chính - Kế Toán</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="" target="_self">Quản Trị - Lãnh Đạo</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="" target="_self">Marketing - Bán Hàng</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="" target="_self">Kinh Tế Học</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="" target="_self">Khởi Nghiệp</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="" target="_self">Doanh Nhân - Tập Đoàn</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="" target="_self">Bài Học Kinh Doanh</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <a href="./category.html" class="menu-item__link">
+                  <span>Sách thiếu nhi</span>
+                </a>
+                <i class="fa-solid fa-arrow-right" style=""></i>
+                <ul class="submenu">
+                  <li class="submenu-item">
+                    <a href="" target="_self">Truyện Tranh Nhật Bản</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <a href="./category.html" class="menu-item__link">
+                  <span>Văn học</span>
+                </a>
+                <i class="fa-solid fa-arrow-right" style=""></i>
+                <ul class="submenu">
+                  <li class="submenu-item">
+                    <a href="" target="_self">Ngôn Tình</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="" target="_self">Tiểu thuyết</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="" target="_self">Light Novel</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="" target="_self">Truyện Trinh Thám - Kiếm Hiệp</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="" target="_self">Truyện Ngắn - Tản Văn</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <a href="./category.html" class="menu-item__link">
+                  <span>Tâm lý - Kỹ năng sống</span>
+                </a>
+                <i class="fa-solid fa-arrow-right" style=""></i>
+                <ul class="submenu">
+                  <li class="submenu-item">
+                    <a href="" target="_self">Kỹ năng sống</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="" target="_self">Rèn luyện nhân cách</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="" target="_self">Tâm Lý</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="" target="_self">Sách cho tuổi mới lớn</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <a href="./category.html" class="menu-item__link">
+                  <span>Nuôi dạy con</span>
+                </a>
+                <i class="fa-solid fa-arrow-right" style=""></i>
+                <ul class="submenu">
+                  <li class="submenu-item">
+                    <a href="" target="_self">Cẩm Nang Làm Cha Mẹ</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="" target="_self"
+                      >Phương Pháp Giáo Dục Trẻ Các Nước</a
+                    >
+                  </li>
+                  <li class="submenu-item">
+                    <a href="" target="_self">Phát Triển Trí Tuệ Cho Trẻ</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="" target="_self">Phát Triển Kĩ Năng Cho Trẻ</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <a href="./category.html" class="menu-item__link">
+                  <span>Giáo Khoa - Tham Khảo</span>
+                </a>
+                <i class="fa-solid fa-arrow-right" style=""></i>
+                <ul class="submenu">
+                  <li class="submenu-item">
+                    <a href="" target="_self">Sách Giáo Khoa</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="" target="_self">Sách Tham Khảo</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="" target="_self">Luyện Thi CĐ - ĐH</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="" target="_self">Mẫu Giáo</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
           </div>
-          <div class="header-shoptool col-xl-5">
-            <ul class="shoptool-list">
-              <li>
-                <div class="shoptool-text">
-                  <a href="./login.html">Đăng nhập</a>
-                </div>
-                <div class="shoptool-text__subcontent">
-                  <!-- code here -->
-                </div>
-              </li>
-              <li>
-                <div class="shoptool-text" title="Giỏ hàng">
-                  <span> Giỏ hàng (</span>
-                  <span class="shoptool-shownumber">0</span>
-                  <span>)</span>
-                  <i class="fas fa-sort-down"></i>
-                </div>
-                <div class="shoptool-text__subcontent">
-                  <!-- code here -->
-                </div>
-              </li>
-            </ul>
+          <div class="header-bottom__right clearfix">
+            <i class="fas fa-phone mr-1"></i>
+            <span>Hotline: </span>
+            <span class="header-bottom__right-span">0938 424 289</span>
           </div>
         </div>
       </div>
-    </div>
-  </header>
-  <div id="header-bottom">
-    <div class="container clearfix">
-      <div class="header-bottom__left clearfix ">
-        <i class="fas fa-bars"></i>
-        <span class="header-bottom__left-title"> DANH MỤC SẢN PHẨM </span>
-        <ul class="menu-list">
-          <li class="menu-item">
-            <a class="menu-item__link">
-              <span>Nổi bật</span>
-            </a>
-            <i class="fa-solid fa-arrow-right" style=""></i>
-            <ul class="submenu">
-              <li class="submenu-item">
-                <a href="" target="_self">Sách Bán Chạy</a>
-              </li>
-              <li class="submenu-item">
-                <a href="" target="_self">Sách Mới</a>
-              </li>
-              <li class="submenu-item">
-                <a href="" target="_self">Sách Phát Hành</a>
-              </li>
-              <li class="submenu-item">
-                <a href="" target="_self">Sách Giảm Giá</a>
-              </li>
-            </ul>
-          </li>
-          <li class="menu-item">
-            <a href="./category.html" class="menu-item__link">
-              <span> Kinh tế</span>
-            </a>
-            <i class="fa-solid fa-arrow-right" style=""></i>
-            <ul class="submenu">
-              <li class="submenu-item">
-                <a href="" target="_self">Tài Chính - Kế Toán</a>
-              </li>
-              <li class="submenu-item">
-                <a href="" target="_self">Quản Trị - Lãnh Đạo</a>
-              </li>
-              <li class="submenu-item">
-                <a href="" target="_self">Marketing - Bán Hàng</a>
-              </li>
-              <li class="submenu-item">
-                <a href="" target="_self">Kinh Tế Học</a>
-              </li>
-              <li class="submenu-item">
-                <a href="" target="_self">Khởi Nghiệp</a>
-              </li>
-              <li class="submenu-item">
-                <a href="" target="_self">Doanh Nhân - Tập Đoàn</a>
-              </li>
-              <li class="submenu-item">
-                <a href="" target="_self">Bài Học Kinh Doanh</a>
-              </li>
-            </ul>
-          </li>
-          <li class="menu-item">
-            <a href="./category.html" class="menu-item__link">
-              <span>Sách thiếu nhi</span>
-            </a>
-            <i class="fa-solid fa-arrow-right" style=""></i>
-            <ul class="submenu">
-              <li class="submenu-item">
-                <a href="" target="_self">Truyện Tranh Nhật Bản</a>
-              </li>
-            </ul>
-          </li>
-          <li class="menu-item">
-            <a href="./category.html" class="menu-item__link">
-              <span>Văn học</span>
-            </a>
-            <i class="fa-solid fa-arrow-right" style=""></i>
-            <ul class="submenu">
-              <li class="submenu-item">
-                <a href="" target="_self">Ngôn Tình</a>
-              </li>
-              <li class="submenu-item">
-                <a href="" target="_self">Tiểu thuyết</a>
-              </li>
-              <li class="submenu-item">
-                <a href="" target="_self">Light Novel</a>
-              </li>
-              <li class="submenu-item">
-                <a href="" target="_self">Truyện Trinh Thám - Kiếm Hiệp</a>
-              </li>
-              <li class="submenu-item">
-                <a href="" target="_self">Truyện Ngắn - Tản Văn</a>
-              </li>
-            </ul>
-          </li>
-          <li class="menu-item">
-            <a href="./category.html" class="menu-item__link">
-              <span>Tâm lý - Kỹ năng sống</span>
-            </a>
-            <i class="fa-solid fa-arrow-right" style=""></i>
-            <ul class="submenu">
-              <li class="submenu-item">
-                <a href="" target="_self">Kỹ năng sống</a>
-              </li>
-              <li class="submenu-item">
-                <a href="" target="_self">Rèn luyện nhân cách</a>
-              </li>
-              <li class="submenu-item">
-                <a href="" target="_self">Tâm Lý</a>
-              </li>
-              <li class="submenu-item">
-                <a href="" target="_self">Sách cho tuổi mới lớn</a>
-              </li>
-            </ul>
-          </li>
-          <li class="menu-item">
-            <a href="./category.html" class="menu-item__link">
-              <span>Nuôi dạy con</span>
-            </a>
-            <i class="fa-solid fa-arrow-right" style=""></i>
-            <ul class="submenu">
-              <li class="submenu-item">
-                <a href="" target="_self">Cẩm Nang Làm Cha Mẹ</a>
-              </li>
-              <li class="submenu-item">
-                <a href="" target="_self">Phương Pháp Giáo Dục Trẻ Các Nước</a>
-              </li>
-              <li class="submenu-item">
-                <a href="" target="_self">Phát Triển Trí Tuệ Cho Trẻ</a>
-              </li>
-              <li class="submenu-item">
-                <a href="" target="_self">Phát Triển Kĩ Năng Cho Trẻ</a>
-              </li>
-            </ul>
-          </li>
-          <li class="menu-item">
-            <a href="./category.html" class="menu-item__link">
-              <span>Giáo Khoa - Tham Khảo</span>
-            </a>
-            <i class="fa-solid fa-arrow-right" style=""></i>
-            <ul class="submenu">
-              <li class="submenu-item">
-                <a href="" target="_self">Sách Giáo Khoa</a>
-              </li>
-              <li class="submenu-item">
-                <a href="" target="_self">Sách Tham Khảo</a>
-              </li>
-              <li class="submenu-item">
-                <a href="" target="_self">Luyện Thi CĐ - ĐH</a>
-              </li>
-              <li class="submenu-item">
-                <a href="" target="_self">Mẫu Giáo</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      <div class="header-bottom__right clearfix">
-        <i class="fas fa-phone mr-1"></i>
-        <span>Hotline: </span>
-        <span class="header-bottom__right-span">0938 424 289</span>
-      </div>
-    </div>
-  </div>
-  <!-- Header end -->
-
-  <!-- Breadcrumb start-->
-  <div class="breadcrumb">
-    <div class="container">
-      <a href="./index.html" class="breadcrumb-home ml-3">Trang chủ</a>
-      <span class="breadcrumb-category">Đăng nhập</span>
-    </div>
-  </div>
-  <!-- Breadcrumb end-->
-  <div id="app-content">
-    <div class="offset-4 content">
-      <form action="" id="input">
-        <h5 class="form-heading">Đăng nhập bằng tài khoản nobita</h5>
-        <div class="form-item">
-          <label for="form-item-email" class="form-item-label">Email <span class="form-item-special">*</span>
-          </label>
-          <input type="email" name="email" id="form-item-email" class="form-item-control" />
-          <span class="form-message">Nhập email của bạn</span>
-        </div>
-        <div class="form-item">
-          <label for="form-item-password" class="form-item-label">Mật khẩu <span class="form-item-special">*</span>
-          </label>
-          <input type="password" name="password" id="form-item-password" class="form-item-control" />
-          <span class="form-message">Nhập mật khẩu của bạn</span>
-        </div>
-        <div class="form-item">
-          <label for="" class="form-item-label"></label>
-          <input type="submit" name="login" id="form-item-login" class="form-item-submit" value="Đăng nhập" />
-          <a href="./register.html" class="form-item-link">Tạo tài khoản</a>
-        </div>
-      </form>
-    </div>
-  </div>
-  <!-- footer start -->
-  <footer id="footer">
-    <div class="container">
-      <ul class="footer-list">
-        <li class="footer-item col-xl-3">
-          Hỗ trợ khách hàng
-          <ul class="footer-sublist">
-            <li class="footer-subitem">
-              <a href="">Email: admin@nobita.vn </a>
-            </li>
-            <li class="footer-subitem">
-              <a href=""> Hotline: <span>0938 424 289</span></a>
-            </li>
-          </ul>
-        </li>
-        <li class="footer-item col-xl-3">
-          Giới thiệu
-          <ul class="footer-sublist">
-            <li class="footer-subitem"><a href="">Về nobita</a></li>
-            <li class="footer-subitem"><a href="">Tuyển dụng</a></li>
-          </ul>
-        </li>
-        <li class="footer-item col-xl-3">
-          Tài khoản
-          <ul class="footer-sublist">
-            <li class="footer-subitem"><a href="">Tài khoản</a></li>
-            <li class="footer-subitem">
-              <a href="">Danh sách đơn hàng</a>
-            </li>
-            <li class="footer-subitem"><a href="">Thông báo</a></li>
-          </ul>
-        </li>
-        <li class="footer-item col-xl-3">
-          Hướng Dẫn
-          <ul class="footer-sublist">
-            <li class="footer-subitem">
-              <a href="">Hướng dẫn mua hàng</a>
-            </li>
-            <li class="footer-subitem">
-              <a href="">Phương thức thanh toán</a>
-            </li>
-            <li class="footer-subitem">
-              <a href="">Câu hỏi thường gặp</a>
-            </li>
-            <li class="footer-subitem">
-              <a href="">Phương thức vận chuyển</a>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-
-    <div class="copyright">
-      <div class="container">
-        <div class="copyright-text">
-          <p>Copyright © 2014 Nobita.vn</p>
+      <!-- Header end -->
+      <!-- Breadcrumb start-->
+      <div class="breadcrumb">
+        <div class="container">
+          <a href="./index.html" class="breadcrumb-home ml-3">Trang chủ</a>
+          <span class="breadcrumb-category">Đăng nhập</span>
         </div>
       </div>
+      <!-- Breadcrumb end-->
+      <div id="app-content">
+        <div class="offset-4 content">
+          <form action="" id="input">
+            <h5 class="form-heading">Đăng nhập bằng tài khoản nobita</h5>
+            <div class="form-item">
+              <label for="form-item-email" class="form-item-label"
+                >Email <span class="form-item-special">*</span>
+              </label>
+              <input
+                type="email"
+                name="email"
+                id="form-item-email"
+                class="form-item-control"
+              />
+              <span class="form-message">Nhập email của bạn</span>
+            </div>
+            <div class="form-item">
+              <label for="form-item-password" class="form-item-label"
+                >Mật khẩu <span class="form-item-special">*</span>
+              </label>
+              <input
+                type="password"
+                name="password"
+                id="form-item-password"
+                class="form-item-control"
+              />
+              <span class="form-message">Nhập mật khẩu của bạn</span>
+            </div>
+            <div class="form-item">
+              <label for="" class="form-item-label"></label>
+              <input
+                type="submit"
+                name="login"
+                id="form-item-login"
+                class="form-item-submit"
+                value="Đăng nhập"
+              />
+              <a href="./register.html" class="form-item-link">Tạo tài khoản</a>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- footer start -->
+      <footer id="footer">
+        <div class="container container-md">
+          <ul class="footer-list">
+            <li class="footer-item col-xl-3 col-md-6">
+              Hỗ trợ khách hàng
+              <ul class="footer-sublist">
+                <li class="footer-subitem">
+                  <a href="">Email: admin@nobita.vn </a>
+                </li>
+                <li class="footer-subitem">
+                  <a href=""> Hotline: <span>0938 424 289</span></a>
+                </li>
+              </ul>
+            </li>
+            <li class="footer-item col-xl-3 col-md-6">
+              Giới thiệu
+              <ul class="footer-sublist">
+                <li class="footer-subitem"><a href="">Về nobita</a></li>
+                <li class="footer-subitem"><a href="">Tuyển dụng</a></li>
+              </ul>
+            </li>
+            <li class="footer-item col-xl-3 col-md-6">
+              Tài khoản
+              <ul class="footer-sublist">
+                <li class="footer-subitem"><a href="">Tài khoản</a></li>
+                <li class="footer-subitem">
+                  <a href="">Danh sách đơn hàng</a>
+                </li>
+                <li class="footer-subitem"><a href="">Thông báo</a></li>
+              </ul>
+            </li>
+            <li class="footer-item col-xl-3 col-md-6">
+              Hướng Dẫn
+              <ul class="footer-sublist">
+                <li class="footer-subitem">
+                  <a href="">Hướng dẫn mua hàng</a>
+                </li>
+                <li class="footer-subitem">
+                  <a href="">Phương thức thanh toán</a>
+                </li>
+                <li class="footer-subitem">
+                  <a href="">Câu hỏi thường gặp</a>
+                </li>
+                <li class="footer-subitem">
+                  <a href="">Phương thức vận chuyển</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="copyright">
+          <div class="container">
+            <div class="copyright-text">
+              <p>Copyright © 2014 Nobita.vn</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="#" class="footer-arrow-top">
+          <i class="fas fa-arrow-up"></i>
+        </a>
+      </footer>
+      <!-- footer end -->
     </div>
 
-    <a href="#" class="footer-arrow-top">
-      <i class="fas fa-arrow-up"></i>
-    </a>
-  </footer>
-  <!-- footer end -->
-</body>
-
+    <script src="./assets/js/main.js"></script>
+    <!-- bootstrap -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
