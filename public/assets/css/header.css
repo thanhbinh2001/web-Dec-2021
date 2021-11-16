@@ -260,13 +260,20 @@
 }
 
 .menu-item {
-    transition: padding-left 0.3s
+    display: flex;
+    transition: padding-left 0.3s;
 }
 
+.menu-item .fa-solid{
+    height: 10px;
+    width: 10px;
+    padding-top:15px;
+}
 .menu-item__link {
     display: block;
     padding: 10px;
     color: #444;
+    flex-basis: 90%
 }
 
 .menu-item__link:hover {
@@ -298,6 +305,9 @@
     width: 210px;
     display: none;
     z-index: 2;
+    padding-left: 15px;
+    padding-top:10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .menu-item:hover {
