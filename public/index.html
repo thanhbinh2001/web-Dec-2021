@@ -1,2415 +1,1789 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web bán sách online</title>
 
-    <!-- Font awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-    />
-    <!-- Favicon -->
-    <link
-      rel="shortcut icon"
-      href="https://nobita.vn/layouts/fontpage/images/favicon.ico"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web bán sách online</title>
 
-    <!-- Css -->
-    <link rel="stylesheet" href="./assets/css/base.css" />
-    <link rel="stylesheet" href="./assets/css/grid.css" />
-    <link rel="stylesheet" href="./assets/css/header.css" />
-    <link rel="stylesheet" href="./assets/css/slider.css" />
-    <link rel="stylesheet" href="./assets/css/content.css" />
-    <link rel="stylesheet" href="./assets/css/footer.css" />
-    <link rel="stylesheet" href="./assets/css/cart.css" />
-    <link rel="stylesheet" href="./assets/css/responsive.css" />
-  </head>
-  <body>
-    <!-- app start -->
-    <div id="app">
-      <!-- header start -->
-      <div id="header">
-        <div class="header-wrapper">
-          <div class="header-top">
-            <div class="grid wide">
-              <div class="row">
-                <div class="col m-1 c-1 menubar hide-on-pc">
-                  <input
-                    type="checkbox"
-                    name="close"
-                    id="checkbox-close"
-                    hidden
-                  />
-                  <label for="checkbox-close"
-                    ><i class="fas fa-bars"></i
-                  ></label>
-                  <ul class="menu-list">
-                    <div class="menu-heading">
-                      <p class="menu-title">
-                        <i class="fas fa-bars"></i> DANH MỤC SẢN PHẨM
-                      </p>
-                      <label for="checkbox-close">
-                        <i class="fas fa-times menu-close"></i>
-                      </label>
-                    </div>
-                    <li class="menu-item">
-                      <input
-                        type="radio"
-                        name="menu"
-                        id="menu-check-1"
-                        hidden
-                      />
-                      <label for="menu-check-1" class="menu-item__label">
-                        Nổi bật
-                      </label>
-                      <ul class="submenu-list">
-                        <li class="submenu-item">
-                          <a href="" class="submenu-item__link">
-                            Sách Bán Chạy
-                          </a>
-                        </li>
-                        <li class="submenu-item">
-                          <a href="" class="submenu-item__link"> Sách Mới </a>
-                        </li>
-                        <li class="submenu-item">
-                          <a href="" class="submenu-item__link">
-                            Sách Phát Hành
-                          </a>
-                        </li>
-                        <li class="submenu-item">
-                          <a href="" class="submenu-item__link">
-                            Sách Giảm Giá
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="menu-item">
-                      <input
-                        type="radio"
-                        name="menu"
-                        id="menu-check-2"
-                        hidden
-                      />
-                      <label for="menu-check-2" class="menu-item__label">
-                        Sách kinh tế
-                      </label>
-                      <ul class="submenu-list">
-                        <li class="submenu-item">
-                          <a href="./category.html" class="submenu-item__link">
-                            Tài Chính - Kế Toán
-                          </a>
-                        </li>
-                        <li class="submenu-item">
-                          <a href="" class="submenu-item__link">
-                            Kinh Tế Học
-                          </a>
-                        </li>
-                        <li class="submenu-item">
-                          <a href="" class="submenu-item__link">
-                            Quản Trị - Lãnh Đạo
-                          </a>
-                        </li>
-                        <li class="submenu-item">
-                          <a href="" class="submenu-item__link">
-                            Marketing - Bán Hàng
-                          </a>
-                        </li>
-                        <li class="submenu-item">
-                          <a href="" class="submenu-item__link">
-                            Khởi Nghiệp
-                          </a>
-                        </li>
-                        <li class="submenu-item">
-                          <a href="" class="submenu-item__link">
-                            Doanh Nhân - Tập Đoàn
-                          </a>
-                        </li>
-                        <li class="submenu-item">
-                          <a href="" class="submenu-item__link">
-                            Bài Học Kinh Doanh
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="menu-item">
-                      <input
-                        type="radio"
-                        name="menu"
-                        id="menu-check-3"
-                        hidden
-                      />
-                      <label for="menu-check-3" class="menu-item__label">
-                        Sách thiếu nhi
-                      </label>
-                      <ul class="submenu-list">
-                        <li class="submenu-item">
-                          <a href="" class="submenu-item__link">
-                            Truyện Tranh Nhật Bản
-                          </a>
-                        </li>
-                        <li class="submenu-item">
-                          <a href="" class="submenu-item__link"> Văn học </a>
-                        </li>
-                        <li class="submenu-item">
-                          <a href="" class="submenu-item__link"> Ngôn Tình </a>
-                        </li>
-                        <li class="submenu-item">
-                          <a href="" class="submenu-item__link">
-                            Tiểu thuyết
-                          </a>
-                        </li>
-                        <li class="submenu-item">
-                          <a href="" class="submenu-item__link">
-                            Light Novel
-                          </a>
-                        </li>
-                        <li class="submenu-item">
-                          <a href="" class="submenu-item__link">
-                            Truyện Trinh Thám - Kiếm Hiệp
-                          </a>
-                        </li>
-                        <li class="submenu-item">
-                          <a href="" class="submenu-item__link">
-                            Truyện Ngắn - Tản Văn
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="menu-item">
-                      <input
-                        type="radio"
-                        name="menu"
-                        id="menu-check-4"
-                        hidden
-                      />
-                      <label for="menu-check-4" class="menu-item__label">
-                        Tâm lý - Kỹ năng sống
-                      </label>
-                      <ul class="submenu-list">
-                        <li class="submenu-item">
-                          <a href="" class="submenu-item__link">
-                            Kỹ năng sống
-                          </a>
-                        </li>
-                        <li class="submenu-item">
-                          <a href="" class="submenu-item__link"> Sách Mới </a>
-                        </li>
-                        <li class="submenu-item">
-                          <a href="" class="submenu-item__link">
-                            Rèn luyện nhân cách
-                          </a>
-                        </li>
-                        <li class="submenu-item">
-                          <a href="" class="submenu-item__link"> Tâm Lý </a>
-                        </li>
-                        <li class="submenu-item">
-                          <a href="" class="submenu-item__link">
-                            Sách cho tuổi mới lớn
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="menu-item">
-                      <input
-                        type="radio"
-                        name="menu"
-                        id="menu-check-5"
-                        hidden
-                      />
-                      <label for="menu-check-5" class="menu-item__label">
-                        Nuôi dạy con
-                      </label>
-                      <ul class="submenu-list">
-                        <li class="submenu-item">
-                          <a href="" class="submenu-item__link">
-                            Cẩm Nang Làm Cha Mẹ
-                          </a>
-                        </li>
-                        <li class="submenu-item">
-                          <a href="" class="submenu-item__link">
-                            Phương Pháp Giáo Dục Trẻ Các Nước
-                          </a>
-                        </li>
-                        <li class="submenu-item">
-                          <a href="" class="submenu-item__link">
-                            Phát Triển Trí Tuệ Cho Trẻ
-                          </a>
-                        </li>
-                        <li class="submenu-item">
-                          <a href="" class="submenu-item__link">
-                            Phát Triển Kĩ Năng Cho Trẻ
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="menu-item">
-                      <input
-                        type="radio"
-                        name="menu"
-                        id="menu-check-6"
-                        hidden
-                      />
-                      <label for="menu-check-6" class="menu-item__label">
-                        Giáo Khoa - Tham Khảo
-                      </label>
-                      <ul class="submenu-list">
-                        <li class="submenu-item">
-                          <a href="" class="submenu-item__link">
-                            Sách Giáo Khoa
-                          </a>
-                        </li>
-                        <li class="submenu-item">
-                          <a href="" class="submenu-item__link">
-                            Sách Tham Khảo
-                          </a>
-                        </li>
-                        <li class="submenu-item">
-                          <a href="" class="submenu-item__link">
-                            Luyện Thi CĐ - ĐH
-                          </a>
-                        </li>
-                        <li class="submenu-item">
-                          <a href="" class="submenu-item__link"> Mẫu Giáo </a>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-                <div class="col l-3 m-9 c-8 header-top__logo">
-                  <a href="./index.html" class="header-top__logo-link">
-                    <img
-                      src="./assets/images/logo/logo.png"
-                      alt=""
-                      class="header-top__picture-img"
-                    />
-                  </a>
-                </div>
-                <div class="col l-9 m-2 c-3 header-top__support">
-                  <div class="row hide-on-mobile-tablet">
-                    <div class="col l-8 header-top__support-search">
-                      <div class="header-search-wrapper">
-                        <input
-                          type="text"
-                          name="search"
-                          id="header-search"
-                          class="header-search"
-                        />
-                        <input
-                          type="submit"
-                          value="Tìm"
-                          class="header-search-submit"
-                        />
-                      </div>
-                    </div>
-                    <ul class="col l-4 header-top__support-tool">
-                      <li class="header-tool">
-                        <a href="./login.html" class="header-tool-login"
-                          >Đăng nhập</a
-                        >
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="https://nobita.vn/layouts/fontpage/images/favicon.ico" />
+
+  <!-- Css -->
+  <link rel="stylesheet" href="./assets/css/base.css" />
+  <link rel="stylesheet" href="./assets/css/grid.css" />
+  <link rel="stylesheet" href="./assets/css/header.css" />
+  <link rel="stylesheet" href="./assets/css/slider.css" />
+  <link rel="stylesheet" href="./assets/css/content.css" />
+  <link rel="stylesheet" href="./assets/css/footer.css" />
+  <link rel="stylesheet" href="./assets/css/cart.css" />
+  <link rel="stylesheet" href="./assets/css/responsive.css" />
+</head>
+
+<body>
+  <!-- app start -->
+  <div id="app">
+    <!-- header start -->
+    <div id="header">
+      <div class="header-wrapper">
+        <div class="header-top">
+          <div class="grid wide">
+            <div class="row">
+              <div class="col m-1 c-1 menubar hide-on-pc">
+                <input type="checkbox" name="close" id="checkbox-close" hidden />
+                <label for="checkbox-close"><i class="fas fa-bars"></i></label>
+                <ul class="menu-list">
+                  <div class="menu-heading">
+                    <p class="menu-title">
+                      <i class="fas fa-bars"></i> DANH MỤC SẢN PHẨM
+                    </p>
+                    <label for="checkbox-close">
+                      <i class="fas fa-times menu-close"></i>
+                    </label>
+                  </div>
+                  <li class="menu-item">
+                    <input type="radio" name="menu" id="menu-check-1" hidden />
+                    <label for="menu-check-1" class="menu-item__label">
+                      Nổi bật
+                    </label>
+                    <ul class="submenu-list">
+                      <li class="submenu-item">
+                        <a href="" class="submenu-item__link">
+                          Sách Bán Chạy
+                        </a>
                       </li>
-                      <li class="header-tool header-cart">
-                        <a class="header-cart__text">Giỏ hàng</a>
-                        <span>
-                          (<span class="header-cart__number">0</span>)
-                        </span>
-
-                        <i class="fas fa-sort-down"></i>
-
-                        <ul class="header-cart__content">
-                          <h2 class="header-cart__content-heading">Giỏ hàng</h2>
-                          <ul class="header-cart__list">
-                            <li class="header-cart__item row no-gutters">
-                              <div class="col l-2">
-                                <img
-                                  src="./assets/images/sanpham/manga/thienthandietthe_1.png"
-                                  alt=""
-                                  class="header-cart__item-img"
-                                />
-                              </div>
-                              <div class="col l-9">
-                                <a href="#" class="header-cart__item-text">
-                                  Thiên thần diệt thế tập 1
-                                </a>
-                                <span class="header-cart__item-price">
-                                  54000 ₫
-                                </span>
-                              </div>
-                              <div class="col l-1">
-                                <i
-                                  class="fas fa-times header-cart__item-delete"
-                                >
-                                </i>
-                              </div>
-                            </li>
-                            <li class="header-cart__item row no-gutters">
-                              <div class="col l-2">
-                                <img
-                                  src="./assets/images/sanpham/manga/thienthandietthe_2.png"
-                                  alt=""
-                                  class="header-cart__item-img"
-                                />
-                              </div>
-                              <div class="col l-9">
-                                <a href="#" class="header-cart__item-text">
-                                  Thiên thần diệt thế tập 2
-                                </a>
-                                <span class="header-cart__item-price">
-                                  54000 ₫
-                                </span>
-                              </div>
-                              <div class="col l-1">
-                                <i
-                                  class="fas fa-times header-cart__item-delete"
-                                >
-                                </i>
-                              </div>
-                            </li>
-                            <li class="header-cart__item row no-gutters">
-                              <div class="col l-2">
-                                <img
-                                  src="./assets/images/sanpham/manga/thienthandietthe_3.png"
-                                  alt=""
-                                  class="header-cart__item-img"
-                                />
-                              </div>
-                              <div class="col l-9">
-                                <a href="#" class="header-cart__item-text">
-                                  Thiên thần diệt thế tập 3
-                                </a>
-                                <span class="header-cart__item-price">
-                                  54000 ₫
-                                </span>
-                              </div>
-                              <div class="col l-1">
-                                <i
-                                  class="fas fa-times header-cart__item-delete"
-                                >
-                                </i>
-                              </div>
-                            </li>
-                            <li class="header-cart__item row no-gutters">
-                              <div class="col l-2">
-                                <img
-                                  src="./assets/images/sanpham/manga/thienthandietthe_4.png"
-                                  alt=""
-                                  class="header-cart__item-img"
-                                />
-                              </div>
-                              <div class="col l-9">
-                                <a href="#" class="header-cart__item-text">
-                                  Thiên thần diệt thế tập 4
-                                </a>
-                                <span class="header-cart__item-price">
-                                  54000 ₫
-                                </span>
-                              </div>
-                              <div class="col l-1">
-                                <i
-                                  class="fas fa-times header-cart__item-delete"
-                                >
-                                </i>
-                              </div>
-                            </li>
-                          </ul>
-                          <div class="header-cart__content-cost">
-                            <p>
-                              <strong>Tổng Tiền:</strong>
-                              <span class="header-cart__content-total">
-                                216000 ₫
-                              </span>
-                            </p>
-                            <div class="header-cart__btn-open">
-                              Xem giỏ hàng
-                            </div>
-                          </div>
-                        </ul>
+                      <li class="submenu-item">
+                        <a href="" class="submenu-item__link"> Sách Mới </a>
+                      </li>
+                      <li class="submenu-item">
+                        <a href="" class="submenu-item__link">
+                          Sách Phát Hành
+                        </a>
+                      </li>
+                      <li class="submenu-item">
+                        <a href="" class="submenu-item__link">
+                          Sách Giảm Giá
+                        </a>
                       </li>
                     </ul>
-                  </div>
-                  <div class="row header-top__tablet-mobile hide-on-pc">
-                    <div class="header-top__tablet-mobile-search">
-                      <i class="fas fa-search"></i>
-                    </div>
-                    <div class="header-top__tablet-mobile-cart">
-                      <a href="./checkout.html">
-                        <i class="fas fa-shopping-cart"></i>
-                        <p>(<span class="shownumber">4</span>)</p>
-                      </a>
-                    </div>
-                  </div>
-                </div>
+                  </li>
+                  <li class="menu-item">
+                    <input type="radio" name="menu" id="menu-check-2" hidden />
+                    <label for="menu-check-2" class="menu-item__label">
+                      Sách kinh tế
+                    </label>
+                    <ul class="submenu-list">
+                      <li class="submenu-item">
+                        <a href="./category.html" class="submenu-item__link">
+                          Tài Chính - Kế Toán
+                        </a>
+                      </li>
+                      <li class="submenu-item">
+                        <a href="" class="submenu-item__link">
+                          Kinh Tế Học
+                        </a>
+                      </li>
+                      <li class="submenu-item">
+                        <a href="" class="submenu-item__link">
+                          Quản Trị - Lãnh Đạo
+                        </a>
+                      </li>
+                      <li class="submenu-item">
+                        <a href="" class="submenu-item__link">
+                          Marketing - Bán Hàng
+                        </a>
+                      </li>
+                      <li class="submenu-item">
+                        <a href="" class="submenu-item__link">
+                          Khởi Nghiệp
+                        </a>
+                      </li>
+                      <li class="submenu-item">
+                        <a href="" class="submenu-item__link">
+                          Doanh Nhân - Tập Đoàn
+                        </a>
+                      </li>
+                      <li class="submenu-item">
+                        <a href="" class="submenu-item__link">
+                          Bài Học Kinh Doanh
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item">
+                    <input type="radio" name="menu" id="menu-check-3" hidden />
+                    <label for="menu-check-3" class="menu-item__label">
+                      Sách thiếu nhi
+                    </label>
+                    <ul class="submenu-list">
+                      <li class="submenu-item">
+                        <a href="" class="submenu-item__link">
+                          Truyện Tranh Nhật Bản
+                        </a>
+                      </li>
+                      <li class="submenu-item">
+                        <a href="" class="submenu-item__link"> Văn học </a>
+                      </li>
+                      <li class="submenu-item">
+                        <a href="" class="submenu-item__link"> Ngôn Tình </a>
+                      </li>
+                      <li class="submenu-item">
+                        <a href="" class="submenu-item__link">
+                          Tiểu thuyết
+                        </a>
+                      </li>
+                      <li class="submenu-item">
+                        <a href="" class="submenu-item__link">
+                          Light Novel
+                        </a>
+                      </li>
+                      <li class="submenu-item">
+                        <a href="" class="submenu-item__link">
+                          Truyện Trinh Thám - Kiếm Hiệp
+                        </a>
+                      </li>
+                      <li class="submenu-item">
+                        <a href="" class="submenu-item__link">
+                          Truyện Ngắn - Tản Văn
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item">
+                    <input type="radio" name="menu" id="menu-check-4" hidden />
+                    <label for="menu-check-4" class="menu-item__label">
+                      Tâm lý - Kỹ năng sống
+                    </label>
+                    <ul class="submenu-list">
+                      <li class="submenu-item">
+                        <a href="" class="submenu-item__link">
+                          Kỹ năng sống
+                        </a>
+                      </li>
+                      <li class="submenu-item">
+                        <a href="" class="submenu-item__link"> Sách Mới </a>
+                      </li>
+                      <li class="submenu-item">
+                        <a href="" class="submenu-item__link">
+                          Rèn luyện nhân cách
+                        </a>
+                      </li>
+                      <li class="submenu-item">
+                        <a href="" class="submenu-item__link"> Tâm Lý </a>
+                      </li>
+                      <li class="submenu-item">
+                        <a href="" class="submenu-item__link">
+                          Sách cho tuổi mới lớn
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item">
+                    <input type="radio" name="menu" id="menu-check-5" hidden />
+                    <label for="menu-check-5" class="menu-item__label">
+                      Nuôi dạy con
+                    </label>
+                    <ul class="submenu-list">
+                      <li class="submenu-item">
+                        <a href="" class="submenu-item__link">
+                          Cẩm Nang Làm Cha Mẹ
+                        </a>
+                      </li>
+                      <li class="submenu-item">
+                        <a href="" class="submenu-item__link">
+                          Phương Pháp Giáo Dục Trẻ Các Nước
+                        </a>
+                      </li>
+                      <li class="submenu-item">
+                        <a href="" class="submenu-item__link">
+                          Phát Triển Trí Tuệ Cho Trẻ
+                        </a>
+                      </li>
+                      <li class="submenu-item">
+                        <a href="" class="submenu-item__link">
+                          Phát Triển Kĩ Năng Cho Trẻ
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item">
+                    <input type="radio" name="menu" id="menu-check-6" hidden />
+                    <label for="menu-check-6" class="menu-item__label">
+                      Giáo Khoa - Tham Khảo
+                    </label>
+                    <ul class="submenu-list">
+                      <li class="submenu-item">
+                        <a href="" class="submenu-item__link">
+                          Sách Giáo Khoa
+                        </a>
+                      </li>
+                      <li class="submenu-item">
+                        <a href="" class="submenu-item__link">
+                          Sách Tham Khảo
+                        </a>
+                      </li>
+                      <li class="submenu-item">
+                        <a href="" class="submenu-item__link">
+                          Luyện Thi CĐ - ĐH
+                        </a>
+                      </li>
+                      <li class="submenu-item">
+                        <a href="" class="submenu-item__link"> Mẫu Giáo </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
               </div>
-            </div>
-          </div>
-          <div class="header-bottom hide-on-mobile-tablet">
-            <div class="grid wide">
-              <div class="row header-bottom-wrapper">
-                <div class="col l-2-4 m-6 c-6 header-bottom-category">
-                  <h2 class="header-bottom-category__title">
-                    <i class="fas fa-bars"></i> DANH MỤC SẢN PHẨM
-                  </h2>
-                  <ul class="header-category-list" style="display: block">
-                    <li class="header-category-item">
-                      <a href="" class="header-category-item__link">
-                        Nổi bật <i class="fa-solid fa-arrow-right"></i>
-                      </a>
-                      <ul class="header-category-item__sublist">
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Sách Bán Chạy
-                          </a>
-                        </li>
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Sách Mới
-                          </a>
-                        </li>
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Sách Phát Hành
-                          </a>
-                        </li>
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Sách Giảm Giá
-                          </a>
-                        </li>
-                      </ul>
+              <div class="col l-3 m-9 c-8 header-top__logo">
+                <a href="./index.html" class="header-top__logo-link">
+                  <img src="./assets/images/logo/logo.png" alt="" class="header-top__picture-img" />
+                </a>
+              </div>
+              <div class="col l-9 m-2 c-3 header-top__support">
+                <div class="row hide-on-mobile-tablet">
+                  <div class="col l-8 header-top__support-search">
+                    <div class="header-search-wrapper">
+                      <input type="text" name="search" id="header-search" class="header-search" />
+                      <input type="submit" value="Tìm" class="header-search-submit" />
+                    </div>
+                  </div>
+                  <ul class="col l-4 header-top__support-tool">
+                    <li class="header-tool">
+                      <a href="./login.html" class="header-tool-login">Đăng nhập</a>
                     </li>
-                    <li class="header-category-item">
-                      <a href="" class="header-category-item__link">
-                        Kinh tế <i class="fa-solid fa-arrow-right"></i>
-                      </a>
-                      <ul class="header-category-item__sublist">
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Tài Chính - Kế Toán
-                          </a>
-                        </li>
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Quản Trị - Lãnh Đạo
-                          </a>
-                        </li>
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Marketing - Bán Hàng
-                          </a>
-                        </li>
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Kinh Tế Học
-                          </a>
-                        </li>
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Khởi Nghiệp
-                          </a>
-                        </li>
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Doanh Nhân - Tập Đoàn
-                          </a>
-                        </li>
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Bài Học Kinh Doanh
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="header-category-item">
-                      <a href="" class="header-category-item__link">
-                        Sách thiếu nhi <i class="fa-solid fa-arrow-right"></i>
-                      </a>
-                      <ul class="header-category-item__sublist">
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Truyện Tranh Nhật Bản
-                          </a>
-                        </li>
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Văn học
-                          </a>
-                        </li>
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Ngôn Tình
-                          </a>
-                        </li>
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Tiểu thuyết
-                          </a>
-                        </li>
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Light Novel
-                          </a>
-                        </li>
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Truyện Trinh Thám - Kiếm Hiệp
-                          </a>
-                        </li>
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Truyện Ngắn - Tản Văn
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="header-category-item">
-                      <a href="" class="header-category-item__link">
-                        Tâm lý - Kỹ năng sống
-                        <i class="fa-solid fa-arrow-right"></i>
-                      </a>
-                      <ul class="header-category-item__sublist">
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Kỹ năng sống
-                          </a>
-                        </li>
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Rèn luyện nhân cách
-                          </a>
-                        </li>
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Tâm Lý
-                          </a>
-                        </li>
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Sách cho tuổi mới lớn
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="header-category-item">
-                      <a href="" class="header-category-item__link">
-                        Nuôi dạy con <i class="fa-solid fa-arrow-right"></i>
-                      </a>
-                      <ul class="header-category-item__sublist">
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Cẩm Nang Làm Cha Mẹ
-                          </a>
-                        </li>
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Phương Pháp Giáo Dục Trẻ Các Nước
-                          </a>
-                        </li>
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Phát Triển Trí Tuệ Cho Trẻ
-                          </a>
-                        </li>
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Phát Triển Kĩ Năng Cho Trẻ
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="header-category-item">
-                      <a href="" class="header-category-item__link">
-                        Giáo Khoa - Tham Khảo
-                        <i class="fa-solid fa-arrow-right"></i>
-                      </a>
-                      <ul class="header-category-item__sublist">
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Sách Giáo Khoa
-                          </a>
-                        </li>
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Sách Tham Khảo
-                          </a>
-                        </li>
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Luyện Thi CĐ - ĐH
-                          </a>
-                        </li>
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Mẫu Giáo
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="header-category-item">
-                      <a href="" class="header-category-item__link">
-                        Giáo Khoa - Tham Khảo
-                        <i class="fa-solid fa-arrow-right"></i>
-                      </a>
-                      <ul class="header-category-item__sublist">
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Sách Giáo Khoa
-                          </a>
-                        </li>
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Sách Tham Khảo
-                          </a>
-                        </li>
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Luyện Thi CĐ - ĐH
-                          </a>
-                        </li>
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Mẫu Giáo
-                          </a>
-                        </li>
+                    <li class="header-tool header-cart">
+                      <a class="header-cart__text">Giỏ hàng</a>
+                      <span>
+                        (<span class="header-cart__number">0</span>)
+                      </span>
+
+                      <i class="fas fa-sort-down"></i>
+
+                      <ul class="header-cart__content">
+                        <h2 class="header-cart__content-heading">Giỏ hàng</h2>
+                        <ul class="header-cart__list">
+                          <li class="header-cart__item row no-gutters">
+                            <div class="col l-2">
+                              <img src="./assets/images/sanpham/manga/thienthandietthe_1.png" alt=""
+                                class="header-cart__item-img" />
+                            </div>
+                            <div class="col l-9">
+                              <a href="#" class="header-cart__item-text">
+                                Thiên thần diệt thế tập 1
+                              </a>
+                              <span class="header-cart__item-price">
+                                54000 ₫
+                              </span>
+                            </div>
+                            <div class="col l-1">
+                              <i class="fas fa-times header-cart__item-delete">
+                              </i>
+                            </div>
+                          </li>
+                          <li class="header-cart__item row no-gutters">
+                            <div class="col l-2">
+                              <img src="./assets/images/sanpham/manga/thienthandietthe_2.png" alt=""
+                                class="header-cart__item-img" />
+                            </div>
+                            <div class="col l-9">
+                              <a href="#" class="header-cart__item-text">
+                                Thiên thần diệt thế tập 2
+                              </a>
+                              <span class="header-cart__item-price">
+                                54000 ₫
+                              </span>
+                            </div>
+                            <div class="col l-1">
+                              <i class="fas fa-times header-cart__item-delete">
+                              </i>
+                            </div>
+                          </li>
+                          <li class="header-cart__item row no-gutters">
+                            <div class="col l-2">
+                              <img src="./assets/images/sanpham/manga/thienthandietthe_3.png" alt=""
+                                class="header-cart__item-img" />
+                            </div>
+                            <div class="col l-9">
+                              <a href="#" class="header-cart__item-text">
+                                Thiên thần diệt thế tập 3
+                              </a>
+                              <span class="header-cart__item-price">
+                                54000 ₫
+                              </span>
+                            </div>
+                            <div class="col l-1">
+                              <i class="fas fa-times header-cart__item-delete">
+                              </i>
+                            </div>
+                          </li>
+                          <li class="header-cart__item row no-gutters">
+                            <div class="col l-2">
+                              <img src="./assets/images/sanpham/manga/thienthandietthe_4.png" alt=""
+                                class="header-cart__item-img" />
+                            </div>
+                            <div class="col l-9">
+                              <a href="#" class="header-cart__item-text">
+                                Thiên thần diệt thế tập 4
+                              </a>
+                              <span class="header-cart__item-price">
+                                54000 ₫
+                              </span>
+                            </div>
+                            <div class="col l-1">
+                              <i class="fas fa-times header-cart__item-delete">
+                              </i>
+                            </div>
+                          </li>
+                        </ul>
+                        <div class="header-cart__content-cost">
+                          <p>
+                            <strong>Tổng Tiền:</strong>
+                            <span class="header-cart__content-total">
+                              216000 ₫
+                            </span>
+                          </p>
+                          <div class="header-cart__btn-open">
+                            Xem giỏ hàng
+                          </div>
+                        </div>
                       </ul>
                     </li>
                   </ul>
                 </div>
-                <div class="col l-o-7 l-2-4 m-6 c-6 header-bottom-hotline">
-                  <h5>
-                    <i class="fas fa-phone"></i>
-                    Hotline:
-                    <span class="header-bottom-hotline__text">
-                      0938 424 289
-                    </span>
-                  </h5>
+                <div class="row header-top__tablet-mobile hide-on-pc">
+                  <div class="header-top__tablet-mobile-search">
+                    <i class="fas fa-search"></i>
+                  </div>
+                  <div class="header-top__tablet-mobile-cart">
+                    <a href="./checkout.html">
+                      <i class="fas fa-shopping-cart"></i>
+                      <p>(<span class="shownumber">4</span>)</p>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- header end -->
-
-      <!-- slider start -->
-      <div id="slider">
-        <div class="grid wide">
-          <div class="row no-gutters">
-            <div class="l-o-3 col l-9 slider-wrapper">
-              <div class="slider-list-picture">
-                <img
-                  src="./assets/images/slider/doc-gia-2019.jpg"
-                  alt=""
-                  class="slider-img active"
-                />
-                <img
-                  src="./assets/images/slider/atta.jpg"
-                  alt=""
-                  class="slider-img"
-                />
-                <img
-                  src="./assets/images/slider/luc-xu-qc.jpg"
-                  alt=""
-                  class="slider-img"
-                />
-                <img
-                  src="./assets/images/slider/song-ngam.jpg"
-                  alt=""
-                  class="slider-img"
-                />
-              </div>
-              <div class="slider-list-control">
-                <div class="slider-control-item active"></div>
-                <div class="slider-control-item"></div>
-                <div class="slider-control-item"></div>
-                <div class="slider-control-item"></div>
-              </div>
-              <div class="slider-arrow">
-                <div class="slider-arrow-left">
-                  <i class="fas fa-chevron-left"></i>
-                </div>
-                <div class="slider-arrow-right">
-                  <i class="fas fa-chevron-right"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- slider end -->
-
-      <!-- content start -->
-      <div id="app-content">
-        <div class="grid wide">
-          <!-- Sách mới start -->
-          <section id="new-book">
-            <div class="section-book-heading row">
-              <a href="" class="section-book-heading__title">
-                Sách mới <span></span>
-              </a>
-              <a href="" class="section-book-heading__show"> Xem tất cả</a>
-            </div>
-            <div class="book-content">
-              <div class="product-list product-wrap row no-gutters">
-                <div class="product-item col l-2-4 m-6 c-6">
-                  <div class="product-item-wrapper">
-                    <a href="./detail.html">
-                      <div
-                        class="product-item-wrapper__img"
-                        style="
-                          background-image: url(./assets/images/sanpham/manga/thienthandietthe_1.png);
-                        "
-                      >
-                        <span
-                          class="product-item-wrapper__sale"
-                          style="
-                            background-image: url('./assets/images/product/saleprice.png');
-                          "
-                          >20%</span
-                        >
-                      </div>
+        <div class="header-bottom hide-on-mobile-tablet">
+          <div class="grid wide">
+            <div class="row header-bottom-wrapper">
+              <div class="col l-2-4 m-6 c-6 header-bottom-category">
+                <h2 class="header-bottom-category__title">
+                  <i class="fas fa-bars"></i> DANH MỤC SẢN PHẨM
+                </h2>
+                <ul class="header-category-list" style="display: block">
+                  <li class="header-category-item">
+                    <a href="" class="header-category-item__link">
+                      Nổi bật <i class="fa-solid fa-arrow-right"></i>
                     </a>
-                    <div class="product-item-wrapper__details">
-                      <div class="product-item-wrapper__title">
-                        <a
-                          href="./detail.html"
-                          class="product-item-wrapper__link"
-                        >
-                          Thiên thần diệt thế - Tập 1</a
-                        >
-                      </div>
-                      <div class="product-item-wrapper__subtitle">
-                        <a href="">Kagami Takaya</a>
-                      </div>
-                      <div class="product-item-wrapper__prices">113.600 ₫</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="product-item col l-2-4 m-6 c-6">
-                  <div class="product-item-wrapper">
-                    <a href="./detail.html">
-                      <div
-                        class="product-item-wrapper__img"
-                        style="
-                          background-image: url(./assets/images/sanpham/manga/thienthandietthe_2.png);
-                        "
-                      >
-                        <span
-                          class="product-item-wrapper__sale"
-                          style="
-                            background-image: url('./assets/images/product/saleprice.png');
-                          "
-                          >20%</span
-                        >
-                      </div>
+                    <ul class="header-category-item__sublist">
+                      <li class="header-category-item__sublist-item">
+                        <a href="" class="header-category-item__sublist-item-link">
+                          Sách Bán Chạy
+                        </a>
+                      </li>
+                      <li class="header-category-item__sublist-item">
+                        <a href="" class="header-category-item__sublist-item-link">
+                          Sách Mới
+                        </a>
+                      </li>
+                      <li class="header-category-item__sublist-item">
+                        <a href="" class="header-category-item__sublist-item-link">
+                          Sách Phát Hành
+                        </a>
+                      </li>
+                      <li class="header-category-item__sublist-item">
+                        <a href="" class="header-category-item__sublist-item-link">
+                          Sách Giảm Giá
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="header-category-item">
+                    <a href="" class="header-category-item__link">
+                      Kinh tế <i class="fa-solid fa-arrow-right"></i>
                     </a>
-                    <div class="product-item-wrapper__details">
-                      <div class="product-item-wrapper__title">
-                        <a
-                          href="./detail.html"
-                          class="product-item-wrapper__link"
-                        >
-                          Thiên thần diệt thế - Tập 2</a
-                        >
-                      </div>
-                      <div class="product-item-wrapper__subtitle">
-                        <a href="">Kagami Takaya</a>
-                      </div>
-                      <div class="product-item-wrapper__prices">113.600 ₫</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="product-item col l-2-4 m-6 c-6">
-                  <div class="product-item-wrapper">
-                    <a href="./detail.html">
-                      <div
-                        class="product-item-wrapper__img"
-                        style="
-                          background-image: url(./assets/images/sanpham/manga/thienthandietthe_3.png);
-                        "
-                      >
-                        <span
-                          class="product-item-wrapper__sale"
-                          style="
-                            background-image: url('./assets/images/product/saleprice.png');
-                          "
-                          >20%</span
-                        >
-                      </div>
+                    <ul class="header-category-item__sublist">
+                      <li class="header-category-item__sublist-item">
+                        <a href="" class="header-category-item__sublist-item-link">
+                          Tài Chính - Kế Toán
+                        </a>
+                      </li>
+                      <li class="header-category-item__sublist-item">
+                        <a href="" class="header-category-item__sublist-item-link">
+                          Quản Trị - Lãnh Đạo
+                        </a>
+                      </li>
+                      <li class="header-category-item__sublist-item">
+                        <a href="" class="header-category-item__sublist-item-link">
+                          Marketing - Bán Hàng
+                        </a>
+                      </li>
+                      <li class="header-category-item__sublist-item">
+                        <a href="" class="header-category-item__sublist-item-link">
+                          Kinh Tế Học
+                        </a>
+                      </li>
+                      <li class="header-category-item__sublist-item">
+                        <a href="" class="header-category-item__sublist-item-link">
+                          Khởi Nghiệp
+                        </a>
+                      </li>
+                      <li class="header-category-item__sublist-item">
+                        <a href="" class="header-category-item__sublist-item-link">
+                          Doanh Nhân - Tập Đoàn
+                        </a>
+                      </li>
+                      <li class="header-category-item__sublist-item">
+                        <a href="" class="header-category-item__sublist-item-link">
+                          Bài Học Kinh Doanh
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="header-category-item">
+                    <a href="" class="header-category-item__link">
+                      Sách thiếu nhi <i class="fa-solid fa-arrow-right"></i>
                     </a>
-                    <div class="product-item-wrapper__details">
-                      <div class="product-item-wrapper__title">
-                        <a
-                          href="./detail.html"
-                          class="product-item-wrapper__link"
-                        >
-                          Thiên thần diệt thế - Tập 3</a
-                        >
-                      </div>
-                      <div class="product-item-wrapper__subtitle">
-                        <a href="">Kagami Takaya</a>
-                      </div>
-                      <div class="product-item-wrapper__prices">113.600 ₫</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="product-item col l-2-4 m-6 c-6">
-                  <div class="product-item-wrapper">
-                    <a href="./detail.html">
-                      <div
-                        class="product-item-wrapper__img"
-                        style="
-                          background-image: url(./assets/images/sanpham/manga/thienthandietthe_4.png);
-                        "
-                      >
-                        <span
-                          class="product-item-wrapper__sale"
-                          style="
-                            background-image: url('./assets/images/product/saleprice.png');
-                          "
-                          >20%</span
-                        >
-                      </div>
+                    <ul class="header-category-item__sublist">
+                      <li class="header-category-item__sublist-item">
+                        <a href="" class="header-category-item__sublist-item-link">
+                          Truyện Tranh Nhật Bản
+                        </a>
+                      </li>
+                      <li class="header-category-item__sublist-item">
+                        <a href="" class="header-category-item__sublist-item-link">
+                          Văn học
+                        </a>
+                      </li>
+                      <li class="header-category-item__sublist-item">
+                        <a href="" class="header-category-item__sublist-item-link">
+                          Ngôn Tình
+                        </a>
+                      </li>
+                      <li class="header-category-item__sublist-item">
+                        <a href="" class="header-category-item__sublist-item-link">
+                          Tiểu thuyết
+                        </a>
+                      </li>
+                      <li class="header-category-item__sublist-item">
+                        <a href="" class="header-category-item__sublist-item-link">
+                          Light Novel
+                        </a>
+                      </li>
+                      <li class="header-category-item__sublist-item">
+                        <a href="" class="header-category-item__sublist-item-link">
+                          Truyện Trinh Thám - Kiếm Hiệp
+                        </a>
+                      </li>
+                      <li class="header-category-item__sublist-item">
+                        <a href="" class="header-category-item__sublist-item-link">
+                          Truyện Ngắn - Tản Văn
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="header-category-item">
+                    <a href="" class="header-category-item__link">
+                      Tâm lý - Kỹ năng sống
+                      <i class="fa-solid fa-arrow-right"></i>
                     </a>
-                    <div class="product-item-wrapper__details">
-                      <div class="product-item-wrapper__title">
-                        <a
-                          href="./detail.html"
-                          class="product-item-wrapper__link"
-                        >
-                          Thiên thần diệt thế - Tập 4</a
-                        >
-                      </div>
-                      <div class="product-item-wrapper__subtitle">
-                        <a href="">Kagami Takaya</a>
-                      </div>
-                      <div class="product-item-wrapper__prices">113.600 ₫</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="product-item col l-2-4 m-6 c-6">
-                  <div class="product-item-wrapper">
-                    <a href="./detail.html">
-                      <div
-                        class="product-item-wrapper__img"
-                        style="
-                          background-image: url(./assets/images/sanpham/manga/thienthandietthe_5.png);
-                        "
-                      >
-                        <span
-                          class="product-item-wrapper__sale"
-                          style="
-                            background-image: url('./assets/images/product/saleprice.png');
-                          "
-                          >20%</span
-                        >
-                      </div>
-                    </a>
-                    <div class="product-item-wrapper__details">
-                      <div class="product-item-wrapper__title">
-                        <a
-                          href="./detail.html"
-                          class="product-item-wrapper__link"
-                        >
-                          Thiên thần diệt thế - Tập 5</a
-                        >
-                      </div>
-                      <div class="product-item-wrapper__subtitle">
-                        <a href="">Kagami Takaya</a>
-                      </div>
-                      <div class="product-item-wrapper__prices">113.600 ₫</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="product-item col l-2-4 m-6 c-6">
-                  <div class="product-item-wrapper">
-                    <a href="./detail.html">
-                      <div
-                        class="product-item-wrapper__img"
-                        style="
-                          background-image: url(./assets/images/sanpham/manga/thienthandietthe_6.png);
-                        "
-                      >
-                        <span
-                          class="product-item-wrapper__sale"
-                          style="
-                            background-image: url('./assets/images/product/saleprice.png');
-                          "
-                          >20%</span
-                        >
-                      </div>
-                    </a>
-                    <div class="product-item-wrapper__details">
-                      <div class="product-item-wrapper__title">
-                        <a
-                          href="./detail.html"
-                          class="product-item-wrapper__link"
-                        >
-                          Thiên thần diệt thế - Tập 6</a
-                        >
-                      </div>
-                      <div class="product-item-wrapper__subtitle">
-                        <a href="">Kagami Takaya</a>
-                      </div>
-                      <div class="product-item-wrapper__prices">113.600 ₫</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="product-item col l-2-4 m-6 c-6">
-                  <div class="product-item-wrapper">
-                    <a href="./detail.html">
-                      <div
-                        class="product-item-wrapper__img"
-                        style="
-                          background-image: url(./assets/images/sanpham/manga/thienthandietthe_7.png);
-                        "
-                      >
-                        <span
-                          class="product-item-wrapper__sale"
-                          style="
-                            background-image: url('./assets/images/product/saleprice.png');
-                          "
-                          >20%</span
-                        >
-                      </div>
-                    </a>
-                    <div class="product-item-wrapper__details">
-                      <div class="product-item-wrapper__title">
-                        <a
-                          href="./detail.html"
-                          class="product-item-wrapper__link"
-                        >
-                          Thiên thần diệt thế - Tập 7</a
-                        >
-                      </div>
-                      <div class="product-item-wrapper__subtitle">
-                        <a href="">Kagami Takaya</a>
-                      </div>
-                      <div class="product-item-wrapper__prices">113.600 ₫</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="product-item col l-2-4 m-6 c-6">
-                  <div class="product-item-wrapper">
-                    <a href="./detail.html">
-                      <div
-                        class="product-item-wrapper__img"
-                        style="
-                          background-image: url(./assets/images/sanpham/manga/thienthandietthe_8.png);
-                        "
-                      >
-                        <span
-                          class="product-item-wrapper__sale"
-                          style="
-                            background-image: url('./assets/images/product/saleprice.png');
-                          "
-                          >20%</span
-                        >
-                      </div>
-                    </a>
-                    <div class="product-item-wrapper__details">
-                      <div class="product-item-wrapper__title">
-                        <a
-                          href="./detail.html"
-                          class="product-item-wrapper__link"
-                        >
-                          Thiên thần diệt thế - Tập 8</a
-                        >
-                      </div>
-                      <div class="product-item-wrapper__subtitle">
-                        <a href="">Kagami Takaya</a>
-                      </div>
-                      <div class="product-item-wrapper__prices">113.600 ₫</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="product-item col l-2-4 m-6 c-6">
-                  <div class="product-item-wrapper">
-                    <a href="./detail.html">
-                      <div
-                        class="product-item-wrapper__img"
-                        style="
-                          background-image: url(./assets/images/sanpham/manga/thienthandietthe_9.png);
-                        "
-                      >
-                        <span
-                          class="product-item-wrapper__sale"
-                          style="
-                            background-image: url('./assets/images/product/saleprice.png');
-                          "
-                          >20%</span
-                        >
-                      </div>
-                    </a>
-                    <div class="product-item-wrapper__details">
-                      <div class="product-item-wrapper__title">
-                        <a
-                          href="./detail.html"
-                          class="product-item-wrapper__link"
-                        >
-                          Thiên thần diệt thế - Tập 9</a
-                        >
-                      </div>
-                      <div class="product-item-wrapper__subtitle">
-                        <a href="">Kagami Takaya</a>
-                      </div>
-                      <div class="product-item-wrapper__prices">113.600 ₫</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="product-item col l-2-4 m-6 c-6">
-                  <div class="product-item-wrapper">
-                    <a href="./detail.html">
-                      <div
-                        class="product-item-wrapper__img"
-                        style="
-                          background-image: url(./assets/images/sanpham/manga/thienthandietthe_10.png);
-                        "
-                      >
-                        <span
-                          class="product-item-wrapper__sale"
-                          style="
-                            background-image: url('./assets/images/product/saleprice.png');
-                          "
-                          >20%</span
-                        >
-                      </div>
-                    </a>
-                    <div class="product-item-wrapper__details">
-                      <div class="product-item-wrapper__title">
-                        <a
-                          href="./detail.html"
-                          class="product-item-wrapper__link"
-                        >
-                          Thiên thần diệt thế - Tập 10</a
-                        >
-                      </div>
-                      <div class="product-item-wrapper__subtitle">
-                        <a href="">Kagami Takaya</a>
-                      </div>
-                      <div class="product-item-wrapper__prices">113.600 ₫</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="product-arrow">
-                <div class="product-arrow-left">
-                  <i class="fas fa-angle-left"></i>
-                </div>
-                <div class="product-arrow-right">
-                  <i class="fas fa-angle-right"></i>
-                </div>
-              </div>
-            </div>
-          </section>
-          <!-- Sách mới end -->
-
-          <!-- Sắp phát hành start -->
-          <section id="published">
-            <div class="section-book-heading row">
-              <a href="" class="section-book-heading__title">
-                Sắp phát hành <span></span>
-              </a>
-              <a href="" class="section-book-heading__show"> Xem tất cả</a>
-            </div>
-            <div class="book-content">
-              <div class="product-list product-wrap row no-gutters">
-                <div class="product-item col l-2-4 m-6 c-6">
-                  <div class="product-item-wrapper">
-                    <a href="./detail.html">
-                      <div
-                        class="product-item-wrapper__img"
-                        style="
-                          background-image: url(./assets/images/sanpham/manga/thienthandietthe_11.png);
-                        "
-                      >
-                        <span
-                          class="product-item-wrapper__sale"
-                          style="
-                            background-image: url('./assets/images/product/saleprice.png');
-                          "
-                          >20%</span
-                        >
-                      </div>
-                    </a>
-                    <div class="product-item-wrapper__details">
-                      <div class="product-item-wrapper__title">
-                        <a
-                          href="./detail.html"
-                          class="product-item-wrapper__link"
-                        >
-                          Thiên thần diệt thế - Tập 11</a
-                        >
-                      </div>
-                      <div class="product-item-wrapper__subtitle">
-                        <a href="">Kagami Takaya</a>
-                      </div>
-                      <div class="product-item-wrapper__prices">113.600 ₫</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="product-item col l-2-4 m-6 c-6">
-                  <div class="product-item-wrapper">
-                    <a href="./detail.html">
-                      <div
-                        class="product-item-wrapper__img"
-                        style="
-                          background-image: url(./assets/images/sanpham/manga/thienthandietthe_12.png);
-                        "
-                      >
-                        <span
-                          class="product-item-wrapper__sale"
-                          style="
-                            background-image: url('./assets/images/product/saleprice.png');
-                          "
-                          >20%</span
-                        >
-                      </div>
-                    </a>
-                    <div class="product-item-wrapper__details">
-                      <div class="product-item-wrapper__title">
-                        <a
-                          href="./detail.html"
-                          class="product-item-wrapper__link"
-                        >
-                          Thiên thần diệt thế - Tập 12</a
-                        >
-                      </div>
-                      <div class="product-item-wrapper__subtitle">
-                        <a href="">Kagami Takaya</a>
-                      </div>
-                      <div class="product-item-wrapper__prices">113.600 ₫</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="product-item col l-2-4 m-6 c-6">
-                  <div class="product-item-wrapper">
-                    <a href="./detail.html">
-                      <div
-                        class="product-item-wrapper__img"
-                        style="
-                          background-image: url(./assets/images/sanpham/manga/thienthandietthe_13.png);
-                        "
-                      >
-                        <span
-                          class="product-item-wrapper__sale"
-                          style="
-                            background-image: url('./assets/images/product/saleprice.png');
-                          "
-                          >20%</span
-                        >
-                      </div>
-                    </a>
-                    <div class="product-item-wrapper__details">
-                      <div class="product-item-wrapper__title">
-                        <a
-                          href="./detail.html"
-                          class="product-item-wrapper__link"
-                        >
-                          Thiên thần diệt thế - Tập 13</a
-                        >
-                      </div>
-                      <div class="product-item-wrapper__subtitle">
-                        <a href="">Kagami Takaya</a>
-                      </div>
-                      <div class="product-item-wrapper__prices">113.600 ₫</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="product-item col l-2-4 m-6 c-6">
-                  <div class="product-item-wrapper">
-                    <a href="./detail.html">
-                      <div
-                        class="product-item-wrapper__img"
-                        style="
-                          background-image: url(./assets/images/sanpham/manga/thienthandietthe_14.png);
-                        "
-                      >
-                        <span
-                          class="product-item-wrapper__sale"
-                          style="
-                            background-image: url('./assets/images/product/saleprice.png');
-                          "
-                          >20%</span
-                        >
-                      </div>
-                    </a>
-                    <div class="product-item-wrapper__details">
-                      <div class="product-item-wrapper__title">
-                        <a
-                          href="./detail.html"
-                          class="product-item-wrapper__link"
-                        >
-                          Thiên thần diệt thế - Tập 14</a
-                        >
-                      </div>
-                      <div class="product-item-wrapper__subtitle">
-                        <a href="">Kagami Takaya</a>
-                      </div>
-                      <div class="product-item-wrapper__prices">113.600 ₫</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="product-item col l-2-4 m-6 c-6">
-                  <div class="product-item-wrapper">
-                    <a href="./detail.html">
-                      <div
-                        class="product-item-wrapper__img"
-                        style="
-                          background-image: url(./assets/images/sanpham/manga/thienthandietthe_15.png);
-                        "
-                      >
-                        <span
-                          class="product-item-wrapper__sale"
-                          style="
-                            background-image: url('./assets/images/product/saleprice.png');
-                          "
-                          >20%</span
-                        >
-                      </div>
-                    </a>
-                    <div class="product-item-wrapper__details">
-                      <div class="product-item-wrapper__title">
-                        <a
-                          href="./detail.html"
-                          class="product-item-wrapper__link"
-                        >
-                          Thiên thần diệt thế - Tập 15</a
-                        >
-                      </div>
-                      <div class="product-item-wrapper__subtitle">
-                        <a href="">Kagami Takaya</a>
-                      </div>
-                      <div class="product-item-wrapper__prices">113.600 ₫</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="product-item col l-2-4 m-6 c-6">
-                  <div class="product-item-wrapper">
-                    <a href="./detail.html">
-                      <div
-                        class="product-item-wrapper__img"
-                        style="
-                          background-image: url(./assets/images/sanpham/manga/thienthandietthe_16.png);
-                        "
-                      >
-                        <span
-                          class="product-item-wrapper__sale"
-                          style="
-                            background-image: url('./assets/images/product/saleprice.png');
-                          "
-                          >20%</span
-                        >
-                      </div>
-                    </a>
-                    <div class="product-item-wrapper__details">
-                      <div class="product-item-wrapper__title">
-                        <a
-                          href="./detail.html"
-                          class="product-item-wrapper__link"
-                        >
-                          Thiên thần diệt thế - Tập 16</a
-                        >
-                      </div>
-                      <div class="product-item-wrapper__subtitle">
-                        <a href="">Kagami Takaya</a>
-                      </div>
-                      <div class="product-item-wrapper__prices">113.600 ₫</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="product-item col l-2-4 m-6 c-6">
-                  <div class="product-item-wrapper">
-                    <a href="./detail.html">
-                      <div
-                        class="product-item-wrapper__img"
-                        style="
-                          background-image: url(./assets/images/sanpham/manga/thienthandietthe_17.png);
-                        "
-                      >
-                        <span
-                          class="product-item-wrapper__sale"
-                          style="
-                            background-image: url('./assets/images/product/saleprice.png');
-                          "
-                          >20%</span
-                        >
-                      </div>
-                    </a>
-                    <div class="product-item-wrapper__details">
-                      <div class="product-item-wrapper__title">
-                        <a
-                          href="./detail.html"
-                          class="product-item-wrapper__link"
-                        >
-                          Thiên thần diệt thế - Tập 17</a
-                        >
-                      </div>
-                      <div class="product-item-wrapper__subtitle">
-                        <a href="">Kagami Takaya</a>
-                      </div>
-                      <div class="product-item-wrapper__prices">113.600 ₫</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="product-item col l-2-4 m-6 c-6">
-                  <div class="product-item-wrapper">
-                    <a href="./detail.html">
-                      <div
-                        class="product-item-wrapper__img"
-                        style="
-                          background-image: url(./assets/images/sanpham/manga/thienthandietthe_18.png);
-                        "
-                      >
-                        <span
-                          class="product-item-wrapper__sale"
-                          style="
-                            background-image: url('./assets/images/product/saleprice.png');
-                          "
-                          >20%</span
-                        >
-                      </div>
-                    </a>
-                    <div class="product-item-wrapper__details">
-                      <div class="product-item-wrapper__title">
-                        <a
-                          href="./detail.html"
-                          class="product-item-wrapper__link"
-                        >
-                          Thiên thần diệt thế - Tập 18</a
-                        >
-                      </div>
-                      <div class="product-item-wrapper__subtitle">
-                        <a href="">Kagami Takaya</a>
-                      </div>
-                      <div class="product-item-wrapper__prices">113.600 ₫</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="product-item col l-2-4 m-6 c-6">
-                  <div class="product-item-wrapper">
-                    <a href="./detail.html">
-                      <div
-                        class="product-item-wrapper__img"
-                        style="
-                          background-image: url(./assets/images/sanpham/manga/thienthandietthe_19.png);
-                        "
-                      >
-                        <span
-                          class="product-item-wrapper__sale"
-                          style="
-                            background-image: url('./assets/images/product/saleprice.png');
-                          "
-                          >20%</span
-                        >
-                      </div>
-                    </a>
-                    <div class="product-item-wrapper__details">
-                      <div class="product-item-wrapper__title">
-                        <a
-                          href="./detail.html"
-                          class="product-item-wrapper__link"
-                        >
-                          Thiên thần diệt thế - Tập 19</a
-                        >
-                      </div>
-                      <div class="product-item-wrapper__subtitle">
-                        <a href="">Kagami Takaya</a>
-                      </div>
-                      <div class="product-item-wrapper__prices">113.600 ₫</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="product-item col l-2-4 m-6 c-6">
-                  <div class="product-item-wrapper">
-                    <a href="./detail.html">
-                      <div
-                        class="product-item-wrapper__img"
-                        style="
-                          background-image: url(./assets/images/sanpham/manga/thienthandietthe_20.png);
-                        "
-                      >
-                        <span
-                          class="product-item-wrapper__sale"
-                          style="
-                            background-image: url('./assets/images/product/saleprice.png');
-                          "
-                          >20%</span
-                        >
-                      </div>
-                    </a>
-                    <div class="product-item-wrapper__details">
-                      <div class="product-item-wrapper__title">
-                        <a
-                          href="./detail.html"
-                          class="product-item-wrapper__link"
-                        >
-                          Thiên thần diệt thế - Tập 20</a
-                        >
-                      </div>
-                      <div class="product-item-wrapper__subtitle">
-                        <a href="">Kagami Takaya</a>
-                      </div>
-                      <div class="product-item-wrapper__prices">113.600 ₫</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="product-arrow">
-                <div class="product-arrow-left">
-                  <i class="fas fa-angle-left"></i>
-                </div>
-                <div class="product-arrow-right">
-                  <i class="fas fa-angle-right"></i>
-                </div>
-              </div>
-            </div>
-          </section>
-          <!-- Sắp phát hành end -->
-
-          <!-- Sách bán chạy start -->
-          <section id="seller">
-            <div class="section-book-heading row">
-              <a href="" class="section-book-heading__title">
-                Sách bán chạy <span></span>
-              </a>
-              <a href="" class="section-book-heading__show"> Xem tất cả</a>
-            </div>
-            <div class="book-content">
-              <div class="product-list product-wrap row no-gutters">
-                <div class="product-item col l-2-4 m-6 c-6">
-                  <div class="product-item-wrapper">
-                    <a href="./detail.html">
-                      <div
-                        class="product-item-wrapper__img"
-                        style="
-                          background-image: url(./assets/images/sanpham/ngontinh/nguoithapsaotroi.png);
-                        "
-                      >
-                        <span
-                          class="product-item-wrapper__sale"
-                          style="
-                            background-image: url('./assets/images/product/saleprice.png');
-                          "
-                          >20%</span
-                        >
-                      </div>
-                    </a>
-                    <div class="product-item-wrapper__details">
-                      <div class="product-item-wrapper__title">
-                        <a
-                          href="./detail.html"
-                          class="product-item-wrapper__link"
-                        >
-                          Người thắp sao trời</a
-                        >
-                      </div>
-                      <div class="product-item-wrapper__subtitle">
-                        <a href="">Lương thi mã</a>
-                      </div>
-                      <div class="product-item-wrapper__prices">99.000 ₫</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="product-item col l-2-4 m-6 c-6">
-                  <div class="product-item-wrapper">
-                    <a href="./detail.html">
-                      <div
-                        class="product-item-wrapper__img"
-                        style="
-                          background-image: url(./assets/images/sanpham/ngontinh/thattichkhongmua.png);
-                        "
-                      >
-                        <span
-                          class="product-item-wrapper__sale"
-                          style="
-                            background-image: url('./assets/images/product/saleprice.png');
-                          "
-                          >20%</span
-                        >
-                      </div>
-                    </a>
-                    <div class="product-item-wrapper__details">
-                      <div class="product-item-wrapper__title">
-                        <a
-                          href="./detail.html"
-                          class="product-item-wrapper__link"
-                        >
-                          Thất tịch ngày không mưa</a
-                        >
-                      </div>
-                      <div class="product-item-wrapper__subtitle">
-                        <a href="">Jini</a>
-                      </div>
-                      <div class="product-item-wrapper__prices">69.000 ₫</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="product-item col l-2-4 m-6 c-6">
-                  <div class="product-item-wrapper">
-                    <a href="./detail.html">
-                      <div
-                        class="product-item-wrapper__img"
-                        style="
-                          background-image: url(./assets/images/sanpham/ngontinh/motnualadauthuong.png);
-                        "
-                      >
-                        <span
-                          class="product-item-wrapper__sale"
-                          style="
-                            background-image: url('./assets/images/product/saleprice.png');
-                          "
-                          >20%</span
-                        >
-                      </div>
-                    </a>
-                    <div class="product-item-wrapper__details">
-                      <div class="product-item-wrapper__title">
-                        <a
-                          href="./detail.html"
-                          class="product-item-wrapper__link"
-                        >
-                          Một nửa là đau thương</a
-                        >
-                      </div>
-                      <div class="product-item-wrapper__subtitle">
-                        <a href="">Lưu vân</a>
-                      </div>
-                      <div class="product-item-wrapper__prices">79.000 ₫</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="product-item col l-2-4 m-6 c-6">
-                  <div class="product-item-wrapper">
-                    <a href="./detail.html">
-                      <div
-                        class="product-item-wrapper__img"
-                        style="
-                          background-image: url(./assets/images/sanpham/ngontinh/dapancuathoigian.png);
-                        "
-                      >
-                        <span
-                          class="product-item-wrapper__sale"
-                          style="
-                            background-image: url('./assets/images/product/saleprice.png');
-                          "
-                          >20%</span
-                        >
-                      </div>
-                    </a>
-                    <div class="product-item-wrapper__details">
-                      <div class="product-item-wrapper__title">
-                        <a
-                          href="./detail.html"
-                          class="product-item-wrapper__link"
-                        >
-                          Đáp án của thời gian</a
-                        >
-                      </div>
-                      <div class="product-item-wrapper__subtitle">
-                        <a href="">Thúy An </a>
-                      </div>
-                      <div class="product-item-wrapper__prices">69.000 ₫</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="product-item col l-2-4 m-6 c-6">
-                  <div class="product-item-wrapper">
-                    <a href="./detail.html">
-                      <div
-                        class="product-item-wrapper__img"
-                        style="
-                          background-image: url(./assets/images/sanpham/ngontinh/cachmotcachcua_1.png);
-                        "
-                      >
-                        <span
-                          class="product-item-wrapper__sale"
-                          style="
-                            background-image: url('./assets/images/product/saleprice.png');
-                          "
-                          >20%</span
-                        >
-                      </div>
-                    </a>
-                    <div class="product-item-wrapper__details">
-                      <div class="product-item-wrapper__title">
-                        <a
-                          href="./detail.html"
-                          class="product-item-wrapper__link"
-                        >
-                          Cách một cánh cửa - Tập 1</a
-                        >
-                      </div>
-                      <div class="product-item-wrapper__subtitle">
-                        <a href="">Hoàng ngọc - Thùy dương</a>
-                      </div>
-                      <div class="product-item-wrapper__prices">79.000 ₫</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="product-item col l-2-4 m-6 c-6">
-                  <div class="product-item-wrapper">
-                    <a href="./detail.html">
-                      <div
-                        class="product-item-wrapper__img"
-                        style="
-                          background-image: url(./assets/images/sanpham/ngontinh/cachmotcachcua_2.png);
-                        "
-                      >
-                        <span
-                          class="product-item-wrapper__sale"
-                          style="
-                            background-image: url('./assets/images/product/saleprice.png');
-                          "
-                          >20%</span
-                        >
-                      </div>
-                    </a>
-                    <div class="product-item-wrapper__details">
-                      <div class="product-item-wrapper__title">
-                        <a
-                          href="./detail.html"
-                          class="product-item-wrapper__link"
-                        >
-                          Cách một cánh cửa - Tập 2</a
-                        >
-                      </div>
-                      <div class="product-item-wrapper__subtitle">
-                        <a href="">Hoàng ngọc - Thùy dương</a>
-                      </div>
-                      <div class="product-item-wrapper__prices">79.000 ₫</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="product-item col l-2-4 m-6 c-6">
-                  <div class="product-item-wrapper">
-                    <a href="./detail.html">
-                      <div
-                        class="product-item-wrapper__img"
-                        style="
-                          background-image: url(./assets/images/sanpham/ngontinh/cachmotcachcua_3.png);
-                        "
-                      >
-                        <span
-                          class="product-item-wrapper__sale"
-                          style="
-                            background-image: url('./assets/images/product/saleprice.png');
-                          "
-                          >20%</span
-                        >
-                      </div>
-                    </a>
-                    <div class="product-item-wrapper__details">
-                      <div class="product-item-wrapper__title">
-                        <a
-                          href="./detail.html"
-                          class="product-item-wrapper__link"
-                        >
-                          Cách một cánh cửa - Tập 3</a
-                        >
-                      </div>
-                      <div class="product-item-wrapper__subtitle">
-                        <a href="">Hoàng ngọc - Thùy dương</a>
-                      </div>
-                      <div class="product-item-wrapper__prices">79.000 ₫</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="product-item col l-2-4 m-6 c-6">
-                  <div class="product-item-wrapper">
-                    <a href="./detail.html">
-                      <div
-                        class="product-item-wrapper__img"
-                        style="
-                          background-image: url(./assets/images/sanpham/ngontinh/cachmotcachcua_4.png);
-                        "
-                      >
-                        <span
-                          class="product-item-wrapper__sale"
-                          style="
-                            background-image: url('./assets/images/product/saleprice.png');
-                          "
-                          >20%</span
-                        >
-                      </div>
-                    </a>
-                    <div class="product-item-wrapper__details">
-                      <div class="product-item-wrapper__title">
-                        <a
-                          href="./detail.html"
-                          class="product-item-wrapper__link"
-                        >
-                          Cách một cánh cửa - Tập 4</a
-                        >
-                      </div>
-                      <div class="product-item-wrapper__subtitle">
-                        <a href="">Hoàng ngọc - Thùy dương</a>
-                      </div>
-                      <div class="product-item-wrapper__prices">79.000 ₫</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="product-arrow">
-                <div class="product-arrow-left">
-                  <i class="fas fa-angle-left"></i>
-                </div>
-                <div class="product-arrow-right">
-                  <i class="fas fa-angle-right"></i>
-                </div>
-              </div>
-            </div>
-          </section>
-          <!-- Sách bán chạy end -->
-
-          <!-- Danh mục start -->
-          <section id="book-category">
-            <div class="section-book-heading row">
-              <a href="" class="section-book-heading__title">
-                Danh mục <span></span>
-              </a>
-              <a href="" class="section-book-heading__show"> Xem tất cả</a>
-            </div>
-            <div class="book-content">
-              <div class="product-list row no-gutters">
-                <div class="product-item col l-2-4 m-6 c-6">
-                  <div class="product-item-wrapper">
-                    <a href="./detail.html">
-                      <div
-                        class="product-item-wrapper__img"
-                        style="
-                          background-image: url(./assets/images/product/danhmuc/hoc-ngoai-ngu__61937.jpg);
-                        "
-                      ></div>
-                    </a>
-                    <div
-                      class="
-                        product-item-wrapper__details
-                        hide-on-mobile-tablet
-                      "
-                    >
-                      <div class="product-item-wrapper__title">
-                        <a
-                          href="./detail.html"
-                          class="product-item-wrapper__link"
-                        >
-                          Học ngoại ngữ - Cho người không biết gi</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="product-item col l-2-4 m-6 c-6">
-                  <div class="product-item-wrapper">
-                    <a href="./detail.html">
-                      <div
-                        class="product-item-wrapper__img"
-                        style="
-                          background-image: url(./assets/images/product/danhmuc/ki-nang-song__84906.jpg);
-                        "
-                      ></div>
-                    </a>
-                    <div
-                      class="
-                        product-item-wrapper__details
-                        hide-on-mobile-tablet
-                      "
-                    >
-                      <div class="product-item-wrapper__title">
-                        <a
-                          href="./detail.html"
-                          class="product-item-wrapper__link"
-                        >
+                    <ul class="header-category-item__sublist">
+                      <li class="header-category-item__sublist-item">
+                        <a href="" class="header-category-item__sublist-item-link">
                           Kỹ năng sống
                         </a>
-                      </div>
+                      </li>
+                      <li class="header-category-item__sublist-item">
+                        <a href="" class="header-category-item__sublist-item-link">
+                          Rèn luyện nhân cách
+                        </a>
+                      </li>
+                      <li class="header-category-item__sublist-item">
+                        <a href="" class="header-category-item__sublist-item-link">
+                          Tâm Lý
+                        </a>
+                      </li>
+                      <li class="header-category-item__sublist-item">
+                        <a href="" class="header-category-item__sublist-item-link">
+                          Sách cho tuổi mới lớn
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="header-category-item">
+                    <a href="" class="header-category-item__link">
+                      Nuôi dạy con <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <ul class="header-category-item__sublist">
+                      <li class="header-category-item__sublist-item">
+                        <a href="" class="header-category-item__sublist-item-link">
+                          Cẩm Nang Làm Cha Mẹ
+                        </a>
+                      </li>
+                      <li class="header-category-item__sublist-item">
+                        <a href="" class="header-category-item__sublist-item-link">
+                          Phương Pháp Giáo Dục Trẻ Các Nước
+                        </a>
+                      </li>
+                      <li class="header-category-item__sublist-item">
+                        <a href="" class="header-category-item__sublist-item-link">
+                          Phát Triển Trí Tuệ Cho Trẻ
+                        </a>
+                      </li>
+                      <li class="header-category-item__sublist-item">
+                        <a href="" class="header-category-item__sublist-item-link">
+                          Phát Triển Kĩ Năng Cho Trẻ
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="header-category-item">
+                    <a href="" class="header-category-item__link">
+                      Giáo Khoa - Tham Khảo
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <ul class="header-category-item__sublist">
+                      <li class="header-category-item__sublist-item">
+                        <a href="" class="header-category-item__sublist-item-link">
+                          Sách Giáo Khoa
+                        </a>
+                      </li>
+                      <li class="header-category-item__sublist-item">
+                        <a href="" class="header-category-item__sublist-item-link">
+                          Sách Tham Khảo
+                        </a>
+                      </li>
+                      <li class="header-category-item__sublist-item">
+                        <a href="" class="header-category-item__sublist-item-link">
+                          Luyện Thi CĐ - ĐH
+                        </a>
+                      </li>
+                      <li class="header-category-item__sublist-item">
+                        <a href="" class="header-category-item__sublist-item-link">
+                          Mẫu Giáo
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="header-category-item">
+                    <a href="" class="header-category-item__link">
+                      Giáo Khoa - Tham Khảo
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <ul class="header-category-item__sublist">
+                      <li class="header-category-item__sublist-item">
+                        <a href="" class="header-category-item__sublist-item-link">
+                          Sách Giáo Khoa
+                        </a>
+                      </li>
+                      <li class="header-category-item__sublist-item">
+                        <a href="" class="header-category-item__sublist-item-link">
+                          Sách Tham Khảo
+                        </a>
+                      </li>
+                      <li class="header-category-item__sublist-item">
+                        <a href="" class="header-category-item__sublist-item-link">
+                          Luyện Thi CĐ - ĐH
+                        </a>
+                      </li>
+                      <li class="header-category-item__sublist-item">
+                        <a href="" class="header-category-item__sublist-item-link">
+                          Mẫu Giáo
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="col l-o-7 l-2-4 m-6 c-6 header-bottom-hotline">
+                <h5>
+                  <i class="fas fa-phone"></i>
+                  Hotline:
+                  <span class="header-bottom-hotline__text">
+                    0938 424 289
+                  </span>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- header end -->
+
+    <!-- slider start -->
+    <div id="slider">
+      <div class="grid wide">
+        <div class="row no-gutters">
+          <div class="l-o-3 col l-9 slider-wrapper">
+            <div class="slider-list-picture">
+              <img src="./assets/images/slider/doc-gia-2019.jpg" alt="" class="slider-img active" />
+              <img src="./assets/images/slider/atta.jpg" alt="" class="slider-img" />
+              <img src="./assets/images/slider/luc-xu-qc.jpg" alt="" class="slider-img" />
+              <img src="./assets/images/slider/song-ngam.jpg" alt="" class="slider-img" />
+            </div>
+            <div class="slider-list-control">
+              <div class="slider-control-item active"></div>
+              <div class="slider-control-item"></div>
+              <div class="slider-control-item"></div>
+              <div class="slider-control-item"></div>
+            </div>
+            <div class="slider-arrow">
+              <div class="slider-arrow-left">
+                <i class="fas fa-chevron-left"></i>
+              </div>
+              <div class="slider-arrow-right">
+                <i class="fas fa-chevron-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- slider end -->
+
+    <!-- content start -->
+    <div id="app-content">
+      <div class="grid wide">
+        <!-- Sách mới start -->
+        <section id="new-book">
+          <div class="section-book-heading row">
+            <a href="" class="section-book-heading__title">
+              Sách mới <span></span>
+            </a>
+            <a href="" class="section-book-heading__show"> Xem tất cả</a>
+          </div>
+          <div class="book-content">
+            <div class="product-list product-wrap row no-gutters">
+              <div class="product-item col l-2-4 m-6 c-6">
+                <div class="product-item-wrapper">
+                  <a href="./detail.html">
+                    <div class="product-item-wrapper__img" style="
+                          background-image: url(./assets/images/sanpham/manga/thienthandietthe_1.png);
+                        ">
+                      <span class="product-item-wrapper__sale" style="
+                            background-image: url('./assets/images/product/saleprice.png');
+                          ">20%</span>
+                    </div>
+                  </a>
+                  <div class="product-item-wrapper__details">
+                    <div class="product-item-wrapper__title">
+                      <a href="./detail.html" class="product-item-wrapper__link">
+                        Thiên thần diệt thế - Tập 1</a>
+                    </div>
+                    <div class="product-item-wrapper__subtitle">
+                      <a href="">Kagami Takaya</a>
+                    </div>
+                    <div class="product-item-wrapper__prices">113.600 ₫</div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item col l-2-4 m-6 c-6">
+                <div class="product-item-wrapper">
+                  <a href="./detail.html">
+                    <div class="product-item-wrapper__img" style="
+                          background-image: url(./assets/images/sanpham/manga/thienthandietthe_2.png);
+                        ">
+                      <span class="product-item-wrapper__sale" style="
+                            background-image: url('./assets/images/product/saleprice.png');
+                          ">20%</span>
+                    </div>
+                  </a>
+                  <div class="product-item-wrapper__details">
+                    <div class="product-item-wrapper__title">
+                      <a href="./detail.html" class="product-item-wrapper__link">
+                        Thiên thần diệt thế - Tập 2</a>
+                    </div>
+                    <div class="product-item-wrapper__subtitle">
+                      <a href="">Kagami Takaya</a>
+                    </div>
+                    <div class="product-item-wrapper__prices">113.600 ₫</div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item col l-2-4 m-6 c-6">
+                <div class="product-item-wrapper">
+                  <a href="./detail.html">
+                    <div class="product-item-wrapper__img" style="
+                          background-image: url(./assets/images/sanpham/manga/thienthandietthe_3.png);
+                        ">
+                      <span class="product-item-wrapper__sale" style="
+                            background-image: url('./assets/images/product/saleprice.png');
+                          ">20%</span>
+                    </div>
+                  </a>
+                  <div class="product-item-wrapper__details">
+                    <div class="product-item-wrapper__title">
+                      <a href="./detail.html" class="product-item-wrapper__link">
+                        Thiên thần diệt thế - Tập 3</a>
+                    </div>
+                    <div class="product-item-wrapper__subtitle">
+                      <a href="">Kagami Takaya</a>
+                    </div>
+                    <div class="product-item-wrapper__prices">113.600 ₫</div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item col l-2-4 m-6 c-6">
+                <div class="product-item-wrapper">
+                  <a href="./detail.html">
+                    <div class="product-item-wrapper__img" style="
+                          background-image: url(./assets/images/sanpham/manga/thienthandietthe_4.png);
+                        ">
+                      <span class="product-item-wrapper__sale" style="
+                            background-image: url('./assets/images/product/saleprice.png');
+                          ">20%</span>
+                    </div>
+                  </a>
+                  <div class="product-item-wrapper__details">
+                    <div class="product-item-wrapper__title">
+                      <a href="./detail.html" class="product-item-wrapper__link">
+                        Thiên thần diệt thế - Tập 4</a>
+                    </div>
+                    <div class="product-item-wrapper__subtitle">
+                      <a href="">Kagami Takaya</a>
+                    </div>
+                    <div class="product-item-wrapper__prices">113.600 ₫</div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item col l-2-4 m-6 c-6">
+                <div class="product-item-wrapper">
+                  <a href="./detail.html">
+                    <div class="product-item-wrapper__img" style="
+                          background-image: url(./assets/images/sanpham/manga/thienthandietthe_5.png);
+                        ">
+                      <span class="product-item-wrapper__sale" style="
+                            background-image: url('./assets/images/product/saleprice.png');
+                          ">20%</span>
+                    </div>
+                  </a>
+                  <div class="product-item-wrapper__details">
+                    <div class="product-item-wrapper__title">
+                      <a href="./detail.html" class="product-item-wrapper__link">
+                        Thiên thần diệt thế - Tập 5</a>
+                    </div>
+                    <div class="product-item-wrapper__subtitle">
+                      <a href="">Kagami Takaya</a>
+                    </div>
+                    <div class="product-item-wrapper__prices">113.600 ₫</div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item col l-2-4 m-6 c-6">
+                <div class="product-item-wrapper">
+                  <a href="./detail.html">
+                    <div class="product-item-wrapper__img" style="
+                          background-image: url(./assets/images/sanpham/manga/thienthandietthe_6.png);
+                        ">
+                      <span class="product-item-wrapper__sale" style="
+                            background-image: url('./assets/images/product/saleprice.png');
+                          ">20%</span>
+                    </div>
+                  </a>
+                  <div class="product-item-wrapper__details">
+                    <div class="product-item-wrapper__title">
+                      <a href="./detail.html" class="product-item-wrapper__link">
+                        Thiên thần diệt thế - Tập 6</a>
+                    </div>
+                    <div class="product-item-wrapper__subtitle">
+                      <a href="">Kagami Takaya</a>
+                    </div>
+                    <div class="product-item-wrapper__prices">113.600 ₫</div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item col l-2-4 m-6 c-6">
+                <div class="product-item-wrapper">
+                  <a href="./detail.html">
+                    <div class="product-item-wrapper__img" style="
+                          background-image: url(./assets/images/sanpham/manga/thienthandietthe_7.png);
+                        ">
+                      <span class="product-item-wrapper__sale" style="
+                            background-image: url('./assets/images/product/saleprice.png');
+                          ">20%</span>
+                    </div>
+                  </a>
+                  <div class="product-item-wrapper__details">
+                    <div class="product-item-wrapper__title">
+                      <a href="./detail.html" class="product-item-wrapper__link">
+                        Thiên thần diệt thế - Tập 7</a>
+                    </div>
+                    <div class="product-item-wrapper__subtitle">
+                      <a href="">Kagami Takaya</a>
+                    </div>
+                    <div class="product-item-wrapper__prices">113.600 ₫</div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item col l-2-4 m-6 c-6">
+                <div class="product-item-wrapper">
+                  <a href="./detail.html">
+                    <div class="product-item-wrapper__img" style="
+                          background-image: url(./assets/images/sanpham/manga/thienthandietthe_8.png);
+                        ">
+                      <span class="product-item-wrapper__sale" style="
+                            background-image: url('./assets/images/product/saleprice.png');
+                          ">20%</span>
+                    </div>
+                  </a>
+                  <div class="product-item-wrapper__details">
+                    <div class="product-item-wrapper__title">
+                      <a href="./detail.html" class="product-item-wrapper__link">
+                        Thiên thần diệt thế - Tập 8</a>
+                    </div>
+                    <div class="product-item-wrapper__subtitle">
+                      <a href="">Kagami Takaya</a>
+                    </div>
+                    <div class="product-item-wrapper__prices">113.600 ₫</div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item col l-2-4 m-6 c-6">
+                <div class="product-item-wrapper">
+                  <a href="./detail.html">
+                    <div class="product-item-wrapper__img" style="
+                          background-image: url(./assets/images/sanpham/manga/thienthandietthe_9.png);
+                        ">
+                      <span class="product-item-wrapper__sale" style="
+                            background-image: url('./assets/images/product/saleprice.png');
+                          ">20%</span>
+                    </div>
+                  </a>
+                  <div class="product-item-wrapper__details">
+                    <div class="product-item-wrapper__title">
+                      <a href="./detail.html" class="product-item-wrapper__link">
+                        Thiên thần diệt thế - Tập 9</a>
+                    </div>
+                    <div class="product-item-wrapper__subtitle">
+                      <a href="">Kagami Takaya</a>
+                    </div>
+                    <div class="product-item-wrapper__prices">113.600 ₫</div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item col l-2-4 m-6 c-6">
+                <div class="product-item-wrapper">
+                  <a href="./detail.html">
+                    <div class="product-item-wrapper__img" style="
+                          background-image: url(./assets/images/sanpham/manga/thienthandietthe_10.png);
+                        ">
+                      <span class="product-item-wrapper__sale" style="
+                            background-image: url('./assets/images/product/saleprice.png');
+                          ">20%</span>
+                    </div>
+                  </a>
+                  <div class="product-item-wrapper__details">
+                    <div class="product-item-wrapper__title">
+                      <a href="./detail.html" class="product-item-wrapper__link">
+                        Thiên thần diệt thế - Tập 10</a>
+                    </div>
+                    <div class="product-item-wrapper__subtitle">
+                      <a href="">Kagami Takaya</a>
+                    </div>
+                    <div class="product-item-wrapper__prices">113.600 ₫</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-arrow">
+              <div class="product-arrow-left">
+                <i class="fas fa-angle-left"></i>
+              </div>
+              <div class="product-arrow-right">
+                <i class="fas fa-angle-right"></i>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Sách mới end -->
+
+        <!-- Sắp phát hành start -->
+        <section id="published">
+          <div class="section-book-heading row">
+            <a href="" class="section-book-heading__title">
+              Sắp phát hành <span></span>
+            </a>
+            <a href="" class="section-book-heading__show"> Xem tất cả</a>
+          </div>
+          <div class="book-content">
+            <div class="product-list product-wrap row no-gutters">
+              <div class="product-item col l-2-4 m-6 c-6">
+                <div class="product-item-wrapper">
+                  <a href="./detail.html">
+                    <div class="product-item-wrapper__img" style="
+                          background-image: url(./assets/images/sanpham/manga/thienthandietthe_11.png);
+                        ">
+                      <span class="product-item-wrapper__sale" style="
+                            background-image: url('./assets/images/product/saleprice.png');
+                          ">20%</span>
+                    </div>
+                  </a>
+                  <div class="product-item-wrapper__details">
+                    <div class="product-item-wrapper__title">
+                      <a href="./detail.html" class="product-item-wrapper__link">
+                        Thiên thần diệt thế - Tập 11</a>
+                    </div>
+                    <div class="product-item-wrapper__subtitle">
+                      <a href="">Kagami Takaya</a>
+                    </div>
+                    <div class="product-item-wrapper__prices">113.600 ₫</div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item col l-2-4 m-6 c-6">
+                <div class="product-item-wrapper">
+                  <a href="./detail.html">
+                    <div class="product-item-wrapper__img" style="
+                          background-image: url(./assets/images/sanpham/manga/thienthandietthe_12.png);
+                        ">
+                      <span class="product-item-wrapper__sale" style="
+                            background-image: url('./assets/images/product/saleprice.png');
+                          ">20%</span>
+                    </div>
+                  </a>
+                  <div class="product-item-wrapper__details">
+                    <div class="product-item-wrapper__title">
+                      <a href="./detail.html" class="product-item-wrapper__link">
+                        Thiên thần diệt thế - Tập 12</a>
+                    </div>
+                    <div class="product-item-wrapper__subtitle">
+                      <a href="">Kagami Takaya</a>
+                    </div>
+                    <div class="product-item-wrapper__prices">113.600 ₫</div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item col l-2-4 m-6 c-6">
+                <div class="product-item-wrapper">
+                  <a href="./detail.html">
+                    <div class="product-item-wrapper__img" style="
+                          background-image: url(./assets/images/sanpham/manga/thienthandietthe_13.png);
+                        ">
+                      <span class="product-item-wrapper__sale" style="
+                            background-image: url('./assets/images/product/saleprice.png');
+                          ">20%</span>
+                    </div>
+                  </a>
+                  <div class="product-item-wrapper__details">
+                    <div class="product-item-wrapper__title">
+                      <a href="./detail.html" class="product-item-wrapper__link">
+                        Thiên thần diệt thế - Tập 13</a>
+                    </div>
+                    <div class="product-item-wrapper__subtitle">
+                      <a href="">Kagami Takaya</a>
+                    </div>
+                    <div class="product-item-wrapper__prices">113.600 ₫</div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item col l-2-4 m-6 c-6">
+                <div class="product-item-wrapper">
+                  <a href="./detail.html">
+                    <div class="product-item-wrapper__img" style="
+                          background-image: url(./assets/images/sanpham/manga/thienthandietthe_14.png);
+                        ">
+                      <span class="product-item-wrapper__sale" style="
+                            background-image: url('./assets/images/product/saleprice.png');
+                          ">20%</span>
+                    </div>
+                  </a>
+                  <div class="product-item-wrapper__details">
+                    <div class="product-item-wrapper__title">
+                      <a href="./detail.html" class="product-item-wrapper__link">
+                        Thiên thần diệt thế - Tập 14</a>
+                    </div>
+                    <div class="product-item-wrapper__subtitle">
+                      <a href="">Kagami Takaya</a>
+                    </div>
+                    <div class="product-item-wrapper__prices">113.600 ₫</div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item col l-2-4 m-6 c-6">
+                <div class="product-item-wrapper">
+                  <a href="./detail.html">
+                    <div class="product-item-wrapper__img" style="
+                          background-image: url(./assets/images/sanpham/manga/thienthandietthe_15.png);
+                        ">
+                      <span class="product-item-wrapper__sale" style="
+                            background-image: url('./assets/images/product/saleprice.png');
+                          ">20%</span>
+                    </div>
+                  </a>
+                  <div class="product-item-wrapper__details">
+                    <div class="product-item-wrapper__title">
+                      <a href="./detail.html" class="product-item-wrapper__link">
+                        Thiên thần diệt thế - Tập 15</a>
+                    </div>
+                    <div class="product-item-wrapper__subtitle">
+                      <a href="">Kagami Takaya</a>
+                    </div>
+                    <div class="product-item-wrapper__prices">113.600 ₫</div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item col l-2-4 m-6 c-6">
+                <div class="product-item-wrapper">
+                  <a href="./detail.html">
+                    <div class="product-item-wrapper__img" style="
+                          background-image: url(./assets/images/sanpham/manga/thienthandietthe_16.png);
+                        ">
+                      <span class="product-item-wrapper__sale" style="
+                            background-image: url('./assets/images/product/saleprice.png');
+                          ">20%</span>
+                    </div>
+                  </a>
+                  <div class="product-item-wrapper__details">
+                    <div class="product-item-wrapper__title">
+                      <a href="./detail.html" class="product-item-wrapper__link">
+                        Thiên thần diệt thế - Tập 16</a>
+                    </div>
+                    <div class="product-item-wrapper__subtitle">
+                      <a href="">Kagami Takaya</a>
+                    </div>
+                    <div class="product-item-wrapper__prices">113.600 ₫</div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item col l-2-4 m-6 c-6">
+                <div class="product-item-wrapper">
+                  <a href="./detail.html">
+                    <div class="product-item-wrapper__img" style="
+                          background-image: url(./assets/images/sanpham/manga/thienthandietthe_17.png);
+                        ">
+                      <span class="product-item-wrapper__sale" style="
+                            background-image: url('./assets/images/product/saleprice.png');
+                          ">20%</span>
+                    </div>
+                  </a>
+                  <div class="product-item-wrapper__details">
+                    <div class="product-item-wrapper__title">
+                      <a href="./detail.html" class="product-item-wrapper__link">
+                        Thiên thần diệt thế - Tập 17</a>
+                    </div>
+                    <div class="product-item-wrapper__subtitle">
+                      <a href="">Kagami Takaya</a>
+                    </div>
+                    <div class="product-item-wrapper__prices">113.600 ₫</div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item col l-2-4 m-6 c-6">
+                <div class="product-item-wrapper">
+                  <a href="./detail.html">
+                    <div class="product-item-wrapper__img" style="
+                          background-image: url(./assets/images/sanpham/manga/thienthandietthe_18.png);
+                        ">
+                      <span class="product-item-wrapper__sale" style="
+                            background-image: url('./assets/images/product/saleprice.png');
+                          ">20%</span>
+                    </div>
+                  </a>
+                  <div class="product-item-wrapper__details">
+                    <div class="product-item-wrapper__title">
+                      <a href="./detail.html" class="product-item-wrapper__link">
+                        Thiên thần diệt thế - Tập 18</a>
+                    </div>
+                    <div class="product-item-wrapper__subtitle">
+                      <a href="">Kagami Takaya</a>
+                    </div>
+                    <div class="product-item-wrapper__prices">113.600 ₫</div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item col l-2-4 m-6 c-6">
+                <div class="product-item-wrapper">
+                  <a href="./detail.html">
+                    <div class="product-item-wrapper__img" style="
+                          background-image: url(./assets/images/sanpham/manga/thienthandietthe_19.png);
+                        ">
+                      <span class="product-item-wrapper__sale" style="
+                            background-image: url('./assets/images/product/saleprice.png');
+                          ">20%</span>
+                    </div>
+                  </a>
+                  <div class="product-item-wrapper__details">
+                    <div class="product-item-wrapper__title">
+                      <a href="./detail.html" class="product-item-wrapper__link">
+                        Thiên thần diệt thế - Tập 19</a>
+                    </div>
+                    <div class="product-item-wrapper__subtitle">
+                      <a href="">Kagami Takaya</a>
+                    </div>
+                    <div class="product-item-wrapper__prices">113.600 ₫</div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item col l-2-4 m-6 c-6">
+                <div class="product-item-wrapper">
+                  <a href="./detail.html">
+                    <div class="product-item-wrapper__img" style="
+                          background-image: url(./assets/images/sanpham/manga/thienthandietthe_20.png);
+                        ">
+                      <span class="product-item-wrapper__sale" style="
+                            background-image: url('./assets/images/product/saleprice.png');
+                          ">20%</span>
+                    </div>
+                  </a>
+                  <div class="product-item-wrapper__details">
+                    <div class="product-item-wrapper__title">
+                      <a href="./detail.html" class="product-item-wrapper__link">
+                        Thiên thần diệt thế - Tập 20</a>
+                    </div>
+                    <div class="product-item-wrapper__subtitle">
+                      <a href="">Kagami Takaya</a>
+                    </div>
+                    <div class="product-item-wrapper__prices">113.600 ₫</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-arrow">
+              <div class="product-arrow-left">
+                <i class="fas fa-angle-left"></i>
+              </div>
+              <div class="product-arrow-right">
+                <i class="fas fa-angle-right"></i>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Sắp phát hành end -->
+
+        <!-- Sách bán chạy start -->
+        <section id="seller">
+          <div class="section-book-heading row">
+            <a href="" class="section-book-heading__title">
+              Sách bán chạy <span></span>
+            </a>
+            <a href="" class="section-book-heading__show"> Xem tất cả</a>
+          </div>
+          <div class="book-content">
+            <div class="product-list product-wrap row no-gutters">
+              <div class="product-item col l-2-4 m-6 c-6">
+                <div class="product-item-wrapper">
+                  <a href="./detail.html">
+                    <div class="product-item-wrapper__img" style="
+                          background-image: url(./assets/images/sanpham/ngontinh/nguoithapsaotroi.png);
+                        ">
+                      <span class="product-item-wrapper__sale" style="
+                            background-image: url('./assets/images/product/saleprice.png');
+                          ">20%</span>
+                    </div>
+                  </a>
+                  <div class="product-item-wrapper__details">
+                    <div class="product-item-wrapper__title">
+                      <a href="./detail.html" class="product-item-wrapper__link">
+                        Người thắp sao trời</a>
+                    </div>
+                    <div class="product-item-wrapper__subtitle">
+                      <a href="">Lương thi mã</a>
+                    </div>
+                    <div class="product-item-wrapper__prices">99.000 ₫</div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item col l-2-4 m-6 c-6">
+                <div class="product-item-wrapper">
+                  <a href="./detail.html">
+                    <div class="product-item-wrapper__img" style="
+                          background-image: url(./assets/images/sanpham/ngontinh/thattichkhongmua.png);
+                        ">
+                      <span class="product-item-wrapper__sale" style="
+                            background-image: url('./assets/images/product/saleprice.png');
+                          ">20%</span>
+                    </div>
+                  </a>
+                  <div class="product-item-wrapper__details">
+                    <div class="product-item-wrapper__title">
+                      <a href="./detail.html" class="product-item-wrapper__link">
+                        Thất tịch ngày không mưa</a>
+                    </div>
+                    <div class="product-item-wrapper__subtitle">
+                      <a href="">Jini</a>
+                    </div>
+                    <div class="product-item-wrapper__prices">69.000 ₫</div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item col l-2-4 m-6 c-6">
+                <div class="product-item-wrapper">
+                  <a href="./detail.html">
+                    <div class="product-item-wrapper__img" style="
+                          background-image: url(./assets/images/sanpham/ngontinh/motnualadauthuong.png);
+                        ">
+                      <span class="product-item-wrapper__sale" style="
+                            background-image: url('./assets/images/product/saleprice.png');
+                          ">20%</span>
+                    </div>
+                  </a>
+                  <div class="product-item-wrapper__details">
+                    <div class="product-item-wrapper__title">
+                      <a href="./detail.html" class="product-item-wrapper__link">
+                        Một nửa là đau thương</a>
+                    </div>
+                    <div class="product-item-wrapper__subtitle">
+                      <a href="">Lưu vân</a>
+                    </div>
+                    <div class="product-item-wrapper__prices">79.000 ₫</div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item col l-2-4 m-6 c-6">
+                <div class="product-item-wrapper">
+                  <a href="./detail.html">
+                    <div class="product-item-wrapper__img" style="
+                          background-image: url(./assets/images/sanpham/ngontinh/dapancuathoigian.png);
+                        ">
+                      <span class="product-item-wrapper__sale" style="
+                            background-image: url('./assets/images/product/saleprice.png');
+                          ">20%</span>
+                    </div>
+                  </a>
+                  <div class="product-item-wrapper__details">
+                    <div class="product-item-wrapper__title">
+                      <a href="./detail.html" class="product-item-wrapper__link">
+                        Đáp án của thời gian</a>
+                    </div>
+                    <div class="product-item-wrapper__subtitle">
+                      <a href="">Thúy An </a>
+                    </div>
+                    <div class="product-item-wrapper__prices">69.000 ₫</div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item col l-2-4 m-6 c-6">
+                <div class="product-item-wrapper">
+                  <a href="./detail.html">
+                    <div class="product-item-wrapper__img" style="
+                          background-image: url(./assets/images/sanpham/ngontinh/cachmotcachcua_1.png);
+                        ">
+                      <span class="product-item-wrapper__sale" style="
+                            background-image: url('./assets/images/product/saleprice.png');
+                          ">20%</span>
+                    </div>
+                  </a>
+                  <div class="product-item-wrapper__details">
+                    <div class="product-item-wrapper__title">
+                      <a href="./detail.html" class="product-item-wrapper__link">
+                        Cách một cánh cửa - Tập 1</a>
+                    </div>
+                    <div class="product-item-wrapper__subtitle">
+                      <a href="">Hoàng ngọc - Thùy dương</a>
+                    </div>
+                    <div class="product-item-wrapper__prices">79.000 ₫</div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item col l-2-4 m-6 c-6">
+                <div class="product-item-wrapper">
+                  <a href="./detail.html">
+                    <div class="product-item-wrapper__img" style="
+                          background-image: url(./assets/images/sanpham/ngontinh/cachmotcachcua_2.png);
+                        ">
+                      <span class="product-item-wrapper__sale" style="
+                            background-image: url('./assets/images/product/saleprice.png');
+                          ">20%</span>
+                    </div>
+                  </a>
+                  <div class="product-item-wrapper__details">
+                    <div class="product-item-wrapper__title">
+                      <a href="./detail.html" class="product-item-wrapper__link">
+                        Cách một cánh cửa - Tập 2</a>
+                    </div>
+                    <div class="product-item-wrapper__subtitle">
+                      <a href="">Hoàng ngọc - Thùy dương</a>
+                    </div>
+                    <div class="product-item-wrapper__prices">79.000 ₫</div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item col l-2-4 m-6 c-6">
+                <div class="product-item-wrapper">
+                  <a href="./detail.html">
+                    <div class="product-item-wrapper__img" style="
+                          background-image: url(./assets/images/sanpham/ngontinh/cachmotcachcua_3.png);
+                        ">
+                      <span class="product-item-wrapper__sale" style="
+                            background-image: url('./assets/images/product/saleprice.png');
+                          ">20%</span>
+                    </div>
+                  </a>
+                  <div class="product-item-wrapper__details">
+                    <div class="product-item-wrapper__title">
+                      <a href="./detail.html" class="product-item-wrapper__link">
+                        Cách một cánh cửa - Tập 3</a>
+                    </div>
+                    <div class="product-item-wrapper__subtitle">
+                      <a href="">Hoàng ngọc - Thùy dương</a>
+                    </div>
+                    <div class="product-item-wrapper__prices">79.000 ₫</div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item col l-2-4 m-6 c-6">
+                <div class="product-item-wrapper">
+                  <a href="./detail.html">
+                    <div class="product-item-wrapper__img" style="
+                          background-image: url(./assets/images/sanpham/ngontinh/cachmotcachcua_4.png);
+                        ">
+                      <span class="product-item-wrapper__sale" style="
+                            background-image: url('./assets/images/product/saleprice.png');
+                          ">20%</span>
+                    </div>
+                  </a>
+                  <div class="product-item-wrapper__details">
+                    <div class="product-item-wrapper__title">
+                      <a href="./detail.html" class="product-item-wrapper__link">
+                        Cách một cánh cửa - Tập 4</a>
+                    </div>
+                    <div class="product-item-wrapper__subtitle">
+                      <a href="">Hoàng ngọc - Thùy dương</a>
+                    </div>
+                    <div class="product-item-wrapper__prices">79.000 ₫</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-arrow">
+              <div class="product-arrow-left">
+                <i class="fas fa-angle-left"></i>
+              </div>
+              <div class="product-arrow-right">
+                <i class="fas fa-angle-right"></i>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Sách bán chạy end -->
+
+        <!-- Danh mục start -->
+        <section id="book-category">
+          <div class="section-book-heading row">
+            <a href="" class="section-book-heading__title">
+              Danh mục <span></span>
+            </a>
+            <a href="" class="section-book-heading__show"> Xem tất cả</a>
+          </div>
+          <div class="book-content">
+            <div class="product-list row no-gutters">
+              <div class="product-item col l-2-4 m-6 c-6">
+                <div class="product-item-wrapper">
+                  <a href="./detail.html">
+                    <div class="product-item-wrapper__img" style="
+                          background-image: url(./assets/images/product/danhmuc/hoc-ngoai-ngu__61937.jpg);
+                        "></div>
+                  </a>
+                  <div class="
+                        product-item-wrapper__details
+                        hide-on-mobile-tablet
+                      ">
+                    <div class="product-item-wrapper__title">
+                      <a href="./detail.html" class="product-item-wrapper__link">
+                        Học ngoại ngữ - Cho người không biết gi</a>
                     </div>
                   </div>
                 </div>
-                <div class="product-item col l-2-4 m-6 c-6">
-                  <div class="product-item-wrapper">
-                    <a href="./detail.html">
-                      <div
-                        class="product-item-wrapper__img"
-                        style="
+              </div>
+              <div class="product-item col l-2-4 m-6 c-6">
+                <div class="product-item-wrapper">
+                  <a href="./detail.html">
+                    <div class="product-item-wrapper__img" style="
+                          background-image: url(./assets/images/product/danhmuc/ki-nang-song__84906.jpg);
+                        "></div>
+                  </a>
+                  <div class="
+                        product-item-wrapper__details
+                        hide-on-mobile-tablet
+                      ">
+                    <div class="product-item-wrapper__title">
+                      <a href="./detail.html" class="product-item-wrapper__link">
+                        Kỹ năng sống
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item col l-2-4 m-6 c-6">
+                <div class="product-item-wrapper">
+                  <a href="./detail.html">
+                    <div class="product-item-wrapper__img" style="
                           background-image: url(./assets/images/product/danhmuc/teen__26864.jpg);
-                        "
-                      ></div>
-                    </a>
-                    <div
-                      class="
+                        "></div>
+                  </a>
+                  <div class="
                         product-item-wrapper__details
                         hide-on-mobile-tablet
-                      "
-                    >
-                      <div class="product-item-wrapper__title">
-                        <a
-                          href="./detail.html"
-                          class="product-item-wrapper__link"
-                        >
-                          Sách tuổi teen</a
-                        >
-                      </div>
+                      ">
+                    <div class="product-item-wrapper__title">
+                      <a href="./detail.html" class="product-item-wrapper__link">
+                        Sách tuổi teen</a>
                     </div>
                   </div>
                 </div>
-                <div class="product-item col l-2-4 m-6 c-6">
-                  <div class="product-item-wrapper">
-                    <a href="./detail.html">
-                      <div
-                        class="product-item-wrapper__img"
-                        style="
+              </div>
+              <div class="product-item col l-2-4 m-6 c-6">
+                <div class="product-item-wrapper">
+                  <a href="./detail.html">
+                    <div class="product-item-wrapper__img" style="
                           background-image: url(./assets/images/product/danhmuc/mr-bu__06488.jpg);
-                        "
-                      ></div>
-                    </a>
-                    <div
-                      class="
+                        "></div>
+                  </a>
+                  <div class="
                         product-item-wrapper__details
                         hide-on-mobile-tablet
-                      "
-                    >
-                      <div class="product-item-wrapper__title">
-                        <a
-                          href="./detail.html"
-                          class="product-item-wrapper__link"
-                        >
-                          Văn học nước ngoài
-                        </a>
-                      </div>
+                      ">
+                    <div class="product-item-wrapper__title">
+                      <a href="./detail.html" class="product-item-wrapper__link">
+                        Văn học nước ngoài
+                      </a>
                     </div>
                   </div>
                 </div>
-                <div class="product-item col l-2-4 m-6 c-6">
-                  <div class="product-item-wrapper">
-                    <a href="./detail.html">
-                      <div
-                        class="product-item-wrapper__img"
-                        style="
+              </div>
+              <div class="product-item col l-2-4 m-6 c-6">
+                <div class="product-item-wrapper">
+                  <a href="./detail.html">
+                    <div class="product-item-wrapper__img" style="
                           background-image: url(./assets/images/product/danhmuc/du-xa-se-cu-du-la-se-quen__31174.jpg);
-                        "
-                      ></div>
-                    </a>
-                    <div
-                      class="
+                        "></div>
+                  </a>
+                  <div class="
                         product-item-wrapper__details
                         hide-on-mobile-tablet
-                      "
-                    >
-                      <div class="product-item-wrapper__title">
-                        <a
-                          href="./detail.html"
-                          class="product-item-wrapper__link"
-                        >
-                          Văn học trong nước</a
-                        >
-                      </div>
+                      ">
+                    <div class="product-item-wrapper__title">
+                      <a href="./detail.html" class="product-item-wrapper__link">
+                        Văn học trong nước</a>
                     </div>
                   </div>
                 </div>
-                <div class="product-item col l-2-4 m-6 c-6">
-                  <div class="product-item-wrapper">
-                    <a href="./detail.html">
-                      <div
-                        class="product-item-wrapper__img"
-                        style="
+              </div>
+              <div class="product-item col l-2-4 m-6 c-6">
+                <div class="product-item-wrapper">
+                  <a href="./detail.html">
+                    <div class="product-item-wrapper__img" style="
                           background-image: url(./assets/images/product/danhmuc/sach-chuyen-nganh__81172.jpg);
-                        "
-                      ></div>
-                    </a>
-                    <div
-                      class="
+                        "></div>
+                  </a>
+                  <div class="
                         product-item-wrapper__details
                         hide-on-mobile-tablet
-                      "
-                    >
-                      <div class="product-item-wrapper__title">
-                        <a
-                          href="./detail.html"
-                          class="product-item-wrapper__link"
-                        >
-                          Sách chuyên ngành
-                        </a>
-                      </div>
+                      ">
+                    <div class="product-item-wrapper__title">
+                      <a href="./detail.html" class="product-item-wrapper__link">
+                        Sách chuyên ngành
+                      </a>
                     </div>
                   </div>
                 </div>
-                <div class="product-item col l-2-4 m-6 c-6">
-                  <div class="product-item-wrapper">
-                    <a href="./detail.html">
-                      <div
-                        class="product-item-wrapper__img"
-                        style="
+              </div>
+              <div class="product-item col l-2-4 m-6 c-6">
+                <div class="product-item-wrapper">
+                  <a href="./detail.html">
+                    <div class="product-item-wrapper__img" style="
                           background-image: url(./assets/images/product/danhmuc/sach-thieu-nhi__04040.jpg);
-                        "
-                      ></div>
-                    </a>
-                    <div
-                      class="
+                        "></div>
+                  </a>
+                  <div class="
                         product-item-wrapper__details
                         hide-on-mobile-tablet
-                      "
-                    >
-                      <div class="product-item-wrapper__title">
-                        <a
-                          href="./detail.html"
-                          class="product-item-wrapper__link"
-                        >
-                          Sách thiếu nhi
-                        </a>
-                      </div>
+                      ">
+                    <div class="product-item-wrapper__title">
+                      <a href="./detail.html" class="product-item-wrapper__link">
+                        Sách thiếu nhi
+                      </a>
                     </div>
                   </div>
                 </div>
-                <div class="product-item col l-2-4 m-6 c-6">
-                  <div class="product-item-wrapper">
-                    <a href="./detail.html">
-                      <div
-                        class="product-item-wrapper__img"
-                        style="
+              </div>
+              <div class="product-item col l-2-4 m-6 c-6">
+                <div class="product-item-wrapper">
+                  <a href="./detail.html">
+                    <div class="product-item-wrapper__img" style="
                           background-image: url(./assets/images/product/danhmuc/thuong-thuc-doi-song__72069.jpg);
-                        "
-                      ></div>
-                    </a>
-                    <div
-                      class="
+                        "></div>
+                  </a>
+                  <div class="
                         product-item-wrapper__details
                         hide-on-mobile-tablet
-                      "
-                    >
-                      <div class="product-item-wrapper__title">
-                        <a
-                          href="./detail.html"
-                          class="product-item-wrapper__link"
-                        >
-                          Thưởng thức đời sống
-                        </a>
-                      </div>
+                      ">
+                    <div class="product-item-wrapper__title">
+                      <a href="./detail.html" class="product-item-wrapper__link">
+                        Thưởng thức đời sống
+                      </a>
                     </div>
                   </div>
                 </div>
+              </div>
 
-                <div class="product-item col l-2-4 m-6 c-6">
-                  <div class="product-item-wrapper">
-                    <a href="./detail.html">
-                      <div
-                        class="product-item-wrapper__img"
-                        style="
+              <div class="product-item col l-2-4 m-6 c-6">
+                <div class="product-item-wrapper">
+                  <a href="./detail.html">
+                    <div class="product-item-wrapper__img" style="
                           background-image: url(./assets/images/product/danhmuc/sach-kinh-te__44040.jpg);
-                        "
-                      ></div>
-                    </a>
-                    <div
-                      class="
+                        "></div>
+                  </a>
+                  <div class="
                         product-item-wrapper__details
                         hide-on-mobile-tablet
-                      "
-                    >
-                      <div class="product-item-wrapper__title">
-                        <a
-                          href="./detail.html"
-                          class="product-item-wrapper__link"
-                        >
-                          Sách kinh tế
-                        </a>
-                      </div>
+                      ">
+                    <div class="product-item-wrapper__title">
+                      <a href="./detail.html" class="product-item-wrapper__link">
+                        Sách kinh tế
+                      </a>
                     </div>
                   </div>
                 </div>
-                <div class="product-item col l-2-4 m-6 c-6">
-                  <div class="product-item-wrapper">
-                    <a href="./detail.html">
-                      <div
-                        class="product-item-wrapper__img"
-                        style="
+              </div>
+              <div class="product-item col l-2-4 m-6 c-6">
+                <div class="product-item-wrapper">
+                  <a href="./detail.html">
+                    <div class="product-item-wrapper__img" style="
                           background-image: url(./assets/images/product/danhmuc/qua-tang__16149.jpg);
-                        "
-                      ></div>
-                    </a>
-                    <div
-                      class="
+                        "></div>
+                  </a>
+                  <div class="
                         product-item-wrapper__details
                         hide-on-mobile-tablet
-                      "
-                    >
-                      <div class="product-item-wrapper__title">
-                        <a
-                          href="./detail.html"
-                          class="product-item-wrapper__link"
-                        >
-                          Văn phòng phẩm</a
-                        >
-                      </div>
+                      ">
+                    <div class="product-item-wrapper__title">
+                      <a href="./detail.html" class="product-item-wrapper__link">
+                        Văn phòng phẩm</a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </section>
-          <!-- Danh mục end -->
+          </div>
+        </section>
+        <!-- Danh mục end -->
 
-          <!-- about start -->
-          <section id="section-about">
-            <div class="about-content container">
-              <h5>Mua Sách Online Tại Nobita.Vn</h5>
-              <p>
-                Ra đời từ năm 2011, đến nay <strong>Nobita.vn</strong> đã trở
-                thành địa chỉ mua sách online quen thuộc của hàng ngàn độc giả
-                trên cả nước. Với đầu sách phong phú, thuộc các thể loại:
-                <a href="">Văn học nước ngoại</a>,
-                <a href="">Văn học trong nước</a>, <a href="">Kinh tế</a>,
-                <a href="">Kỹ năng sống</a>, <a href="">Thiếu nhi</a>,
-                <a href="">Sách học ngoại ngữ</a>,
-                <a href="">Sách chuyên ngành</a>,... được cập nhật liên tục từ
-                các nhà xuất bản uy tín trong nước.
-              </p>
-              <p>
-                Khi mua sách online tại Nobita.vn, Quý khách được
-                <strong>Bọc plastic miễn phí</strong>
-                đến 99% (trừ sách bìa cứng, sách dạng hộp - dạng đặc biệt, sách
-                khổ quá to, ...)
-              </p>
-              <p>
-                Ngoài ra, với hình thức
-                <strong
-                  >Giao hàng thu tiền tận nơi và Đổi hàng trong vòng 7
-                  ngày</strong
-                >
-                nếu sách có bất kỳ lỗi nào trong quá trình in ấn sẽ giúp Quý
-                khách yên tâm hơn khi mua sắm tại Nobita.vn
-              </p>
-            </div>
-          </section>
-          <!-- about end -->
-        </div>
+        <!-- about start -->
+        <section id="section-about">
+          <div class="about-content container">
+            <h5>Mua Sách Online Tại Nobita.Vn</h5>
+            <p>
+              Ra đời từ năm 2011, đến nay <strong>Nobita.vn</strong> đã trở
+              thành địa chỉ mua sách online quen thuộc của hàng ngàn độc giả
+              trên cả nước. Với đầu sách phong phú, thuộc các thể loại:
+              <a href="">Văn học nước ngoại</a>,
+              <a href="">Văn học trong nước</a>, <a href="">Kinh tế</a>,
+              <a href="">Kỹ năng sống</a>, <a href="">Thiếu nhi</a>,
+              <a href="">Sách học ngoại ngữ</a>,
+              <a href="">Sách chuyên ngành</a>,... được cập nhật liên tục từ
+              các nhà xuất bản uy tín trong nước.
+            </p>
+            <p>
+              Khi mua sách online tại Nobita.vn, Quý khách được
+              <strong>Bọc plastic miễn phí</strong>
+              đến 99% (trừ sách bìa cứng, sách dạng hộp - dạng đặc biệt, sách
+              khổ quá to, ...)
+            </p>
+            <p>
+              Ngoài ra, với hình thức
+              <strong>Giao hàng thu tiền tận nơi và Đổi hàng trong vòng 7
+                ngày</strong>
+              nếu sách có bất kỳ lỗi nào trong quá trình in ấn sẽ giúp Quý
+              khách yên tâm hơn khi mua sắm tại Nobita.vn
+            </p>
+          </div>
+        </section>
+        <!-- about end -->
       </div>
-      <!-- content end -->
-
-      <!-- footer start -->
-      <footer id="footer">
-        <div class="grid wide">
-          <ul class="footer-list row">
-            <li class="footer-item col l-3 m-6 c-6">
-              <h2>Hỗ trợ khách hàng</h2>
-              <ul class="footer-sublist">
-                <li class="footer-subitem">
-                  <a href="">Email: admin@nobita.vn </a>
-                </li>
-                <li class="footer-subitem">
-                  <a href=""> Hotline: <span>0938 424 289</span></a>
-                </li>
-              </ul>
-            </li>
-            <li class="footer-item col l-3 m-6 c-6">
-              <h2>Giới thiệu</h2>
-              <ul class="footer-sublist">
-                <li class="footer-subitem">
-                  <a href="./about.html">Về nobita</a>
-                </li>
-                <li class="footer-subitem"><a href="">Tuyển dụng</a></li>
-              </ul>
-            </li>
-            <li class="footer-item col l-3 m-6 c-6">
-              <h2>Tài khoản</h2>
-              <ul class="footer-sublist">
-                <li class="footer-subitem">
-                  <a href="./login.html">Tài khoản</a>
-                </li>
-                <li class="footer-subitem">
-                  <a href="">Danh sách đơn hàng</a>
-                </li>
-                <li class="footer-subitem"><a href="">Thông báo</a></li>
-              </ul>
-            </li>
-            <li class="footer-item col l-3 m-6 c-6">
-              <h2>Hướng Dẫn</h2>
-              <ul class="footer-sublist">
-                <li class="footer-subitem">
-                  <a href="">Hướng dẫn mua hàng</a>
-                </li>
-                <li class="footer-subitem">
-                  <a href="">Phương thức thanh toán</a>
-                </li>
-                <li class="footer-subitem">
-                  <a href="">Câu hỏi thường gặp</a>
-                </li>
-                <li class="footer-subitem">
-                  <a href="">Phương thức vận chuyển</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-
-        <div class="copyright">
-          <div class="container">
-            <div class="copyright-text">
-              <p>Copyright © 2014 Nobita.vn</p>
-            </div>
-          </div>
-        </div>
-
-        <a href="#" class="footer-arrow-top">
-          <i class="fas fa-arrow-up"></i>
-        </a>
-      </footer>
-      <!-- footer end -->
     </div>
-    <!-- app end -->
+    <!-- content end -->
 
-    <!-- cart start -->
-    <div id="cart-section">
-      <div class="cart-section-wrapper">
-        <div class="cart-section-title">
-          <h2>Giỏ hàng của tôi</h2>
-          <a href="" class="cart-section-close">Close X</a>
-        </div>
-        <div class="cart-section-container">
-          <div class="cart-section-head">
-            <p>Bạn có <span class="shownumber">4</span> sản phẩm trong giỏ</p>
-          </div>
-          <div class="cart-section-body">
-            <ul class="cart-section-body-head">
-              <li class="l-6">Sản phẩm trong giỏ</li>
-              <li class="l-2">Giá bán</li>
-              <li class="l-2">Số lượng</li>
-              <li class="l-2">Thành tiền</li>
+    <!-- footer start -->
+    <footer id="footer">
+      <div class="grid wide">
+        <ul class="footer-list row">
+          <li class="footer-item col l-3 m-6 c-6">
+            <h2>Hỗ trợ khách hàng</h2>
+            <ul class="footer-sublist">
+              <li class="footer-subitem">
+                <a href="">Email: admin@nobita.vn </a>
+              </li>
+              <li class="footer-subitem">
+                <a href=""> Hotline: <span>0938 424 289</span></a>
+              </li>
             </ul>
-            <div class="cart-section-body-content">
-              <div class="cart-section-body-content__item">
-                <div class="l-6 cart-section-body-content-col">
-                  <div class="cart-section-picture l-1">
-                    <img
-                      src="./assets/images/sanpham/manga/thienthandietthe_1.png"
-                      alt=""
-                      class="cart-section-img"
-                    />
-                  </div>
-                  <div class="cart-section-name l-10">
-                    <p>Thiên thần diệt thế- Tập 1</p>
-                  </div>
+          </li>
+          <li class="footer-item col l-3 m-6 c-6">
+            <h2>Giới thiệu</h2>
+            <ul class="footer-sublist">
+              <li class="footer-subitem">
+                <a href="./about.html">Về nobita</a>
+              </li>
+              <li class="footer-subitem"><a href="">Tuyển dụng</a></li>
+            </ul>
+          </li>
+          <li class="footer-item col l-3 m-6 c-6">
+            <h2>Tài khoản</h2>
+            <ul class="footer-sublist">
+              <li class="footer-subitem">
+                <a href="./login.html">Tài khoản</a>
+              </li>
+              <li class="footer-subitem">
+                <a href="">Danh sách đơn hàng</a>
+              </li>
+              <li class="footer-subitem"><a href="">Thông báo</a></li>
+            </ul>
+          </li>
+          <li class="footer-item col l-3 m-6 c-6">
+            <h2>Hướng Dẫn</h2>
+            <ul class="footer-sublist">
+              <li class="footer-subitem">
+                <a href="">Hướng dẫn mua hàng</a>
+              </li>
+              <li class="footer-subitem">
+                <a href="">Phương thức thanh toán</a>
+              </li>
+              <li class="footer-subitem">
+                <a href="">Câu hỏi thường gặp</a>
+              </li>
+              <li class="footer-subitem">
+                <a href="">Phương thức vận chuyển</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="copyright">
+        <div class="container">
+          <div class="copyright-text">
+            <p>Copyright © 2014 Nobita.vn</p>
+          </div>
+        </div>
+      </div>
+
+      <a href="#" class="footer-arrow-top">
+        <i class="fas fa-arrow-up"></i>
+      </a>
+    </footer>
+    <!-- footer end -->
+  </div>
+  <!-- app end -->
+
+  <!-- cart start -->
+  <div id="cart-section">
+    <div class="cart-section-wrapper">
+      <div class="cart-section-title">
+        <h2>Giỏ hàng của tôi</h2>
+        <a href="" class="cart-section-close">Close X</a>
+      </div>
+      <div class="cart-section-container">
+        <div class="cart-section-head">
+          <p>Bạn có <span class="shownumber">4</span> sản phẩm trong giỏ</p>
+        </div>
+        <div class="cart-section-body">
+          <ul class="cart-section-body-head">
+            <li class="l-6">Sản phẩm trong giỏ</li>
+            <li class="l-2">Giá bán</li>
+            <li class="l-2">Số lượng</li>
+            <li class="l-2">Thành tiền</li>
+          </ul>
+          <div class="cart-section-body-content">
+            <div class="cart-section-body-content__item">
+              <div class="l-6 cart-section-body-content-col">
+                <div class="cart-section-picture l-1">
+                  <img src="./assets/images/sanpham/manga/thienthandietthe_1.png" alt="" class="cart-section-img" />
                 </div>
-                <div class="l-2 cart-section-price">99.000 ₫</div>
-                <div class="l-2 cart-section-quantity">
-                  <input
-                    type="text"
-                    name=""
-                    id="cart-section-quantity"
-                    value="1"
-                  />
+                <div class="cart-section-name l-10">
+                  <p>Thiên thần diệt thế- Tập 1</p>
                 </div>
-                <div class="l-2 cart-section-sum">99.000 ₫</div>
-                <div class="cart-section-delete">Xóa</div>
               </div>
-              <div class="cart-section-body-content__item">
-                <div class="l-6 cart-section-body-content-col">
-                  <div class="cart-section-picture l-1">
-                    <img
-                      src="./assets/images/sanpham/manga/thienthandietthe_2.png"
-                      alt=""
-                      class="cart-section-img"
-                    />
-                  </div>
-                  <div class="cart-section-name l-10">
-                    <p>Thiên thần diệt thế- Tập 2</p>
-                  </div>
-                </div>
-                <div class="l-2 cart-section-price">99.000 ₫</div>
-                <div class="l-2 cart-section-quantity">
-                  <input
-                    type="text"
-                    name=""
-                    id="cart-section-quantity"
-                    value="1"
-                  />
-                </div>
-                <div class="l-2 cart-section-sum">99.000 ₫</div>
-                <div class="cart-section-delete">Xóa</div>
+              <div class="l-2 cart-section-price">99.000 ₫</div>
+              <div class="l-2 cart-section-quantity">
+                <input type="text" name="" id="cart-section-quantity" value="1" />
               </div>
-              <div class="cart-section-body-content__item">
-                <div class="l-6 cart-section-body-content-col">
-                  <div class="cart-section-picture l-1">
-                    <img
-                      src="./assets/images/sanpham/manga/thienthandietthe_3.png"
-                      alt=""
-                      class="cart-section-img"
-                    />
-                  </div>
-                  <div class="cart-section-name l-10">
-                    <p>Thiên thần diệt thế- Tập 3</p>
-                  </div>
+              <div class="l-2 cart-section-sum">99.000 ₫</div>
+              <div class="cart-section-delete">Xóa</div>
+            </div>
+            <div class="cart-section-body-content__item">
+              <div class="l-6 cart-section-body-content-col">
+                <div class="cart-section-picture l-1">
+                  <img src="./assets/images/sanpham/manga/thienthandietthe_2.png" alt="" class="cart-section-img" />
                 </div>
-                <div class="l-2 cart-section-price">99.000 ₫</div>
-                <div class="l-2 cart-section-quantity">
-                  <input
-                    type="text"
-                    name=""
-                    id="cart-section-quantity"
-                    value="1"
-                  />
+                <div class="cart-section-name l-10">
+                  <p>Thiên thần diệt thế- Tập 2</p>
                 </div>
-                <div class="l-2 cart-section-sum">99.000 ₫</div>
-                <div class="cart-section-delete">Xóa</div>
               </div>
-              <div class="cart-section-body-content__item">
-                <div class="l-6 cart-section-body-content-col">
-                  <div class="cart-section-picture l-1">
-                    <img
-                      src="./assets/images/sanpham/manga/thienthandietthe_4.png"
-                      alt=""
-                      class="cart-section-img"
-                    />
-                  </div>
-                  <div class="cart-section-name l-10">
-                    <p>Thiên thần diệt thế- Tập 4</p>
-                  </div>
+              <div class="l-2 cart-section-price">99.000 ₫</div>
+              <div class="l-2 cart-section-quantity">
+                <input type="text" name="" id="cart-section-quantity" value="1" />
+              </div>
+              <div class="l-2 cart-section-sum">99.000 ₫</div>
+              <div class="cart-section-delete">Xóa</div>
+            </div>
+            <div class="cart-section-body-content__item">
+              <div class="l-6 cart-section-body-content-col">
+                <div class="cart-section-picture l-1">
+                  <img src="./assets/images/sanpham/manga/thienthandietthe_3.png" alt="" class="cart-section-img" />
                 </div>
-                <div class="l-2 cart-section-price">99.000 ₫</div>
-                <div class="l-2 cart-section-quantity">
-                  <input
-                    type="text"
-                    name=""
-                    id="cart-section-quantity"
-                    value="1"
-                  />
+                <div class="cart-section-name l-10">
+                  <p>Thiên thần diệt thế- Tập 3</p>
                 </div>
-                <div class="l-2 cart-section-sum">99.000 ₫</div>
-                <div class="cart-section-delete">Xóa</div>
+              </div>
+              <div class="l-2 cart-section-price">99.000 ₫</div>
+              <div class="l-2 cart-section-quantity">
+                <input type="text" name="" id="cart-section-quantity" value="1" />
+              </div>
+              <div class="l-2 cart-section-sum">99.000 ₫</div>
+              <div class="cart-section-delete">Xóa</div>
+            </div>
+            <div class="cart-section-body-content__item">
+              <div class="l-6 cart-section-body-content-col">
+                <div class="cart-section-picture l-1">
+                  <img src="./assets/images/sanpham/manga/thienthandietthe_4.png" alt="" class="cart-section-img" />
+                </div>
+                <div class="cart-section-name l-10">
+                  <p>Thiên thần diệt thế- Tập 4</p>
+                </div>
+              </div>
+              <div class="l-2 cart-section-price">99.000 ₫</div>
+              <div class="l-2 cart-section-quantity">
+                <input type="text" name="" id="cart-section-quantity" value="1" />
+              </div>
+              <div class="l-2 cart-section-sum">99.000 ₫</div>
+              <div class="cart-section-delete">Xóa</div>
+            </div>
+          </div>
+          <div class="cart-section-body-footer">
+            <div class="cart-section-body-footer-total-wrapper">
+              <div class="cart-section-body-footer-subtotal l-o-8">
+                <p class="col l-6">Tổng tiền:</p>
+                <span class="col l-6"> 216.000 ₫ </span>
+              </div>
+              <div class="cart-section-body-footer-total l-o-8">
+                <p class="col l-6">Thành tiền:</p>
+                <span class="col l-6"> 216.000 ₫ </span>
               </div>
             </div>
-            <div class="cart-section-body-footer">
-              <div class="cart-section-body-footer-total-wrapper">
-                <div class="cart-section-body-footer-subtotal l-o-8">
-                  <p class="col l-6">Tổng tiền:</p>
-                  <span class="col l-6"> 216.000 ₫ </span>
-                </div>
-                <div class="cart-section-body-footer-total l-o-8">
-                  <p class="col l-6">Thành tiền:</p>
-                  <span class="col l-6"> 216.000 ₫ </span>
-                </div>
-              </div>
-              <div class="cart-section-body-footer-pay">
-                <a href="" class="cart-section-body-footer-close">
-                  <i class="fas fa-caret-right"></i> Thêm sản phẩm khác vào giỏ
-                  hàng
-                </a>
-                <a
-                  href="./checkout.html"
-                  class="cart-section-body-footer-payment"
-                >
-                  Thực hiện thanh toán
-                </a>
-              </div>
+            <div class="cart-section-body-footer-pay">
+              <a href="" class="cart-section-body-footer-close">
+                <i class="fas fa-caret-right"></i> Thêm sản phẩm khác vào giỏ
+                hàng
+              </a>
+              <a href="./checkout.html" class="cart-section-body-footer-payment">
+                Thực hiện thanh toán
+              </a>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- cart end -->
+  </div>
+  <!-- cart end -->
 
-    <script src="./assets/js/main.js"></script>
-  </body>
+  <script src="./assets/js/main.js"></script>
+</body>
+
 </html>

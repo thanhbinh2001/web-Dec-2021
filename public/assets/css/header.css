@@ -293,7 +293,9 @@
     background-color: var(--main-color);
 }
 
-.header-category-item__sublist-item {}
+.header-category-item__sublist-item {
+    padding-left: 10px;
+}
 
 .header-category-item__sublist-item-link {
     display: block;
