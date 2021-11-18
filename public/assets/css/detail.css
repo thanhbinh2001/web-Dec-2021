@@ -1,0 +1,145 @@
+#detail {
+    position: relative;
+    margin-top: 30px;
+}
+
+.detail-picture {}
+
+.detail-img {
+    width: 100%;
+}
+
+.detail-content {}
+
+.detail-content__title {
+    font-size: 1.8rem;
+    font-weight: normal;
+    margin: 10px 0;
+    color: #333;
+}
+
+.detail-content__publisher,
+.detail-content__authors {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.detail-content__publisher-name,
+.detail-content__author {
+    text-decoration: none;
+}
+
+.detail-content__publisher-name:hover,
+.detail-content__author:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.detail-content--border {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.detail-content-total {
+    padding: 20px 0;
+}
+
+.detail-content__price {
+    font-size: 2.4rem;
+    font-weight: bold;
+
+}
+
+.detail-content__root-price {
+    font-size: 1.4rem;
+}
+
+.detail-content__sale-price {
+    font-size: 1.4rem;
+}
+
+.detail-content__button {
+    background-color: #ff3300;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 10px;
+    font-weight: bold;
+    width: 170px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.detail-content__button-xl{
+    margin-top: 20px;
+    width: 450px;
+}
+
+.detail-content--main-color {
+    color: var(--main-color);
+}
+
+.detail-content--strong{
+    font-weight: bold;
+}
+
+.detail-content__accompanying-promotion {
+    padding: 10px 0;
+}
+
+.detail-content__accompanying-promotion p {
+    font-size: 1.4rem;
+    margin: 5px 0;
+}
+
+.detail-section {
+    margin: 30px 0;
+    position: relative;
+}
+
+
+.detail-heading {
+    color: var(--a-color);
+    font-size: 2rem;
+    border-bottom: 1px solid #e7e7e7;
+    text-transform: capitalize;
+}
+
+.detail-title {
+    color: var(--red-color);
+}
+
+.detail-description p {
+    font-size: 1.6rem;
+    margin: 10px 0;
+}
+
+.detail-section__details-link {
+    text-decoration: none;
+    font-size: 1.4rem;
+
+}
+
+.detail-section__details span {
+    font-size: 1.4rem;
+}
+
+.detail-section__details-item{
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+.detail-content--bg-gray{
+    background-color: var(--bg-1-color);
+}
+
+.detail-content__hover--a-color:hover{
+    color: var(--a-color);
+}
+
+.detail-content__hover--main-color:hover{
+    color: var(--main-color);
+
+}

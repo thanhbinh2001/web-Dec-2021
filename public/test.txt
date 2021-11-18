@@ -1,0 +1,294 @@
+<div id="app-content">
+        <section id="checkout">
+          <div class="grid wide">
+            <div class="row">
+              <!-- left -->
+              <div class="checkout-left col l-9 m-12 c-12">
+                <div class="checkout-left-wrapper">
+                  <div class="checkout-left-address">
+                    <div class="checkout-left__heading">
+                      <h2 class="checkout-left__heading-title">
+                        Địa chỉ giao hàng
+                      </h2>
+                    </div>
+                    <form action="" id="checkout-form">
+                      <div class="checkout-group">
+                        <div class="row no-gutters">
+                          <label for="" class="col l-2 m-2 c-2 checkout-form-label">
+                            Họ và tên <span class="checkout-star">*</span>
+                          </label>
+                          <select name="" id="checkout-gender" class="col l-1 m-2 c-2">
+                            <option value="0" checked>Chị</option>
+                            <option value="1">Anh</option>
+                          </select>
+                          <input
+                            type="text"
+                            name="name"
+                            id="checkout-name"
+                            class="checkout-form-control col l-4 m-12 c-12"
+                          />
+                        </div>
+                      </div>
+                      <div class="checkout-group">
+                        <div class="row no-gutters">
+                          <label
+                            for="checkout-phone"
+                            class="checkout-form-label col l-2 m-2 c-2"
+                          >
+                            Điện thoại <span class="checkout-star">*</span>
+                          </label>
+                          <input
+                            type="text"
+                            name="phone"
+                            id="checkout-phone"
+                            class="checkout-form-control col l-5 m-12 c-12"
+                          />
+                        </div>
+                      </div>
+                      <div class="checkout-group">
+                        <div class="row no-gutters">
+                          <label for="" class="checkout-form-label col l-2 m-2 c-2">
+                            Tỉnh/Thành <span class="checkout-star">*</span>
+                          </label>
+                          <select
+                            name="select-province"
+                            id="select-province"
+                            class="col l-5 m-5 c-5"
+                          >
+                            <option value="" checked>Chọn tỉnh thành</option>
+                            <option value="">Hà Nội</option>
+                            <option value="">Hồ Chí Minh</option>
+                            <option value="">Đà Nẵng</option>
+                            <option value="">Cần Thơ</option>
+                            <option value="">...</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="checkout-group">
+                        <div class="row no-gutters">
+                          <label for="" class="checkout-form-label col l-2 m-2 c-2">
+                            Quận huyện <span class="checkout-star">*</span>
+                          </label>
+                          <select
+                            name="select-province"
+                            id="select-province"
+                            class="col l-5 m-5 c-5"
+                          >
+                            <option value="" checked>Chọn quận huyện</option>
+                            <option value="">Quận 1</option>
+                            <option value="">Quận 2</option>
+                            <option value="">Quận 3</option>
+                            <option value="">Quận 4</option>
+                            <option value="">...</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="checkout-group">
+                        <div class="row no-gutters">
+                          <label for="" class="checkout-form-label col l-2 m-2 c-2">
+                            Phường xã <span class="checkout-star">*</span>
+                          </label>
+                          <select
+                            name="select-province"
+                            id="select-province"
+                            class="col l-5 m-5 c-5"
+                          >
+                            <option value="" checked>Chọn Phường xã</option>
+                            <option value="">Bến Thành</option>
+                            <option value="">Phạm Ngũ Lão</option>
+                            <option value="">Tân Định</option>
+                            <option value="">Bến Nghé</option>
+                            <option value="">...</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="checkout-group">
+                        <div class="row no-gutters">
+                          <label for="" class="checkout-form-label col l-2 m-2 c-2">
+                            Địa chỉ <span class="checkout-star">*</span>
+                          </label>
+                          <textarea
+                            name=""
+                            id=""
+                            cols="30"
+                            rows="5"
+                            class="checkout-form-textarea col l-5 m-5 c-5"
+                          ></textarea>
+                        </div>
+                      </div>
+                      <div class="checkout-group">
+                        <div class="row no-gutters">
+                          <button class="checkout-next-btn col l-o-3 m-o-3 c-">
+                            Tiếp tục
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+
+                  <div class="checkout-left-payment">
+                    <div class="checkout-left__heading">
+                      <h2 class="checkout-left__heading-title">
+                        Địa chỉ giao hàng
+                      </h2>
+                    </div>
+                    <div class="checkout-left-payment__select">
+                      <div class="checkout-group checkout-payment">
+                        <input
+                          type="radio"
+                          name="checkout-payment"
+                          id="checkout-payment-cast"
+                          class="payment-radio"
+                          checked
+                        />
+                        <label
+                          for="checkout-payment-cast"
+                          class="checkout-form-label"
+                        >
+                          Thanh toán tiền mặt khi nhận hàng
+                        </label>
+                      </div>
+                      <div class="checkout-group checkout-payment">
+                        <input
+                          type="radio"
+                          name="checkout-payment"
+                          id="checkout-payment-bank"
+                          class="payment-radio"
+                        />
+                        <label
+                          for="checkout-payment-bank"
+                          class="checkout-form-label"
+                        >
+                          Chuyển khoản ngân hàng
+                        </label>
+                        <div class="checkout-payment-content">
+                          <p>
+                            Tài khoản BIDV: 12300065xxx - Chủ tài khoản: Nguyễn
+                            Văn A – CN Đông Sài Gòn
+                          </p>
+                          <p>
+                            Lưu ý: Sau khi chuyển khoản, quý khách vui lòng
+                            thông báo qua điện thoại hoặc email để Nobita tiện
+                            kiểm tra và xử lý đơn hàng.
+                          </p>
+                          <p>
+                            Hỗ trợ khách hàng: 0938 424 289 - Email:
+                            admin@nobita.vn
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="checkout-left-payment-order">
+                      <button class="checkout-order-btn">Đặt mua</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- right -->
+              <div class="checkout-right col l-3 m-12 c-12">
+                <div class="checkout-right-wrapper">
+                  <div class="checkout-right-address">
+                    <div class="checkout-right-heading">
+                      <h2>Địa chỉ giao hàng</h2>
+                      <div class="checkout-right-repair">Sửa</div>
+                    </div>
+                    <div class="checkout-right-address__item">
+                      <p>Anh Hoàng Nguyễn Quang Huy</p>
+                    </div>
+                    <div class="checkout-right-address__item">
+                      <p>Ngã tư Vũng Tàu, Biên Hòa, Đồng Nai</p>
+                    </div>
+                    <div class="checkout-right-address__item">
+                      <span>Điện thoại:</span>
+                      <p>0909 388 xxx</p>
+                    </div>
+                  </div>
+                  <div class="checkout-right-order">
+                    <div class="checkout-right-order__top">
+                      <div class="checkout-right-heading">
+                        <h2>
+                          Đơn hàng (<span class="shownumber">4</span> ) sản phẩm
+                        </h2>
+                        <div class="checkout-right-repair">Sửa</div>
+                      </div>
+                    </div>
+                    <div class="checkout-right-order__body">
+                      <div class="checkout-right-order__body-item">
+                        <a class="checkout-right-order__body-item-text">
+                          <span class="shownumber">1</span>
+                          x Thiên thần diệt thế - Tập 1
+                        </a>
+                        <span class="checkout-right-order__body-item-price">
+                          99.000 ₫
+                        </span>
+                      </div>
+                      <div class="checkout-right-order__body-item">
+                        <a class="checkout-right-order__body-item-text">
+                          <span class="shownumber">1</span>
+                          x Thiên thần diệt thế - Tập 2
+                        </a>
+                        <span class="checkout-right-order__body-item-price">
+                          99.000 ₫
+                        </span>
+                      </div>
+                      <div class="checkout-right-order__body-item">
+                        <a class="checkout-right-order__body-item-text">
+                          <span class="shownumber">1</span>
+                          x Thiên thần diệt thế - Tập 3
+                        </a>
+                        <span class="checkout-right-order__body-item-price">
+                          99.000 ₫
+                        </span>
+                      </div>
+                      <div class="checkout-right-order__body-item">
+                        <a class="checkout-right-order__body-item-text">
+                          <span class="shownumber">1</span>
+                          x Thiên thần diệt thế - Tập 4
+                        </a>
+                        <span class="checkout-right-order__body-item-price">
+                          99.000 ₫
+                        </span>
+                      </div>
+                    </div>
+
+                    <div class="checkout-right-order__footer">
+                      <div class="checkout-right-order__footer-item">
+                        <p>Tạm tính</p>
+                        <span
+                          class="checkout-right-order__footer-item-subtotal"
+                        >
+                          216.000 ₫
+                        </span>
+                      </div>
+                      <div class="checkout-right-order__footer-item">
+                        <p>Phí vận chuyển</p>
+                        <span
+                          class="
+                            checkout-right-order__footer-item-subtotal
+                            checkout-right-order__footer-item--red
+                          "
+                        >
+                          Miễn phí
+                        </span>
+                      </div>
+                      <div
+                        class="
+                          checkout-right-order__footer-item
+                          checkout-right-order__footer-item--gray
+                        "
+                      >
+                        <p>Thành tiền</p>
+                        <span
+                          class="checkout-right-order__footer-item-subtotal"
+                        >
+                          216.000 ₫
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
