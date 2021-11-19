@@ -36,7 +36,14 @@
     .cart-section-body-content{
         max-height: 150px;
     }
-}
+    #app-content{
+        padding: 0px 10px;
+    }
+    #footer{
+        padding: 0px 10px;
+    }
+    
+    }
 
 /* mobile + tablet  < 1024px */
 @media (max-width: 1023px) {
