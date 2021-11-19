@@ -6,6 +6,9 @@
     .cart-section-body-content{
         max-height: 200px;
     }
+    .product-item-wrapper__details{
+        padding-left: 35px;
+    }
 }
 
 /* mobile < 740px*/
