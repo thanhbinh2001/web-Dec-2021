@@ -70,15 +70,17 @@ $(".slider-arrow-left").onclick = function (e) {
 };
 //slider end
 
-// khai báo 
+// khai báo
+
 const widthItemProduct = $(".product-item").clientWidth;
-var numberBook = $(".product-list").clientWidth / widthItemProduct;
+var numberBook = Math.round($(".product-list").clientWidth / widthItemProduct) ;
 
 // sách mới start
 var newBookCount = 0;
+
 // right
 $("#new-book .product-arrow-right").onclick = function () {
-  if (newBookCount == $$("#new-book .product-item").length-numberBook) {
+  if (newBookCount == $$("#new-book .product-item").length - numberBook) {
     $("#new-book .product-list").style.transform = `translateX(0)`;
     newBookCount = 0;
   } else {
