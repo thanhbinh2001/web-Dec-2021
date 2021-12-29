@@ -96,7 +96,7 @@
 
 .header-cart:hover {
     background-color: #fff;
-    animation: fadeIn .5s linear;
+    animation: fadeIn .0.5s linear;
 }
 
 .header-cart:hover>a,

@@ -1,1216 +1,962 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web bán sách online</title>
 
-    <!-- Font awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-    />
-    <!-- Favicon -->
-    <link
-      rel="shortcut icon"
-      href="https://nobita.vn/layouts/fontpage/images/favicon.ico"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web bán sách online</title>
 
-    <!-- Css -->
-    <link rel="stylesheet" href="./assets/css/base.css" />
-    <link rel="stylesheet" href="./assets/css/grid.css" />
-    <link rel="stylesheet" href="./assets/css/header.css" />
-    <link rel="stylesheet" href="./assets/css/footer.css" />
-    <link rel="stylesheet" href="./assets/css/cart.css" />
-    <link rel="stylesheet" href="./assets/css/responsive.css" />
-    <link rel="stylesheet" href="./assets/css/checkout.css" />
-  </head>
-  <body>
-    <!-- app start -->
-    <div id="app">
-      <!-- header start -->
-      <div id="header">
-        <div class="header-wrapper">
-          <div class="header-top">
-            <div class="grid wide">
-              <div class="row">
-                <div class="col m-1 c-1 menubar hide-on-pc">
-                  <input
-                    type="checkbox"
-                    name="close"
-                    id="checkbox-close"
-                    hidden
-                  />
-                  <label for="checkbox-close"
-                    ><i class="fas fa-bars"></i
-                  ></label>
-                  <ul class="menu-list">
-                    <div class="menu-heading">
-                      <p class="menu-title">
-                        <i class="fas fa-bars"></i> DANH MỤC SẢN PHẨM
-                      </p>
-                      <label for="checkbox-close">
-                        <i class="fas fa-times menu-close"></i>
-                      </label>
-                    </div>
-                    <li class="menu-item">
-                      <input
-                        type="radio"
-                        name="menu"
-                        id="menu-check-1"
-                        hidden
-                      />
-                      <label for="menu-check-1" class="menu-item__label">
-                        Nổi bật
-                      </label>
-                      <ul class="submenu-list">
-                        <li class="submenu-item">
-                          <a href="" class="submenu-item__link">
-                            Sách Bán Chạy
-                          </a>
-                        </li>
-                        <li class="submenu-item">
-                          <a href="" class="submenu-item__link"> Sách Mới </a>
-                        </li>
-                        <li class="submenu-item">
-                          <a href="" class="submenu-item__link">
-                            Sách Phát Hành
-                          </a>
-                        </li>
-                        <li class="submenu-item">
-                          <a href="" class="submenu-item__link">
-                            Sách Giảm Giá
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="menu-item">
-                      <input
-                        type="radio"
-                        name="menu"
-                        id="menu-check-2"
-                        hidden
-                      />
-                      <label for="menu-check-2" class="menu-item__label">
-                        Sách kinh tế
-                      </label>
-                      <ul class="submenu-list">
-                        <li class="submenu-item">
-                          <a href="" class="submenu-item__link">
-                            Tài Chính - Kế Toán
-                          </a>
-                        </li>
-                        <li class="submenu-item">
-                          <a href="" class="submenu-item__link">
-                            Kinh Tế Học
-                          </a>
-                        </li>
-                        <li class="submenu-item">
-                          <a href="" class="submenu-item__link">
-                            Quản Trị - Lãnh Đạo
-                          </a>
-                        </li>
-                        <li class="submenu-item">
-                          <a href="" class="submenu-item__link">
-                            Marketing - Bán Hàng
-                          </a>
-                        </li>
-                        <li class="submenu-item">
-                          <a href="" class="submenu-item__link">
-                            Khởi Nghiệp
-                          </a>
-                        </li>
-                        <li class="submenu-item">
-                          <a href="" class="submenu-item__link">
-                            Doanh Nhân - Tập Đoàn
-                          </a>
-                        </li>
-                        <li class="submenu-item">
-                          <a href="" class="submenu-item__link">
-                            Bài Học Kinh Doanh
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="menu-item">
-                      <input
-                        type="radio"
-                        name="menu"
-                        id="menu-check-3"
-                        hidden
-                      />
-                      <label for="menu-check-3" class="menu-item__label">
-                        Sách thiếu nhi
-                      </label>
-                      <ul class="submenu-list">
-                        <li class="submenu-item">
-                          <a href="" class="submenu-item__link">
-                            Truyện Tranh Nhật Bản
-                          </a>
-                        </li>
-                        <li class="submenu-item">
-                          <a href="" class="submenu-item__link"> Văn học </a>
-                        </li>
-                        <li class="submenu-item">
-                          <a href="" class="submenu-item__link"> Ngôn Tình </a>
-                        </li>
-                        <li class="submenu-item">
-                          <a href="" class="submenu-item__link">
-                            Tiểu thuyết
-                          </a>
-                        </li>
-                        <li class="submenu-item">
-                          <a href="" class="submenu-item__link">
-                            Light Novel
-                          </a>
-                        </li>
-                        <li class="submenu-item">
-                          <a href="" class="submenu-item__link">
-                            Truyện Trinh Thám - Kiếm Hiệp
-                          </a>
-                        </li>
-                        <li class="submenu-item">
-                          <a href="" class="submenu-item__link">
-                            Truyện Ngắn - Tản Văn
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="menu-item">
-                      <input
-                        type="radio"
-                        name="menu"
-                        id="menu-check-4"
-                        hidden
-                      />
-                      <label for="menu-check-4" class="menu-item__label">
-                        Tâm lý - Kỹ năng sống
-                      </label>
-                      <ul class="submenu-list">
-                        <li class="submenu-item">
-                          <a href="" class="submenu-item__link">
-                            Kỹ năng sống
-                          </a>
-                        </li>
-                        <li class="submenu-item">
-                          <a href="" class="submenu-item__link"> Sách Mới </a>
-                        </li>
-                        <li class="submenu-item">
-                          <a href="" class="submenu-item__link">
-                            Rèn luyện nhân cách
-                          </a>
-                        </li>
-                        <li class="submenu-item">
-                          <a href="" class="submenu-item__link"> Tâm Lý </a>
-                        </li>
-                        <li class="submenu-item">
-                          <a href="" class="submenu-item__link">
-                            Sách cho tuổi mới lớn
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="menu-item">
-                      <input
-                        type="radio"
-                        name="menu"
-                        id="menu-check-5"
-                        hidden
-                      />
-                      <label for="menu-check-5" class="menu-item__label">
-                        Nuôi dạy con
-                      </label>
-                      <ul class="submenu-list">
-                        <li class="submenu-item">
-                          <a href="" class="submenu-item__link">
-                            Cẩm Nang Làm Cha Mẹ
-                          </a>
-                        </li>
-                        <li class="submenu-item">
-                          <a href="" class="submenu-item__link">
-                            Phương Pháp Giáo Dục Trẻ Các Nước
-                          </a>
-                        </li>
-                        <li class="submenu-item">
-                          <a href="" class="submenu-item__link">
-                            Phát Triển Trí Tuệ Cho Trẻ
-                          </a>
-                        </li>
-                        <li class="submenu-item">
-                          <a href="" class="submenu-item__link">
-                            Phát Triển Kĩ Năng Cho Trẻ
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="menu-item">
-                      <input
-                        type="radio"
-                        name="menu"
-                        id="menu-check-6"
-                        hidden
-                      />
-                      <label for="menu-check-6" class="menu-item__label">
-                        Giáo Khoa - Tham Khảo
-                      </label>
-                      <ul class="submenu-list">
-                        <li class="submenu-item">
-                          <a href="" class="submenu-item__link">
-                            Sách Giáo Khoa
-                          </a>
-                        </li>
-                        <li class="submenu-item">
-                          <a href="" class="submenu-item__link">
-                            Sách Tham Khảo
-                          </a>
-                        </li>
-                        <li class="submenu-item">
-                          <a href="" class="submenu-item__link">
-                            Luyện Thi CĐ - ĐH
-                          </a>
-                        </li>
-                        <li class="submenu-item">
-                          <a href="" class="submenu-item__link"> Mẫu Giáo </a>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-                <div class="col l-3 m-9 c-8 header-top__logo">
-                  <a href="./index.html" class="header-top__logo-link">
-                    <img
-                      src="./assets/images/logo/logo.png"
-                      alt=""
-                      class="header-top__picture-img"
-                    />
-                  </a>
-                </div>
-                <div class="col l-9 m-2 c-3 header-top__support">
-                  <div class="row hide-on-mobile-tablet">
-                    <div class="col l-8 header-top__support-search">
-                      <div class="header-search-wrapper">
-                        <input
-                          type="text"
-                          name="search"
-                          id="header-search"
-                          class="header-search"
-                        />
-                        <input
-                          type="submit"
-                          value="Tìm"
-                          class="header-search-submit"
-                        />
-                      </div>
-                    </div>
-                    <ul class="col l-4 header-top__support-tool">
-                      <li class="header-tool">
-                        <a href="./login.html" class="header-tool-login"
-                          >Đăng nhập</a
-                        >
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="https://nobita.vn/layouts/fontpage/images/favicon.ico" />
+
+  <!-- Css -->
+  <link rel="stylesheet" href="./assets/css/base.css" />
+  <link rel="stylesheet" href="./assets/css/grid.css" />
+  <link rel="stylesheet" href="./assets/css/header.css" />
+  <link rel="stylesheet" href="./assets/css/footer.css" />
+  <link rel="stylesheet" href="./assets/css/cart.css" />
+  <link rel="stylesheet" href="./assets/css/responsive.css" />
+  <link rel="stylesheet" href="./assets/css/checkout.css" />
+</head>
+
+<body>
+  <!-- app start -->
+  <div id="app">
+    <!-- header start -->
+    <div id="header">
+      <div class="header-wrapper">
+        <div class="header-top">
+          <div class="grid wide">
+            <div class="row">
+              <div class="col m-1 c-1 menubar hide-on-pc">
+                <input type="checkbox" name="close" id="checkbox-close" hidden />
+                <label for="checkbox-close"><i class="fas fa-bars"></i></label>
+                <ul class="menu-list">
+                  <div class="menu-heading">
+                    <p class="menu-title">
+                      <i class="fas fa-bars"></i> DANH MỤC SẢN PHẨM
+                    </p>
+                    <label for="checkbox-close">
+                      <i class="fas fa-times menu-close"></i>
+                    </label>
+                  </div>
+                  <li class="menu-item">
+                    <input type="radio" name="menu" id="menu-check-1" hidden />
+                    <label for="menu-check-1" class="menu-item__label">
+                      Nổi bật
+                    </label>
+                    <ul class="submenu-list">
+                      <li class="submenu-item">
+                        <a href="" class="submenu-item__link">
+                          Sách Bán Chạy
+                        </a>
                       </li>
-                      <li class="header-tool header-cart">
-                        <a class="header-cart__text">Giỏ hàng</a>
-                        <span>
-                          (<span class="header-cart__number">0</span>)
-                        </span>
-
-                        <i class="fas fa-sort-down"></i>
-
-                        <ul class="header-cart__content">
-                          <h2 class="header-cart__content-heading">Giỏ hàng</h2>
-                          <ul class="header-cart__list">
-                            <li class="header-cart__item row no-gutters">
-                              <div class="col l-2">
-                                <img
-                                  src="./assets/images/sanpham/manga/thienthandietthe_1.png"
-                                  alt=""
-                                  class="header-cart__item-img"
-                                />
-                              </div>
-                              <div class="col l-9">
-                                <a href="#" class="header-cart__item-text">
-                                  Thiên thần diệt thế tập 1
-                                </a>
-                                <span class="header-cart__item-price">
-                                  54000 ₫
-                                </span>
-                              </div>
-                              <div class="col l-1">
-                                <i
-                                  class="fas fa-times header-cart__item-delete"
-                                >
-                                </i>
-                              </div>
-                            </li>
-                            <li class="header-cart__item row no-gutters">
-                              <div class="col l-2">
-                                <img
-                                  src="./assets/images/sanpham/manga/thienthandietthe_2.png"
-                                  alt=""
-                                  class="header-cart__item-img"
-                                />
-                              </div>
-                              <div class="col l-9">
-                                <a href="#" class="header-cart__item-text">
-                                  Thiên thần diệt thế tập 2
-                                </a>
-                                <span class="header-cart__item-price">
-                                  54000 ₫
-                                </span>
-                              </div>
-                              <div class="col l-1">
-                                <i
-                                  class="fas fa-times header-cart__item-delete"
-                                >
-                                </i>
-                              </div>
-                            </li>
-                            <li class="header-cart__item row no-gutters">
-                              <div class="col l-2">
-                                <img
-                                  src="./assets/images/sanpham/manga/thienthandietthe_3.png"
-                                  alt=""
-                                  class="header-cart__item-img"
-                                />
-                              </div>
-                              <div class="col l-9">
-                                <a href="#" class="header-cart__item-text">
-                                  Thiên thần diệt thế tập 3
-                                </a>
-                                <span class="header-cart__item-price">
-                                  54000 ₫
-                                </span>
-                              </div>
-                              <div class="col l-1">
-                                <i
-                                  class="fas fa-times header-cart__item-delete"
-                                >
-                                </i>
-                              </div>
-                            </li>
-                            <li class="header-cart__item row no-gutters">
-                              <div class="col l-2">
-                                <img
-                                  src="./assets/images/sanpham/manga/thienthandietthe_4.png"
-                                  alt=""
-                                  class="header-cart__item-img"
-                                />
-                              </div>
-                              <div class="col l-9">
-                                <a href="#" class="header-cart__item-text">
-                                  Thiên thần diệt thế tập 4
-                                </a>
-                                <span class="header-cart__item-price">
-                                  54000 ₫
-                                </span>
-                              </div>
-                              <div class="col l-1">
-                                <i
-                                  class="fas fa-times header-cart__item-delete"
-                                >
-                                </i>
-                              </div>
-                            </li>
-                          </ul>
-                          <div class="header-cart__content-cost">
-                            <p>
-                              <strong>Tổng Tiền:</strong>
-                              <span class="header-cart__content-total">
-                                216000 ₫
-                              </span>
-                            </p>
-                            <div class="header-cart__btn-open">
-                              Xem giỏ hàng
-                            </div>
-                          </div>
-                        </ul>
+                      <li class="submenu-item">
+                        <a href="" class="submenu-item__link"> Sách Mới </a>
+                      </li>
+                      <li class="submenu-item">
+                        <a href="" class="submenu-item__link">
+                          Sách Phát Hành
+                        </a>
                       </li>
                     </ul>
-                  </div>
-                  <div class="row header-top__tablet-mobile hide-on-pc">
-                    <div class="header-top__tablet-mobile-search">
-                      <i class="fas fa-search"></i>
-                    </div>
-                    <div class="header-top__tablet-mobile-cart">
-                      <a href="./checkout.html">
-                        <i class="fas fa-shopping-cart"></i>
-                        <p>(<span class="shownumber">4</span>)</p>
-                      </a>
-                    </div>
-                  </div>
-                </div>
+                  </li>
+                  <li class="menu-item">
+                    <input type="radio" name="menu" id="menu-check-2" hidden />
+                    <label for="menu-check-2" class="menu-item__label">
+                      Văn Học
+                    </label>
+                    <ul class="submenu-list">
+                      <li class="submenu-item">
+                        <a href="" class="submenu-item__link">
+                          Tiểu Thuyết
+                        </a>
+                      </li>
+                      <li class="submenu-item">
+                        <a href="" class="submenu-item__link"> Truyện Ngắn - Tản Văn </a>
+                      </li>
+                      <li class="submenu-item">
+                        <a href="" class="submenu-item__link">
+                          Light Novel
+                        </a>
+                      </li>
+                      <li class="submenu-item">
+                        <a href="" class="submenu-item__link">
+                          Ngôn Tình
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item">
+                    <input type="radio" name="menu" id="menu-check-3" hidden />
+                    <label for="menu-check-3" class="menu-item__label">
+                      Sách Kinh Tế
+                    </label>
+                    <ul class="submenu-list">
+                      <li class="submenu-item">
+                        <a href="./category.html" class="submenu-item__link">
+                          Nhân Vật - Bài Học Kinh Doanh
+                        </a>
+                      </li>
+                      <li class="submenu-item">
+                        <a href="" class="submenu-item__link">
+                          Quản Trị - Lãnh Đạo
+                        </a>
+                      </li>
+                      <li class="submenu-item">
+                        <a href="" class="submenu-item__link">
+                          Marketing - Bán Hàng
+                        </a>
+                      </li>
+                      <li class="submenu-item">
+                        <a href="" class="submenu-item__link">
+                          Phân Tích Kinh Tế
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item">
+                    <input type="radio" name="menu" id="menu-check-4" hidden />
+                    <label for="menu-check-4" class="menu-item__label">
+                      Sách Thiếu Nhi
+                    </label>
+                    <ul class="submenu-list">
+                      <li class="submenu-item">
+                        <a href="" class="submenu-item__link">
+                          Manga - Comic
+                        </a>
+                      </li>
+                      <li class="submenu-item">
+                        <a href="" class="submenu-item__link"> Kiến Thức Bách Khoa </a>
+                      </li>
+                      <li class="submenu-item">
+                        <a href="" class="submenu-item__link"> Sách Tranh Kỹ Năng Sống Trẻ</a>
+                      </li>
+                      <li class="submenu-item">
+                        <a href="" class="submenu-item__link">
+                          Vừa Học Vừa Chơi Cho Trẻ
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item">
+                    <input type="radio" name="menu" id="menu-check-5" hidden />
+                    <label for="menu-check-5" class="menu-item__label">
+                      Tâm Lý - Kỹ Năng Sống
+                    </label>
+                    <ul class="submenu-list">
+                      <li class="submenu-item">
+                        <a href="" class="submenu-item__link">
+                          Kỹ Năng Sống
+                        </a>
+                      </li>
+                      <li class="submenu-item">
+                        <a href="" class="submenu-item__link"> Sách Mới </a>
+                      </li>
+                      <li class="submenu-item">
+                        <a href="" class="submenu-item__link">
+                          Rèn Luyện Nhân Cách
+                        </a>
+                      </li>
+                      <li class="submenu-item">
+                        <a href="" class="submenu-item__link"> Tâm Lý </a>
+                      </li>
+                      <li class="submenu-item">
+                        <a href="" class="submenu-item__link">
+                          Sách Cho Tuổi Mới Lớn
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item">
+                    <input type="radio" name="menu" id="menu-check-6" hidden />
+                    <label for="menu-check-6" class="menu-item__label">
+                      Nuôi Dạy Con
+                    </label>
+                    <ul class="submenu-list">
+                      <li class="submenu-item">
+                        <a href="" class="submenu-item__link">
+                          Cẩm Nang Làm Cha Mẹ
+                        </a>
+                      </li>
+                      <li class="submenu-item">
+                        <a href="" class="submenu-item__link">
+                          Phương Pháp Giáo Dục Trẻ Các Nước
+                        </a>
+                      </li>
+                      <li class="submenu-item">
+                        <a href="" class="submenu-item__link">
+                          Phát Triển Trí Tuệ Cho Trẻ
+                        </a>
+                      </li>
+                      <li class="submenu-item">
+                        <a href="" class="submenu-item__link">
+                          Phát Triển Kĩ Năng Cho Trẻ
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item">
+                    <input type="radio" name="menu" id="menu-check-7" hidden />
+                    <label for="menu-check-7" class="menu-item__label">
+                      Tiểu Sử Hồi Ký
+                    </label>
+                    <ul class="submenu-list">
+                      <li class="submenu-item">
+                        <a href="" class="submenu-item__link">
+                          Câu Chuyện Cuộc Đời
+                        </a>
+                      </li>
+                      <li class="submenu-item">
+                        <a href="" class="submenu-item__link">
+                          Chính Trị
+                        </a>
+                      </li>
+                      <li class="submenu-item">
+                        <a href="" class="submenu-item__link">
+                          Kinh Tế
+                        </a>
+                      </li>
+                      <li class="submenu-item">
+                        <a href="" class="submenu-item__link">
+                          Nghệ Thuật - Giải Trí
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item">
+                    <input type="radio" name="menu" id="menu-check-8" hidden />
+                    <label for="menu-check-8" class="menu-item__label">
+                      Giáo Khoa - Tham Khảo
+                    </label>
+                    <ul class="submenu-list">
+                      <li class="submenu-item">
+                        <a href="" class="submenu-item__link">
+                          Sách Giáo Khoa
+                        </a>
+                      </li>
+                      <li class="submenu-item">
+                        <a href="" class="submenu-item__link">
+                          Sách Tham Khảo
+                        </a>
+                      </li>
+                      <li class="submenu-item">
+                        <a href="" class="submenu-item__link">
+                          Luyện Thi CĐ - ĐH
+                        </a>
+                      </li>
+                      <li class="submenu-item">
+                        <a href="" class="submenu-item__link">
+                          Mẫu Giáo
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
               </div>
-            </div>
-          </div>
-          <div class="header-bottom hide-on-mobile-tablet">
-            <div class="grid wide">
-              <div class="row header-bottom-wrapper">
-                <div class="col l-2-4 header-bottom-category">
-                  <h2 class="header-bottom-category__title">
-                    <i class="fas fa-bars"></i> DANH MỤC SẢN PHẨM
-                  </h2>
-                  <ul class="header-category-list">
-                    <li class="header-category-item">
-                      <a href="" class="header-category-item__link">
-                        Nổi bật <i class="fa-solid fa-arrow-right"></i>
-                      </a>
-                      <ul class="header-category-item__sublist">
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Sách Bán Chạy
-                          </a>
-                        </li>
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Sách Mới
-                          </a>
-                        </li>
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Sách Phát Hành
-                          </a>
-                        </li>
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Sách Giảm Giá
-                          </a>
-                        </li>
-                      </ul>
+              <div class="col l-3 m-9 c-8 header-top__logo">
+                <a href="./index.html" class="header-top__logo-link">
+                  <img src="./assets/images/logo/logo.png" alt="" class="header-top__picture-img" />
+                </a>
+              </div>
+              <div class="col l-9 m-2 c-3 header-top__support">
+                <div class="row hide-on-mobile-tablet">
+                  <div class="col l-8 header-top__support-search">
+                    <div class="header-search-wrapper">
+                      <input type="text" name="search" id="header-search" class="header-search" />
+                      <input type="submit" value="Tìm" class="header-search-submit" />
+                    </div>
+                  </div>
+                  <ul class="col l-4 header-top__support-tool">
+                    <li class="header-tool">
+                      <a href="./login.html" class="header-tool-login">Đăng nhập</a>
                     </li>
-                    <li class="header-category-item">
-                      <a href="" class="header-category-item__link">
-                        Kinh tế <i class="fa-solid fa-arrow-right"></i>
-                      </a>
-                      <ul class="header-category-item__sublist">
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Tài Chính - Kế Toán
-                          </a>
-                        </li>
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Quản Trị - Lãnh Đạo
-                          </a>
-                        </li>
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Marketing - Bán Hàng
-                          </a>
-                        </li>
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Kinh Tế Học
-                          </a>
-                        </li>
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Khởi Nghiệp
-                          </a>
-                        </li>
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Doanh Nhân - Tập Đoàn
-                          </a>
-                        </li>
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Bài Học Kinh Doanh
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="header-category-item">
-                      <a href="" class="header-category-item__link">
-                        Sách thiếu nhi <i class="fa-solid fa-arrow-right"></i>
-                      </a>
-                      <ul class="header-category-item__sublist">
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Truyện Tranh Nhật Bản
-                          </a>
-                        </li>
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Văn học
-                          </a>
-                        </li>
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Ngôn Tình
-                          </a>
-                        </li>
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Tiểu thuyết
-                          </a>
-                        </li>
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Light Novel
-                          </a>
-                        </li>
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Truyện Trinh Thám - Kiếm Hiệp
-                          </a>
-                        </li>
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Truyện Ngắn - Tản Văn
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="header-category-item">
-                      <a href="" class="header-category-item__link">
-                        Tâm lý - Kỹ năng sống
-                        <i class="fa-solid fa-arrow-right"></i>
-                      </a>
-                      <ul class="header-category-item__sublist">
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Kỹ năng sống
-                          </a>
-                        </li>
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Rèn luyện nhân cách
-                          </a>
-                        </li>
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Tâm Lý
-                          </a>
-                        </li>
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Sách cho tuổi mới lớn
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="header-category-item">
-                      <a href="" class="header-category-item__link">
-                        Nuôi dạy con <i class="fa-solid fa-arrow-right"></i>
-                      </a>
-                      <ul class="header-category-item__sublist">
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Cẩm Nang Làm Cha Mẹ
-                          </a>
-                        </li>
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Phương Pháp Giáo Dục Trẻ Các Nước
-                          </a>
-                        </li>
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Phát Triển Trí Tuệ Cho Trẻ
-                          </a>
-                        </li>
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Phát Triển Kĩ Năng Cho Trẻ
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="header-category-item">
-                      <a href="" class="header-category-item__link">
-                        Giáo Khoa - Tham Khảo
-                        <i class="fa-solid fa-arrow-right"></i>
-                      </a>
-                      <ul class="header-category-item__sublist">
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Sách Giáo Khoa
-                          </a>
-                        </li>
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Sách Tham Khảo
-                          </a>
-                        </li>
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Luyện Thi CĐ - ĐH
-                          </a>
-                        </li>
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Mẫu Giáo
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="header-category-item">
-                      <a href="" class="header-category-item__link">
-                        Giáo Khoa - Tham Khảo
-                        <i class="fa-solid fa-arrow-right"></i>
-                      </a>
-                      <ul class="header-category-item__sublist">
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Sách Giáo Khoa
-                          </a>
-                        </li>
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Sách Tham Khảo
-                          </a>
-                        </li>
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Luyện Thi CĐ - ĐH
-                          </a>
-                        </li>
-                        <li class="header-category-item__sublist-item">
-                          <a
-                            href=""
-                            class="header-category-item__sublist-item-link"
-                          >
-                            Mẫu Giáo
-                          </a>
-                        </li>
+                    <li class="header-tool header-cart">
+                      <a class="header-cart__text">Giỏ hàng</a>
+                      <span>
+                        (<span class="header-cart__number">0</span>)
+                      </span>
+
+                      <i class="fas fa-sort-down"></i>
+
+                      <ul class="header-cart__content">
+                        <h2 class="header-cart__content-heading">Giỏ hàng</h2>
+                        <ul class="header-cart__list">
+                          <li class="header-cart__item row no-gutters">
+                            <div class="col l-2">
+                              <img src="./assets/images/sanpham/manga/thienthandietthe_1.png" alt=""
+                                class="header-cart__item-img" />
+                            </div>
+                            <div class="col l-9">
+                              <a href="#" class="header-cart__item-text">
+                                Thiên thần diệt thế tập 1
+                              </a>
+                              <span class="header-cart__item-price">
+                                54000 ₫
+                              </span>
+                            </div>
+                            <div class="col l-1">
+                              <i class="fas fa-times header-cart__item-delete">
+                              </i>
+                            </div>
+                          </li>
+                          <li class="header-cart__item row no-gutters">
+                            <div class="col l-2">
+                              <img src="./assets/images/sanpham/manga/thienthandietthe_2.png" alt=""
+                                class="header-cart__item-img" />
+                            </div>
+                            <div class="col l-9">
+                              <a href="#" class="header-cart__item-text">
+                                Thiên thần diệt thế tập 2
+                              </a>
+                              <span class="header-cart__item-price">
+                                54000 ₫
+                              </span>
+                            </div>
+                            <div class="col l-1">
+                              <i class="fas fa-times header-cart__item-delete">
+                              </i>
+                            </div>
+                          </li>
+                          <li class="header-cart__item row no-gutters">
+                            <div class="col l-2">
+                              <img src="./assets/images/sanpham/manga/thienthandietthe_3.png" alt=""
+                                class="header-cart__item-img" />
+                            </div>
+                            <div class="col l-9">
+                              <a href="#" class="header-cart__item-text">
+                                Thiên thần diệt thế tập 3
+                              </a>
+                              <span class="header-cart__item-price">
+                                54000 ₫
+                              </span>
+                            </div>
+                            <div class="col l-1">
+                              <i class="fas fa-times header-cart__item-delete">
+                              </i>
+                            </div>
+                          </li>
+                          <li class="header-cart__item row no-gutters">
+                            <div class="col l-2">
+                              <img src="./assets/images/sanpham/manga/thienthandietthe_4.png" alt=""
+                                class="header-cart__item-img" />
+                            </div>
+                            <div class="col l-9">
+                              <a href="#" class="header-cart__item-text">
+                                Thiên thần diệt thế tập 4
+                              </a>
+                              <span class="header-cart__item-price">
+                                54000 ₫
+                              </span>
+                            </div>
+                            <div class="col l-1">
+                              <i class="fas fa-times header-cart__item-delete">
+                              </i>
+                            </div>
+                          </li>
+                        </ul>
+                        <div class="header-cart__content-cost">
+                          <p>
+                            <strong>Tổng Tiền:</strong>
+                            <span class="header-cart__content-total">
+                              216000 ₫
+                            </span>
+                          </p>
+                          <div class="header-cart__btn-open">
+                            Xem giỏ hàng
+                          </div>
+                        </div>
                       </ul>
                     </li>
                   </ul>
                 </div>
-                <div class="col l-o-7 l-2-4 header-bottom-hotline">
-                  <h5>
-                    <i class="fas fa-phone"></i>
-                    Hotline:
-                    <span class="header-bottom-hotline__text">
-                      0938 424 289
-                    </span>
-                  </h5>
+                <div class="row header-top__tablet-mobile hide-on-pc">
+                  <div class="header-top__tablet-mobile-search">
+                    <i class="fas fa-search"></i>
+                  </div>
+                  <div class="header-top__tablet-mobile-cart">
+                    <a href="./checkout.html">
+                      <i class="fas fa-shopping-cart"></i>
+                      <p>(<span class="shownumber">4</span>)</p>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <div class="header-bottom hide-on-mobile-tablet">
+          <div class="grid wide">
+            <div class="row header-bottom-wrapper">
+              <div class="col l-2-4 m-6 c-6 header-bottom-category">
+                <h2 class="header-bottom-category__title">
+                  <i class="fas fa-bars"></i> DANH MỤC SẢN PHẨM
+                </h2>
+                <ul class="header-category-list">
+                  <li class="header-category-item">
+                    <a href="" class="header-category-item__link">
+                      Nổi bật <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <ul class="header-category-item__sublist">
+                      <li class="header-category-item__sublist-item">
+                        <a href="" class="header-category-item__sublist-item-link">
+                          Sách Bán Chạy
+                        </a>
+                      </li>
+                      <li class="header-category-item__sublist-item">
+                        <a href="" class="header-category-item__sublist-item-link">
+                          Sách Mới
+                        </a>
+                      </li>
+                      <li class="header-category-item__sublist-item">
+                        <a href="" class="header-category-item__sublist-item-link">
+                          Sách Phát Hành
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="header-category-item">
+                    <a href="" class="header-category-item__link">
+                      Văn Học
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <ul class="header-category-item__sublist">
+                      <li class="header-category-item__sublist-item">
+                        <a href="" class="header-category-item__sublist-item-link">
+                          Tiểu Thuyết
+                        </a>
+                      </li>
+                      <li class="header-category-item__sublist-item">
+                        <a href="" class="header-category-item__sublist-item-link">
+                          Truyện Ngắn - Tản Văn
+                        </a>
+                      </li>
+                      <li class="header-category-item__sublist-item">
+                        <a href="" class="header-category-item__sublist-item-link">
+                          Light Novel
+                        </a>
+                      </li>
+                      <li class="header-category-item__sublist-item">
+                        <a href="" class="header-category-item__sublist-item-link">
+                          Ngôn Tình
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="header-category-item">
+                    <a href="./category.html" class="header-category-item__link">
+                      Kinh Tế <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <ul class="header-category-item__sublist">
+                      <li class="header-category-item__sublist-item">
+                        <a href="" class="header-category-item__sublist-item-link">
+                          Nhân Vật - Bài Học Kinh Doanh
+                        </a>
+                      </li>
+                      <li class="header-category-item__sublist-item">
+                        <a href="" class="header-category-item__sublist-item-link">
+                          Quản Trị - Lãnh Đạo
+                        </a>
+                      </li>
+                      <li class="header-category-item__sublist-item">
+                        <a href="" class="header-category-item__sublist-item-link">
+                          Marketing - Bán Hàng
+                        </a>
+                      </li>
+                      <li class="header-category-item__sublist-item">
+                        <a href="" class="header-category-item__sublist-item-link">
+                          Phân Tích Kinh Tế
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="header-category-item">
+                    <a href="" class="header-category-item__link">
+                      Sách Thiếu Nhi <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <ul class="header-category-item__sublist">
+                      <li class="header-category-item__sublist-item">
+                        <a href="" class="header-category-item__sublist-item-link">
+                          Manga - Comic
+                        </a>
+                      </li>
+                      <li class="header-category-item__sublist-item">
+                        <a href="" class="header-category-item__sublist-item-link">
+                          Kiến Thức Bách Khoa
+                        </a>
+                      </li>
+                      <li class="header-category-item__sublist-item">
+                        <a href="" class="header-category-item__sublist-item-link">
+                          Sách Tranh Kỹ Năng Cho Trẻ
+                        </a>
+                      </li>
+                      <li class="header-category-item__sublist-item">
+                        <a href="" class="header-category-item__sublist-item-link">
+                          Vừa Học - Vừa Chơi Cho Trẻ
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="header-category-item">
+                    <a href="" class="header-category-item__link">
+                      Tâm Ký - Kỹ Năng Sống
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <ul class="header-category-item__sublist">
+                      <li class="header-category-item__sublist-item">
+                        <a href="" class="header-category-item__sublist-item-link">
+                          Kỹ Năng Sống
+                        </a>
+                      </li>
+                      <li class="header-category-item__sublist-item">
+                        <a href="" class="header-category-item__sublist-item-link">
+                          Rèn Luyện Nhân Cách
+                        </a>
+                      </li>
+                      <li class="header-category-item__sublist-item">
+                        <a href="" class="header-category-item__sublist-item-link">
+                          Tâm Lý
+                        </a>
+                      </li>
+                      <li class="header-category-item__sublist-item">
+                        <a href="" class="header-category-item__sublist-item-link">
+                          Sách Cho Tuổi Mới Lớn
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="header-category-item">
+                    <a href="" class="header-category-item__link">
+                      Nuôi Dạy Con <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <ul class="header-category-item__sublist">
+                      <li class="header-category-item__sublist-item">
+                        <a href="" class="header-category-item__sublist-item-link">
+                          Cẩm Nang Làm Cha Mẹ
+                        </a>
+                      </li>
+                      <li class="header-category-item__sublist-item">
+                        <a href="" class="header-category-item__sublist-item-link">
+                          Phương Pháp Giáo Dục Trẻ Các Nước
+                        </a>
+                      </li>
+                      <li class="header-category-item__sublist-item">
+                        <a href="" class="header-category-item__sublist-item-link">
+                          Phát Triển Trí Tuệ Cho Trẻ
+                        </a>
+                      </li>
+                      <li class="header-category-item__sublist-item">
+                        <a href="" class="header-category-item__sublist-item-link">
+                          Phát Triển Kĩ Năng Cho Trẻ
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="header-category-item">
+                    <a href="" class="header-category-item__link">
+                      Tiểu Sử Hồi Ký
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <ul class="header-category-item__sublist">
+                      <li class="header-category-item__sublist-item">
+                        <a href="" class="header-category-item__sublist-item-link">
+                          Câu Chuyện Cuộc Đời
+                        </a>
+                      </li>
+                      <li class="header-category-item__sublist-item">
+                        <a href="" class="header-category-item__sublist-item-link">
+                          Chính Trị
+                        </a>
+                      </li>
+                      <li class="header-category-item__sublist-item">
+                        <a href="" class="header-category-item__sublist-item-link">
+                          Kinh Tế
+                        </a>
+                      </li>
+                      <li class="header-category-item__sublist-item">
+                        <a href="" class="header-category-item__sublist-item-link">
+                          Nghệ Thuật - Giải Trí
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="header-category-item">
+                    <a href="" class="header-category-item__link">
+                      Giáo Khoa - Tham Khảo
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <ul class="header-category-item__sublist">
+                      <li class="header-category-item__sublist-item">
+                        <a href="" class="header-category-item__sublist-item-link">
+                          Sách Giáo Khoa
+                        </a>
+                      </li>
+                      <li class="header-category-item__sublist-item">
+                        <a href="" class="header-category-item__sublist-item-link">
+                          Sách Tham Khảo
+                        </a>
+                      </li>
+                      <li class="header-category-item__sublist-item">
+                        <a href="" class="header-category-item__sublist-item-link">
+                          Luyện Thi CĐ - ĐH
+                        </a>
+                      </li>
+                      <li class="header-category-item__sublist-item">
+                        <a href="" class="header-category-item__sublist-item-link">
+                          Mẫu Giáo
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+
+                </ul>
+              </div>
+              <div class="col l-o-7 l-2-4 m-6 c-6 header-bottom-hotline">
+                <h5>
+                  <i class="fas fa-phone"></i>
+                  Hotline:
+                  <span class="header-bottom-hotline__text">
+                    0938 424 289
+                  </span>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <!-- header end -->
+    </div>
+    <!-- header end -->
 
-      <div id="app-content">
-        <div class="grid wide">
-          <div id="app-content">
-            <section id="checkout">
-              <div class="grid wide">
-                <div class="row">
-                  <!-- left -->
-                  <div class="checkout-left col l-9 m-12 c-12">
-                    <div class="checkout-left-wrapper">
-                      <div class="checkout-left-address">
-                        <div class="checkout-left__heading">
-                          <h2 class="checkout-left__heading-title">
-                            Địa chỉ giao hàng
-                          </h2>
-                        </div>
-                        <form action="" id="checkout-form">
-                          <div class="checkout-group">
-                            <div class="row no-gutters">
-                              <label
-                                for=""
-                                class="col l-2 m-2 c-4 checkout-form-label"
-                              >
-                                Họ và tên <span class="checkout-star">*</span>
-                              </label>
-                              <select
-                                name=""
-                                id="checkout-gender"
-                                class="col l-1 m-2 c-2"
-                              >
-                                <option value="0" checked>Chị</option>
-                                <option value="1">Anh</option>
-                              </select>
-                              <input
-                                type="text"
-                                name="name"
-                                id="checkout-name"
-                                class="checkout-form-control col l-4 m-12 c-12"
-                              />
-                            </div>
-                          </div>
-                          <div class="checkout-group">
-                            <div class="row no-gutters">
-                              <label
-                                for="checkout-phone"
-                                class="checkout-form-label col l-2 m-2 c-4"
-                              >
-                                Điện thoại <span class="checkout-star">*</span>
-                              </label>
-                              <input
-                                type="text"
-                                name="phone"
-                                id="checkout-phone"
-                                class="checkout-form-control col l-5 m-12 c-12"
-                              />
-                            </div>
-                          </div>
-                          <div class="checkout-group">
-                            <div class="row no-gutters">
-                              <label
-                                for=""
-                                class="checkout-form-label col l-2 m-2 c-4"
-                              >
-                                Địa chỉ <span class="checkout-star">*</span>
-                              </label>
-                              <textarea
-                                name=""
-                                id=""
-                                cols="30"
-                                rows="5"
-                                class="checkout-form-textarea col l-5 m-5 c-12"
-                              ></textarea>
-                            </div>
-                          </div>
-                          <div class="checkout-group">
-                            <div class="row no-gutters">
-                              <button
-                                class="checkout-next-btn col l-o-3 m-o-3 c-o-5"
-                              >
-                                Tiếp tục
-                              </button>
-                            </div>
-                          </div>
-                        </form>
+    <div id="app-content">
+      <div class="grid wide">
+        <div id="app-content">
+          <section id="checkout">
+            <div class="grid wide">
+              <div class="row">
+                <!-- left -->
+                <div class="checkout-left col l-9 m-12 c-12">
+                  <div class="checkout-left-wrapper">
+                    <div class="checkout-left-address">
+                      <div class="checkout-left__heading">
+                        <h2 class="checkout-left__heading-title">
+                          Địa chỉ giao hàng
+                        </h2>
                       </div>
+                      <form action="" id="checkout-form">
+                        <div class="checkout-group">
+                          <div class="row no-gutters">
+                            <label for="" class="col l-2 m-2 c-4 checkout-form-label">
+                              Họ và tên <span class="checkout-star">*</span>
+                            </label>
+                            <select name="" id="checkout-gender" class="col l-1 m-2 c-2">
+                              <option value="0" checked>Chị</option>
+                              <option value="1">Anh</option>
+                            </select>
+                            <input type="text" name="name" id="checkout-name"
+                              class="checkout-form-control col l-4 m-12 c-12" />
+                          </div>
+                        </div>
+                        <div class="checkout-group">
+                          <div class="row no-gutters">
+                            <label for="checkout-phone" class="checkout-form-label col l-2 m-2 c-4">
+                              Điện thoại <span class="checkout-star">*</span>
+                            </label>
+                            <input type="text" name="phone" id="checkout-phone"
+                              class="checkout-form-control col l-5 m-12 c-12" />
+                          </div>
+                        </div>
+                        <div class="checkout-group">
+                          <div class="row no-gutters">
+                            <label for="" class="checkout-form-label col l-2 m-2 c-4">
+                              Địa chỉ <span class="checkout-star">*</span>
+                            </label>
+                            <textarea name="" id="" cols="30" rows="5"
+                              class="checkout-form-textarea col l-5 m-5 c-12"></textarea>
+                          </div>
+                        </div>
+                        <div class="checkout-group">
+                          <div class="row no-gutters">
+                            <button class="checkout-next-btn col l-o-3 m-o-3 c-o-5">
+                              Tiếp tục
+                            </button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
 
-                      <div class="checkout-left-payment">
-                        <div class="checkout-left__heading">
-                          <h2 class="checkout-left__heading-title">
-                            Địa chỉ giao hàng
-                          </h2>
+                    <div class="checkout-left-payment">
+                      <div class="checkout-left__heading">
+                        <h2 class="checkout-left__heading-title">
+                          Địa chỉ giao hàng
+                        </h2>
+                      </div>
+                      <div class="checkout-left-payment__select">
+                        <div class="checkout-group checkout-payment">
+                          <input type="radio" name="checkout-payment" id="checkout-payment-cast" class="payment-radio"
+                            checked />
+                          <label for="checkout-payment-cast" class="checkout-form-label">
+                            Thanh toán tiền mặt khi nhận hàng
+                          </label>
                         </div>
-                        <div class="checkout-left-payment__select">
-                          <div class="checkout-group checkout-payment">
-                            <input
-                              type="radio"
-                              name="checkout-payment"
-                              id="checkout-payment-cast"
-                              class="payment-radio"
-                              checked
-                            />
-                            <label
-                              for="checkout-payment-cast"
-                              class="checkout-form-label"
-                            >
-                              Thanh toán tiền mặt khi nhận hàng
-                            </label>
-                          </div>
-                          <div class="checkout-group checkout-payment">
-                            <input
-                              type="radio"
-                              name="checkout-payment"
-                              id="checkout-payment-bank"
-                              class="payment-radio"
-                            />
-                            <label
-                              for="checkout-payment-bank"
-                              class="checkout-form-label"
-                            >
-                              Chuyển khoản ngân hàng
-                            </label>
-                            <div class="checkout-payment-content">
-                              <p>
-                                Tài khoản BIDV: 12300065xxx - Chủ tài khoản:
-                                Nguyễn Văn A – CN Đông Sài Gòn
-                              </p>
-                              <p>
-                                Lưu ý: Sau khi chuyển khoản, quý khách vui lòng
-                                thông báo qua điện thoại hoặc email để Nobita
-                                tiện kiểm tra và xử lý đơn hàng.
-                              </p>
-                              <p>
-                                Hỗ trợ khách hàng: 0938 424 289 - Email:
-                                admin@nobita.vn
-                              </p>
-                            </div>
+                        <div class="checkout-group checkout-payment">
+                          <input type="radio" name="checkout-payment" id="checkout-payment-bank"
+                            class="payment-radio" />
+                          <label for="checkout-payment-bank" class="checkout-form-label">
+                            Chuyển khoản ngân hàng
+                          </label>
+                          <div class="checkout-payment-content">
+                            <p>
+                              Tài khoản BIDV: 12300065xxx - Chủ tài khoản:
+                              Nguyễn Văn A – CN Đông Sài Gòn
+                            </p>
+                            <p>
+                              Lưu ý: Sau khi chuyển khoản, quý khách vui lòng
+                              thông báo qua điện thoại hoặc email để Nobita
+                              tiện kiểm tra và xử lý đơn hàng.
+                            </p>
+                            <p>
+                              Hỗ trợ khách hàng: 0938 424 289 - Email:
+                              admin@nobita.vn
+                            </p>
                           </div>
                         </div>
-                        <div class="checkout-left-payment-order">
-                          <button class="checkout-order-btn">Đặt mua</button>
-                        </div>
+                      </div>
+                      <div class="checkout-left-payment-order">
+                        <button class="checkout-order-btn">Đặt mua</button>
                       </div>
                     </div>
                   </div>
-                  <!-- right -->
-                  <div class="checkout-right col l-3 m-12 c-12">
-                    <div class="checkout-right-wrapper">
-                      <div class="checkout-right-address">
+                </div>
+                <!-- right -->
+                <div class="checkout-right col l-3 m-12 c-12">
+                  <div class="checkout-right-wrapper">
+                    <div class="checkout-right-address">
+                      <div class="checkout-right-heading">
+                        <h2>Địa chỉ giao hàng</h2>
+                        <div class="checkout-right-repair">Sửa</div>
+                      </div>
+                      <div class="checkout-right-address__item">
+                        <p>Anh Hoàng Nguyễn Quang Huy</p>
+                      </div>
+                      <div class="checkout-right-address__item">
+                        <p>Ngã tư Vũng Tàu, Biên Hòa, Đồng Nai</p>
+                      </div>
+                      <div class="checkout-right-address__item">
+                        <span>Điện thoại:</span>
+                        <p>0909 388 xxx</p>
+                      </div>
+                    </div>
+                    <div class="checkout-right-order">
+                      <div class="checkout-right-order__top">
                         <div class="checkout-right-heading">
-                          <h2>Địa chỉ giao hàng</h2>
+                          <h2>
+                            Đơn hàng (<span class="shownumber">4</span> ) sản
+                            phẩm
+                          </h2>
                           <div class="checkout-right-repair">Sửa</div>
                         </div>
-                        <div class="checkout-right-address__item">
-                          <p>Anh Hoàng Nguyễn Quang Huy</p>
+                      </div>
+                      <div class="checkout-right-order__body">
+                        <div class="checkout-right-order__body-item">
+                          <a class="checkout-right-order__body-item-text">
+                            <span class="shownumber">1</span>
+                            x Thiên thần diệt thế - Tập 1
+                          </a>
+                          <span class="checkout-right-order__body-item-price">
+                            99.000 ₫
+                          </span>
                         </div>
-                        <div class="checkout-right-address__item">
-                          <p>Ngã tư Vũng Tàu, Biên Hòa, Đồng Nai</p>
+                        <div class="checkout-right-order__body-item">
+                          <a class="checkout-right-order__body-item-text">
+                            <span class="shownumber">1</span>
+                            x Thiên thần diệt thế - Tập 2
+                          </a>
+                          <span class="checkout-right-order__body-item-price">
+                            99.000 ₫
+                          </span>
                         </div>
-                        <div class="checkout-right-address__item">
-                          <span>Điện thoại:</span>
-                          <p>0909 388 xxx</p>
+                        <div class="checkout-right-order__body-item">
+                          <a class="checkout-right-order__body-item-text">
+                            <span class="shownumber">1</span>
+                            x Thiên thần diệt thế - Tập 3
+                          </a>
+                          <span class="checkout-right-order__body-item-price">
+                            99.000 ₫
+                          </span>
+                        </div>
+                        <div class="checkout-right-order__body-item">
+                          <a class="checkout-right-order__body-item-text">
+                            <span class="shownumber">1</span>
+                            x Thiên thần diệt thế - Tập 4
+                          </a>
+                          <span class="checkout-right-order__body-item-price">
+                            99.000 ₫
+                          </span>
                         </div>
                       </div>
-                      <div class="checkout-right-order">
-                        <div class="checkout-right-order__top">
-                          <div class="checkout-right-heading">
-                            <h2>
-                              Đơn hàng (<span class="shownumber">4</span> ) sản
-                              phẩm
-                            </h2>
-                            <div class="checkout-right-repair">Sửa</div>
-                          </div>
-                        </div>
-                        <div class="checkout-right-order__body">
-                          <div class="checkout-right-order__body-item">
-                            <a class="checkout-right-order__body-item-text">
-                              <span class="shownumber">1</span>
-                              x Thiên thần diệt thế - Tập 1
-                            </a>
-                            <span class="checkout-right-order__body-item-price">
-                              99.000 ₫
-                            </span>
-                          </div>
-                          <div class="checkout-right-order__body-item">
-                            <a class="checkout-right-order__body-item-text">
-                              <span class="shownumber">1</span>
-                              x Thiên thần diệt thế - Tập 2
-                            </a>
-                            <span class="checkout-right-order__body-item-price">
-                              99.000 ₫
-                            </span>
-                          </div>
-                          <div class="checkout-right-order__body-item">
-                            <a class="checkout-right-order__body-item-text">
-                              <span class="shownumber">1</span>
-                              x Thiên thần diệt thế - Tập 3
-                            </a>
-                            <span class="checkout-right-order__body-item-price">
-                              99.000 ₫
-                            </span>
-                          </div>
-                          <div class="checkout-right-order__body-item">
-                            <a class="checkout-right-order__body-item-text">
-                              <span class="shownumber">1</span>
-                              x Thiên thần diệt thế - Tập 4
-                            </a>
-                            <span class="checkout-right-order__body-item-price">
-                              99.000 ₫
-                            </span>
-                          </div>
-                        </div>
 
-                        <div class="checkout-right-order__footer">
-                          <div class="checkout-right-order__footer-item">
-                            <p>Tạm tính</p>
-                            <span
-                              class="checkout-right-order__footer-item-subtotal"
-                            >
-                              216.000 ₫
-                            </span>
-                          </div>
-                          <div class="checkout-right-order__footer-item">
-                            <p>Phí vận chuyển</p>
-                            <span
-                              class="
+                      <div class="checkout-right-order__footer">
+                        <div class="checkout-right-order__footer-item">
+                          <p>Tạm tính</p>
+                          <span class="checkout-right-order__footer-item-subtotal">
+                            216.000 ₫
+                          </span>
+                        </div>
+                        <div class="checkout-right-order__footer-item">
+                          <p>Phí vận chuyển</p>
+                          <span class="
                                 checkout-right-order__footer-item-subtotal
                                 checkout-right-order__footer-item--red
-                              "
-                            >
-                              Miễn phí
-                            </span>
-                          </div>
-                          <div
-                            class="
+                              ">
+                            Miễn phí
+                          </span>
+                        </div>
+                        <div class="
                               checkout-right-order__footer-item
                               checkout-right-order__footer-item--gray
-                            "
-                          >
-                            <p>Thành tiền</p>
-                            <span
-                              class="checkout-right-order__footer-item-subtotal"
-                            >
-                              216.000 ₫
-                            </span>
-                          </div>
+                            ">
+                          <p>Thành tiền</p>
+                          <span class="checkout-right-order__footer-item-subtotal">
+                            216.000 ₫
+                          </span>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </section>
-          </div>
+            </div>
+          </section>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- app end -->
+  <!-- app end -->
 
-    <!-- cart start -->
-    <div id="cart-section">
-      <div class="cart-section-wrapper">
-        <div class="cart-section-title">
-          <h2>Giỏ hàng của tôi</h2>
-          <a href="" class="cart-section-close">Close X</a>
+  <!-- cart start -->
+  <div id="cart-section">
+    <div class="cart-section-wrapper">
+      <div class="cart-section-title">
+        <h2>Giỏ hàng của tôi</h2>
+        <a href="" class="cart-section-close">Close X</a>
+      </div>
+      <div class="cart-section-container">
+        <div class="cart-section-head">
+          <p>Bạn có <span class="shownumber">4</span> sản phẩm trong giỏ</p>
         </div>
-        <div class="cart-section-container">
-          <div class="cart-section-head">
-            <p>Bạn có <span class="shownumber">4</span> sản phẩm trong giỏ</p>
+        <div class="cart-section-body">
+          <ul class="cart-section-body-head">
+            <li class="col l-6 m-6 c-6">Sản phẩm trong giỏ</li>
+            <li class="col l-2 m-2 c-2">Giá bán</li>
+            <li class="col l-2 m-2 c-2">Số lượng</li>
+            <li class="col l-2 m-2 c-2">Thành tiền</li>
+          </ul>
+          <div class="cart-section-body-content">
+            <div class="cart-section-body-content__item">
+              <div class="col l-6 m-6 c-6">
+                <div class="row no-gutters cart-section-body-content-col">
+                  <div class="cart-section-picture col l-1 m-1 c-2">
+                    <img src="./assets/images/sanpham/manga/thienthandietthe_1.png" alt="" class="cart-section-img" />
+                  </div>
+                  <div class="cart-section-name col l-10 m-10 c-9">
+                    <p>Thiên thần diệt thế- Tập 1</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col l-2 m-2 c-2 cart-section-price">99.000 ₫</div>
+              <div class="col l-2 m-2 c-2 cart-section-quantity">
+                <input type="text" name="" id="cart-section-quantity" value="1" />
+              </div>
+              <div class="col l-2 m-2 c-2 cart-section-sum">99.000 ₫</div>
+              <div class="cart-section-delete">Xóa</div>
+            </div>
+            <div class="cart-section-body-content__item">
+              <div class="col l-6 m-6 c-6">
+                <div class="row no-gutters cart-section-body-content-col">
+                  <div class="cart-section-picture col l-1 m-1 c-2">
+                    <img src="./assets/images/sanpham/manga/thienthandietthe_2.png" alt="" class="cart-section-img" />
+                  </div>
+                  <div class="cart-section-name col l-10 m-10 c-9">
+                    <p>Thiên thần diệt thế- Tập 2</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col l-2 m-2 c-2 cart-section-price">99.000 ₫</div>
+              <div class="col l-2 m-2 c-2 cart-section-quantity">
+                <input type="text" name="" id="cart-section-quantity" value="1" />
+              </div>
+              <div class="col l-2 m-2 c-2 cart-section-sum">99.000 ₫</div>
+              <div class="cart-section-delete">Xóa</div>
+            </div>
+            <div class="cart-section-body-content__item">
+              <div class="col l-6 m-6 c-6">
+                <div class="row no-gutters cart-section-body-content-col">
+                  <div class="cart-section-picture col l-1 m-1 c-2">
+                    <img src="./assets/images/sanpham/manga/thienthandietthe_3.png" alt="" class="cart-section-img" />
+                  </div>
+                  <div class="cart-section-name col l-10 m-10 c-9">
+                    <p>Thiên thần diệt thế- Tập 3</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col l-2 m-2 c-2 cart-section-price">99.000 ₫</div>
+              <div class="col l-2 m-2 c-2 cart-section-quantity">
+                <input type="text" name="" id="cart-section-quantity" value="1" />
+              </div>
+              <div class="col l-2 m-2 c-2 cart-section-sum">99.000 ₫</div>
+              <div class="cart-section-delete">Xóa</div>
+            </div>
+            <div class="cart-section-body-content__item">
+              <div class="col l-6 m-6 c-6">
+                <div class="row no-gutters cart-section-body-content-col">
+                  <div class="cart-section-picture col l-1 m-1 c-2">
+                    <img src="./assets/images/sanpham/manga/thienthandietthe_4.png" alt="" class="cart-section-img" />
+                  </div>
+                  <div class="cart-section-name col l-10 m-10 c-9">
+                    <p>Thiên thần diệt thế- Tập 4</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col l-2 m-2 c-2 cart-section-price">99.000 ₫</div>
+              <div class="col l-2 m-2 c-2 cart-section-quantity">
+                <input type="text" name="" id="cart-section-quantity" value="1" />
+              </div>
+              <div class="col l-2 m-2 c-2 cart-section-sum">99.000 ₫</div>
+              <div class="cart-section-delete">Xóa</div>
+            </div>
           </div>
-          <div class="cart-section-body">
-            <ul class="cart-section-body-head">
-              <li class="col l-6 m-6 c-6">Sản phẩm trong giỏ</li>
-              <li class="col l-2 m-2 c-2">Giá bán</li>
-              <li class="col l-2 m-2 c-2">Số lượng</li>
-              <li class="col l-2 m-2 c-2">Thành tiền</li>
-            </ul>
-            <div class="cart-section-body-content">
-              <div class="cart-section-body-content__item">
-                <div class="col l-6 m-6 c-6">
-                  <div class="row no-gutters cart-section-body-content-col">
-                    <div class="cart-section-picture col l-1 m-1 c-2">
-                      <img
-                        src="./assets/images/sanpham/manga/thienthandietthe_1.png"
-                        alt=""
-                        class="cart-section-img"
-                      />
-                    </div>
-                    <div class="cart-section-name col l-10 m-10 c-9">
-                      <p>Thiên thần diệt thế- Tập 1</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col l-2 m-2 c-2 cart-section-price">99.000 ₫</div>
-                <div class="col l-2 m-2 c-2 cart-section-quantity">
-                  <input
-                    type="text"
-                    name=""
-                    id="cart-section-quantity"
-                    value="1"
-                  />
-                </div>
-                <div class="col l-2 m-2 c-2 cart-section-sum">99.000 ₫</div>
-                <div class="cart-section-delete">Xóa</div>
+          <div class="cart-section-body-footer">
+            <div class="cart-section-body-footer-total-wrapper">
+              <div class="cart-section-body-footer-subtotal l-o-8 m-o-8 c-o-2">
+                <p class="col l-6 m-6 c-6">Tổng tiền:</p>
+                <span class="col l-6 m-6 c-6"> 216.000 ₫ </span>
               </div>
-              <div class="cart-section-body-content__item">
-                <div class="col l-6 m-6 c-6">
-                  <div class="row no-gutters cart-section-body-content-col">
-                    <div class="cart-section-picture col l-1 m-1 c-2">
-                      <img
-                        src="./assets/images/sanpham/manga/thienthandietthe_2.png"
-                        alt=""
-                        class="cart-section-img"
-                      />
-                    </div>
-                    <div class="cart-section-name col l-10 m-10 c-9">
-                      <p>Thiên thần diệt thế- Tập 2</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col l-2 m-2 c-2 cart-section-price">99.000 ₫</div>
-                <div class="col l-2 m-2 c-2 cart-section-quantity">
-                  <input
-                    type="text"
-                    name=""
-                    id="cart-section-quantity"
-                    value="1"
-                  />
-                </div>
-                <div class="col l-2 m-2 c-2 cart-section-sum">99.000 ₫</div>
-                <div class="cart-section-delete">Xóa</div>
-              </div>
-              <div class="cart-section-body-content__item">
-                <div class="col l-6 m-6 c-6">
-                  <div class="row no-gutters cart-section-body-content-col">
-                    <div class="cart-section-picture col l-1 m-1 c-2">
-                      <img
-                        src="./assets/images/sanpham/manga/thienthandietthe_3.png"
-                        alt=""
-                        class="cart-section-img"
-                      />
-                    </div>
-                    <div class="cart-section-name col l-10 m-10 c-9">
-                      <p>Thiên thần diệt thế- Tập 3</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col l-2 m-2 c-2 cart-section-price">99.000 ₫</div>
-                <div class="col l-2 m-2 c-2 cart-section-quantity">
-                  <input
-                    type="text"
-                    name=""
-                    id="cart-section-quantity"
-                    value="1"
-                  />
-                </div>
-                <div class="col l-2 m-2 c-2 cart-section-sum">99.000 ₫</div>
-                <div class="cart-section-delete">Xóa</div>
-              </div>
-              <div class="cart-section-body-content__item">
-                <div class="col l-6 m-6 c-6">
-                  <div class="row no-gutters cart-section-body-content-col">
-                    <div class="cart-section-picture col l-1 m-1 c-2">
-                      <img
-                        src="./assets/images/sanpham/manga/thienthandietthe_4.png"
-                        alt=""
-                        class="cart-section-img"
-                      />
-                    </div>
-                    <div class="cart-section-name col l-10 m-10 c-9">
-                      <p>Thiên thần diệt thế- Tập 4</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col l-2 m-2 c-2 cart-section-price">99.000 ₫</div>
-                <div class="col l-2 m-2 c-2 cart-section-quantity">
-                  <input
-                    type="text"
-                    name=""
-                    id="cart-section-quantity"
-                    value="1"
-                  />
-                </div>
-                <div class="col l-2 m-2 c-2 cart-section-sum">99.000 ₫</div>
-                <div class="cart-section-delete">Xóa</div>
+              <div class="cart-section-body-footer-total l-o-8 m-o-8 c-o-2">
+                <p class="col l-6 m-6 c-6">Thành tiền:</p>
+                <span class="col l-6 m-6 c-6"> 216.000 ₫ </span>
               </div>
             </div>
-            <div class="cart-section-body-footer">
-              <div class="cart-section-body-footer-total-wrapper">
-                <div
-                  class="cart-section-body-footer-subtotal l-o-8 m-o-8 c-o-2"
-                >
-                  <p class="col l-6 m-6 c-6">Tổng tiền:</p>
-                  <span class="col l-6 m-6 c-6"> 216.000 ₫ </span>
-                </div>
-                <div class="cart-section-body-footer-total l-o-8 m-o-8 c-o-2">
-                  <p class="col l-6 m-6 c-6">Thành tiền:</p>
-                  <span class="col l-6 m-6 c-6"> 216.000 ₫ </span>
-                </div>
-              </div>
-              <div class="cart-section-body-footer-pay">
-                <a href="" class="cart-section-body-footer-close">
-                  <i class="fas fa-caret-right"></i> Thêm sản phẩm khác vào giỏ
-                  hàng
-                </a>
-                <a
-                  href="./checkout.html"
-                  class="cart-section-body-footer-payment"
-                >
-                  Thực hiện thanh toán
-                </a>
-              </div>
+            <div class="cart-section-body-footer-pay">
+              <a href="" class="cart-section-body-footer-close">
+                <i class="fas fa-caret-right"></i> Thêm sản phẩm khác vào giỏ
+                hàng
+              </a>
+              <a href="./checkout.html" class="cart-section-body-footer-payment">
+                Thực hiện thanh toán
+              </a>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- cart end -->
+  </div>
+  <!-- cart end -->
 
-    <script src="./assets/js/checkout.js"></script>
-  </body>
+  <script src="./assets/js/checkout.js"></script>
+</body>
+
 </html>
