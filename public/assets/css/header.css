@@ -200,8 +200,12 @@
     padding: 10px;
     margin-top: 5px;
     cursor: pointer;
+    border-radius: 5px;
 }
-
+.btn-giohang{
+    text-decoration: none;
+    color: white;
+}
 /* header bottom start*/
 
 .header-bottom-wrapper {}

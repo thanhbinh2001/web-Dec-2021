@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
   <!-- Favicon -->
   <link rel="shortcut icon" href="https://nobita.vn/layouts/fontpage/images/favicon.ico" />
-
   <!-- Css -->
   <link rel="stylesheet" href="./assets/css/base.css" />
   <link rel="stylesheet" href="./assets/css/grid.css" />
@@ -366,7 +365,9 @@
                             </span>
                           </p>
                           <div class="header-cart__btn-open">
-                            Xem giỏ hàng
+                            <a href="cart.html" class="btn-giohang">
+                              Xem giỏ hàng
+                            </a>
                           </div>
                         </div>
                       </ul>
@@ -638,7 +639,7 @@
               <div class="row">
                 <!-- left -->
                 <div class="checkout-left col l-9 m-12 c-12">
-                  <div class="checkout-left-wrapper">
+                  <div class="checkout-left-wrapper-address">
                     <div class="checkout-left-address">
                       <div class="checkout-left__heading">
                         <h2 class="checkout-left__heading-title">
@@ -677,20 +678,15 @@
                               class="checkout-form-textarea col l-5 m-5 c-12"></textarea>
                           </div>
                         </div>
-                        <div class="checkout-group">
-                          <div class="row no-gutters">
-                            <button class="checkout-next-btn col l-o-3 m-o-3 c-o-5">
-                              Tiếp tục
-                            </button>
-                          </div>
-                        </div>
+
                       </form>
                     </div>
-
-                    <div class="checkout-left-payment">
-                      <div class="checkout-left__heading">
+                  </div>
+                  <div class="checkout-left-wrapper-payment">
+                    <div class="checkout-left-payment ">
+                      <div class=" checkout-left__heading">
                         <h2 class="checkout-left__heading-title">
-                          Địa chỉ giao hàng
+                          Phương thức thanh toán
                         </h2>
                       </div>
                       <div class="checkout-left-payment__select">
@@ -733,22 +729,6 @@
                 <!-- right -->
                 <div class="checkout-right col l-3 m-12 c-12">
                   <div class="checkout-right-wrapper">
-                    <div class="checkout-right-address">
-                      <div class="checkout-right-heading">
-                        <h2>Địa chỉ giao hàng</h2>
-                        <div class="checkout-right-repair">Sửa</div>
-                      </div>
-                      <div class="checkout-right-address__item">
-                        <p>Anh Hoàng Nguyễn Quang Huy</p>
-                      </div>
-                      <div class="checkout-right-address__item">
-                        <p>Ngã tư Vũng Tàu, Biên Hòa, Đồng Nai</p>
-                      </div>
-                      <div class="checkout-right-address__item">
-                        <span>Điện thoại:</span>
-                        <p>0909 388 xxx</p>
-                      </div>
-                    </div>
                     <div class="checkout-right-order">
                       <div class="checkout-right-order__top">
                         <div class="checkout-right-heading">
@@ -796,6 +776,25 @@
                             99.000 ₫
                           </span>
                         </div>
+                        <div class="checkout-right-order__body-item">
+                          <a class="checkout-right-order__body-item-text">
+                            <span class="shownumber">1</span>
+                            x Thiên thần diệt thế - Tập 5
+                          </a>
+                          <span class="checkout-right-order__body-item-price">
+                            99.000 ₫
+                          </span>
+                        </div>
+                        <div class="checkout-right-order__body-item">
+                          <a class="checkout-right-order__body-item-text">
+                            <span class="shownumber">1</span>
+                            x Thiên thần diệt thế - Tập 6
+                          </a>
+                          <span class="checkout-right-order__body-item-price">
+                            99.000 ₫
+                          </span>
+                        </div>
+
                       </div>
 
                       <div class="checkout-right-order__footer">
@@ -836,126 +835,6 @@
   </div>
 
   <!-- app end -->
-
-  <!-- cart start -->
-  <div id="cart-section">
-    <div class="cart-section-wrapper">
-      <div class="cart-section-title">
-        <h2>Giỏ hàng của tôi</h2>
-        <a href="" class="cart-section-close">Close X</a>
-      </div>
-      <div class="cart-section-container">
-        <div class="cart-section-head">
-          <p>Bạn có <span class="shownumber">4</span> sản phẩm trong giỏ</p>
-        </div>
-        <div class="cart-section-body">
-          <ul class="cart-section-body-head">
-            <li class="col l-6 m-6 c-6">Sản phẩm trong giỏ</li>
-            <li class="col l-2 m-2 c-2">Giá bán</li>
-            <li class="col l-2 m-2 c-2">Số lượng</li>
-            <li class="col l-2 m-2 c-2">Thành tiền</li>
-          </ul>
-          <div class="cart-section-body-content">
-            <div class="cart-section-body-content__item">
-              <div class="col l-6 m-6 c-6">
-                <div class="row no-gutters cart-section-body-content-col">
-                  <div class="cart-section-picture col l-1 m-1 c-2">
-                    <img src="./assets/images/sanpham/manga/thienthandietthe_1.png" alt="" class="cart-section-img" />
-                  </div>
-                  <div class="cart-section-name col l-10 m-10 c-9">
-                    <p>Thiên thần diệt thế- Tập 1</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col l-2 m-2 c-2 cart-section-price">99.000 ₫</div>
-              <div class="col l-2 m-2 c-2 cart-section-quantity">
-                <input type="text" name="" id="cart-section-quantity" value="1" />
-              </div>
-              <div class="col l-2 m-2 c-2 cart-section-sum">99.000 ₫</div>
-              <div class="cart-section-delete">Xóa</div>
-            </div>
-            <div class="cart-section-body-content__item">
-              <div class="col l-6 m-6 c-6">
-                <div class="row no-gutters cart-section-body-content-col">
-                  <div class="cart-section-picture col l-1 m-1 c-2">
-                    <img src="./assets/images/sanpham/manga/thienthandietthe_2.png" alt="" class="cart-section-img" />
-                  </div>
-                  <div class="cart-section-name col l-10 m-10 c-9">
-                    <p>Thiên thần diệt thế- Tập 2</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col l-2 m-2 c-2 cart-section-price">99.000 ₫</div>
-              <div class="col l-2 m-2 c-2 cart-section-quantity">
-                <input type="text" name="" id="cart-section-quantity" value="1" />
-              </div>
-              <div class="col l-2 m-2 c-2 cart-section-sum">99.000 ₫</div>
-              <div class="cart-section-delete">Xóa</div>
-            </div>
-            <div class="cart-section-body-content__item">
-              <div class="col l-6 m-6 c-6">
-                <div class="row no-gutters cart-section-body-content-col">
-                  <div class="cart-section-picture col l-1 m-1 c-2">
-                    <img src="./assets/images/sanpham/manga/thienthandietthe_3.png" alt="" class="cart-section-img" />
-                  </div>
-                  <div class="cart-section-name col l-10 m-10 c-9">
-                    <p>Thiên thần diệt thế- Tập 3</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col l-2 m-2 c-2 cart-section-price">99.000 ₫</div>
-              <div class="col l-2 m-2 c-2 cart-section-quantity">
-                <input type="text" name="" id="cart-section-quantity" value="1" />
-              </div>
-              <div class="col l-2 m-2 c-2 cart-section-sum">99.000 ₫</div>
-              <div class="cart-section-delete">Xóa</div>
-            </div>
-            <div class="cart-section-body-content__item">
-              <div class="col l-6 m-6 c-6">
-                <div class="row no-gutters cart-section-body-content-col">
-                  <div class="cart-section-picture col l-1 m-1 c-2">
-                    <img src="./assets/images/sanpham/manga/thienthandietthe_4.png" alt="" class="cart-section-img" />
-                  </div>
-                  <div class="cart-section-name col l-10 m-10 c-9">
-                    <p>Thiên thần diệt thế- Tập 4</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col l-2 m-2 c-2 cart-section-price">99.000 ₫</div>
-              <div class="col l-2 m-2 c-2 cart-section-quantity">
-                <input type="text" name="" id="cart-section-quantity" value="1" />
-              </div>
-              <div class="col l-2 m-2 c-2 cart-section-sum">99.000 ₫</div>
-              <div class="cart-section-delete">Xóa</div>
-            </div>
-          </div>
-          <div class="cart-section-body-footer">
-            <div class="cart-section-body-footer-total-wrapper">
-              <div class="cart-section-body-footer-subtotal l-o-8 m-o-8 c-o-2">
-                <p class="col l-6 m-6 c-6">Tổng tiền:</p>
-                <span class="col l-6 m-6 c-6"> 216.000 ₫ </span>
-              </div>
-              <div class="cart-section-body-footer-total l-o-8 m-o-8 c-o-2">
-                <p class="col l-6 m-6 c-6">Thành tiền:</p>
-                <span class="col l-6 m-6 c-6"> 216.000 ₫ </span>
-              </div>
-            </div>
-            <div class="cart-section-body-footer-pay">
-              <a href="" class="cart-section-body-footer-close">
-                <i class="fas fa-caret-right"></i> Thêm sản phẩm khác vào giỏ
-                hàng
-              </a>
-              <a href="./checkout.html" class="cart-section-body-footer-payment">
-                Thực hiện thanh toán
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- cart end -->
-
   <script src="./assets/js/checkout.js"></script>
 </body>
 

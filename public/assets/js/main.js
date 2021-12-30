@@ -4,16 +4,6 @@ const $$ = document.querySelectorAll.bind(document);
 $(".header-cart__btn-open").onclick = function () {
   $("#cart-section").style.display = "block";
 };
-
-$(".cart-section-close").onclick = function (e) {
-  e.preventDefault();
-  $("#cart-section").style.display = "none";
-};
-
-$(".cart-section-body-footer-close").onclick = function (e) {
-  e.preventDefault();
-  $("#cart-section").style.display = "none";
-};
 // header end
 
 //slider start

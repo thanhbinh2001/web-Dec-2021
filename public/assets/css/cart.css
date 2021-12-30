@@ -1,21 +1,14 @@
+.fa-caret-right{
+    padding-right:2px;
+}
 #cart-section {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 99;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: none;
+    position: relative;
 }
 
 .cart-section-wrapper {
-    background-color: var(--main-color);
-    width: 50%;
+    width: 100%;
     position: absolute;
-    top: 50%;
-    right: 50%;
-    transform: translate(50%, -50%);
+    top: 15%;
     padding: 10px;
 }
 
@@ -23,10 +16,13 @@
     position: relative;
 }
 
+
 .cart-section-title h2 {
-    color: var(--bg-1-color);
-    font-size: 1.6rem;
+    font-size: 2rem;
     text-transform: uppercase;
+    margin: 10px 15px;
+    font-weight: bold;
+    text-align: center;
 }
 
 .cart-section-close {
@@ -51,14 +47,20 @@
     font-weight: bold;
 }
 
-.cart-section-body {}
-
+.cart-section-body {
+    margin-top:10px;
+}
+.cart-section-body-head #first-title{
+    padding-left: 30px;
+}
 .cart-section-body-head {
     display: flex;
     align-items: center;
     padding: 10px 0;
     border-bottom: 1px solid #ccc;
     list-style: none;
+    background-color:var(--main-color); 
+    color:white;
 }
 
 .cart-section-body-head li {
@@ -68,6 +70,7 @@
 .cart-section-body-content {
     max-height: 300px;
     overflow-y: scroll;
+    border: 1px solid #ccc;
 }
 
 ::-webkit-scrollbar {
@@ -107,7 +110,7 @@
 .cart-section-quantity {}
 
 #cart-section-quantity {
-    width: 50%;
+    width: 25%;
     text-align: center;
     padding: 5px;
 }
@@ -129,10 +132,12 @@
 }
 
 .cart-section-body-footer {
-    padding-top: 10px;
+    padding-top: 50px;
 }
 
-.cart-section-body-footer-total-wrapper {}
+.cart-section-body-footer-total-wrapper {
+    
+}
 
 .cart-section-body-footer-subtotal {
     padding: 10px 0;
@@ -140,11 +145,11 @@
     position: relative;
     display: flex;
 }
-
 .cart-section-body-footer-total p,
 .cart-section-body-footer-subtotal p {
     font-weight: bold;
     font-size: 1.4rem;
+    
 }
 
 .cart-section-body-footer-total span,
