@@ -198,11 +198,12 @@
 
 .comment-section {
     margin-top: 50px;
+    padding: 0 50px;
 }
 
 .comment-header {
     display: flex;
-    width: 40%;
+    width: 50%;
 }
 
 .comment-image {
@@ -242,7 +243,7 @@
 
 .comment-body {
     margin-top: 20px;
-    width: 40%;
+    width: 50%;
 }
 
 .comment-list {
