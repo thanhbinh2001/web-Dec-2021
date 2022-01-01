@@ -233,6 +233,7 @@
     padding: 8px 12px;
     margin-top: 10px;
     float: right;
+    cursor: pointer;
 }
 
 .btn-primary {
