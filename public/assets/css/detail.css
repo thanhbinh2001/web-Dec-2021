@@ -203,7 +203,7 @@
 
 .comment-header {
     display: flex;
-    width: 50%;
+    width: 70%;
 }
 
 .comment-image {
@@ -243,7 +243,7 @@
 
 .comment-body {
     margin-top: 20px;
-    width: 50%;
+    width: 70%;
 }
 
 .comment-list {
@@ -265,5 +265,5 @@
 
 .comment-item__content {
     font-weight: normal;
-    font-size: 1.3re;
+    font-size: 1.4rem;
 }
